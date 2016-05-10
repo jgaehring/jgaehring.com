@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <h2 class="footer-heading"><a href="{{site.baseurl}}">{{ site.title }}</a></h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
@@ -31,6 +31,14 @@
       <div class="footer-col footer-col-3">
         <p>{{ site.description }}</p>
       </div>
+    </div>
+
+    <div class="trigger">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+      {% endfor %}
     </div>
 
   </div>
