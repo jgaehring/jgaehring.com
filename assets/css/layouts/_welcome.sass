@@ -1,5 +1,9 @@
+// Welcome Page Styles
+
+// Intro
+
 .intro
-  background-color: pink
+  background-color: white
   width: auto
   height: 90vh
   z-index: 10000
@@ -36,12 +40,31 @@
   left: 50%
   top: 50%
   transform: translate(-50%, -50%)
-  background-color: #ddd
+  background-color: #f4f4f4
   display: none
-//
-// .blurb-container
-//   width: 100%
-//   height: 100%
+  text-align: center
+  color: #777
+
+.blurb-container
+  width: 100%
+  height: 100%
+  text-align: center
+
+  p
+    margin-top: 5vw
+    font-family: 'Raleway'
+    @media screen and (max-width: 600px)
+      font-size: 16px
+
+    @media screen and (min-width: 600px)
+      font-size: 28px
+
+
+  span
+    color: #ff4400
+
+  .email
+    color: #222
 
 svg
   width: 100%

@@ -6,6 +6,6 @@ $(function () {
 
     $('.intro-card').mouseleave(function () {
         $('.card-back').css('display', 'none');
-    });
+      });
 
   });

@@ -1,6 +1,7 @@
 /**
  * Reset some basic elements
  */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway';
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -286,7 +287,7 @@ pre {
     color: #099; }
 
 .intro {
-  background-color: pink;
+  background-color: white;
   width: auto;
   height: 90vh;
   z-index: 10000;
@@ -320,8 +321,28 @@ pre {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ddd;
-  display: none; }
+  background-color: #f4f4f4;
+  display: none;
+  text-align: center;
+  color: #777; }
+
+.blurb-container {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .blurb-container p {
+    margin-top: 5vw;
+    font-family: "Raleway"; }
+    @media screen and (max-width: 600px) {
+      .blurb-container p {
+        font-size: 16px; } }
+    @media screen and (min-width: 600px) {
+      .blurb-container p {
+        font-size: 28px; } }
+  .blurb-container span {
+    color: #ff4400; }
+  .blurb-container .email {
+    color: #222; }
 
 svg {
   width: 100%;
