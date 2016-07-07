@@ -1,7 +1,7 @@
 /**
  * Reset some basic elements
  */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto+Slab';
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -321,18 +321,24 @@ pre {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f4f4f4;
+  background-color: white;
   display: none;
   text-align: center;
-  color: #777; }
+  color: #777;
+  border: 2.5px dashed #fdde00; }
 
 .blurb-container {
   width: 100%;
   height: 100%;
   text-align: center; }
+  .blurb-container img {
+    width: 12vw;
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px #777;
+    margin: 3vw; }
   .blurb-container p {
-    margin-top: 5vw;
-    font-family: "Raleway"; }
+    font-family: "Open Sans"; }
     @media screen and (max-width: 600px) {
       .blurb-container p {
         font-size: 16px; } }
@@ -340,7 +346,8 @@ pre {
       .blurb-container p {
         font-size: 28px; } }
   .blurb-container span {
-    color: #ff4400; }
+    color: #fdde00;
+    font-weight: bolder; }
   .blurb-container .email {
     color: #222; }
 
