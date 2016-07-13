@@ -337,28 +337,49 @@ pre {
   border: 2px solid #fdde00; }
 
 .blurb-container {
-  width: 100%;
-  height: 100%;
-  text-align: center; }
+  margin: 5vw 5%;
+  width: 90%;
+  height: 90%;
+  text-align: left; }
+  .blurb-container .avatar {
+    text-align: center; }
+    @media screen and (max-width: 359px) {
+      .blurb-container .avatar {
+        display: none; } }
   .blurb-container img {
     width: 12vw;
     max-width: 100px;
     border-radius: 50%;
-    box-shadow: 0px 5px 5px #777;
-    margin: 3vw; }
+    box-shadow: 0px 5px 5px #777; }
   .blurb-container p {
     font-family: "Open Sans"; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 460px) {
       .blurb-container p {
+        font-size: 10px; } }
+    @media screen and (min-width: 460px) {
+      .blurb-container p {
+        font-size: 13px; } }
+    @media screen and (min-width: 675px) {
+      .blurb-container p {
+        font-size: 18px; } }
+  .blurb-container h2 {
+    font-family: "Raleway"; }
+    @media screen and (max-width: 460px) {
+      .blurb-container h2 {
         font-size: 16px; } }
-    @media screen and (min-width: 600px) {
-      .blurb-container p {
+    @media screen and (min-width: 460px) {
+      .blurb-container h2 {
+        font-size: 20px; } }
+    @media screen and (min-width: 675px) {
+      .blurb-container h2 {
+        margin-top: 5%;
         font-size: 28px; } }
   .blurb-container span {
     color: #fdde00;
     font-weight: bolder; }
   .blurb-container .email {
-    color: #222; }
+    color: #222;
+    text-align: center; }
 
 /**
  * Site header
