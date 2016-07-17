@@ -355,6 +355,7 @@ pre {
     font-family: "Open Sans"; }
     @media screen and (max-width: 460px) {
       .blurb-container p {
+        margin-bottom: 2vw;
         font-size: 10px; } }
     @media screen and (min-width: 460px) {
       .blurb-container p {
@@ -366,6 +367,7 @@ pre {
     font-family: "Raleway"; }
     @media screen and (max-width: 460px) {
       .blurb-container h2 {
+        margin-bottom: 2vw;
         font-size: 16px; } }
     @media screen and (min-width: 460px) {
       .blurb-container h2 {
@@ -374,12 +376,21 @@ pre {
       .blurb-container h2 {
         margin-top: 5%;
         font-size: 28px; } }
-  .blurb-container span {
-    color: #fdde00;
-    font-weight: bolder; }
+    .blurb-container h2 span {
+      color: #fdde00;
+      font-weight: 900; }
   .blurb-container .email {
-    color: #222;
     text-align: center; }
+    @media screen and (max-width: 460px) {
+      .blurb-container .email {
+        font-size: 12px; } }
+    @media screen and (min-width: 460px) {
+      .blurb-container .email {
+        font-size: 14px; } }
+    @media screen and (min-width: 675px) {
+      .blurb-container .email {
+        margin-top: 5%;
+        font-size: 22px; } }
 
 /**
  * Site header

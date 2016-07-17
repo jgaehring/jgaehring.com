@@ -6,14 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: jamesgaehring.com
-email: your-email@domain.com
+title: jgaehring.com
+email: jamie@jgaehring.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is James Edward Gaehring, but most people just know me as Jamie. I'm an independent web developer and consultant based in Brooklyn, New York. I've had over 10 years of experience working for GrowNYC's Greenmarket program, leading publicity and promotions at Union Square. Now I'm providing farmers with access to better data tools and open source software to maike their businesses and communities more sustainable in the 21st Century.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jamesgaehring.com" # the base hostname & protocol for your site
+url: "http://jgaehring.com" # the base hostname & protocol for your site
 twitter_username: JamieGaehring
 github_username:  jgaehring
 
