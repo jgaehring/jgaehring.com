@@ -391,6 +391,14 @@ pre {
       .blurb-container .email {
         margin-top: 5%;
         font-size: 22px; } }
+    .blurb-container .email a {
+      color: inherit; }
+      .blurb-container .email a:link {
+        text-decoration: none; }
+    .blurb-container .email a:hover {
+      text-decoration: none;
+      background-color: #fdde00;
+      color: black; }
 
 /**
  * Site header
