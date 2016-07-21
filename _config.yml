@@ -9,7 +9,7 @@
 title: jgaehring.com
 email: jamie@jgaehring.com
 description: > # this means to ignore newlines until "baseurl:"
-  My name is James Edward Gaehring, but most people just know me as Jamie. I'm an independent web developer and consultant based in Brooklyn, New York. I've had over 10 years of experience working for GrowNYC's Greenmarket program, leading publicity and promotions at Union Square. Now I'm providing farmers with access to better data tools and open source software to maike their businesses and communities more sustainable in the 21st Century.
+  My name is Jamie Gaehring. I'm an independent web developer and consultant based in Brooklyn, New York. I've had over 10 years of experience working for GrowNYC's Greenmarket program, leading communications at Union Square. Today I'm providing farmers with access to better data tools and open source software to make their businesses and communities more sustainable in the 21st Century.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jgaehring.com" # the base hostname & protocol for your site
 twitter_username: JamieGaehring
