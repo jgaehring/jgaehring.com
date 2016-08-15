@@ -570,3 +570,16 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/martins/AgendaBold.ttf") format("truetype");
+  font-weight: bold; }
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/martins/AgendaLight.ttf") format("truetype");
+  font-weight: normal; }
+@font-face {
+  font-family: "Agenda";
+  src: url("../fonts/martins/AgendaMedium.ttf") format("truetype");
+  font-weight: 500; }
