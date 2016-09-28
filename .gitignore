@@ -1,6 +1,7 @@
 *~
 .unused/**
 _site
+_site/feed.xml
 .sass-cache
 .jekyll-metadata
 _notes.md
