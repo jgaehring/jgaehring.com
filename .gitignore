@@ -1,4 +1,6 @@
 *~
 .unused/**
-.sass-cache/**
-notes.md
+_site
+.sass-cache
+.jekyll-metadata
+_notes.md
