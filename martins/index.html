@@ -10,9 +10,10 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="assets/css/jquery-ui.css"> -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="canonical" href="http://martinspretzels.com/">
-  <link rel="alternate" type="application/rss+xml" title="Martin's Pretzels" href="http://martinspretzels.com/feed.xml">
 </head>
 
 
@@ -64,7 +65,7 @@
         <div class="row-wrapper">
           <header class="row modal-header">
             <h2>This is a modal form.</h2>
-            <p>If you're interested in exploring a wholesale relationship with us, please fill out the brief contact form below (why?) or <a href="mailto:hello@martinshandmade.com" class="mail-to">email us</a>.</p>
+            <p>If you're interested in exploring a wholesale relationship with us, please fill out the brief contact form below and we will reply within a couple days with more information. You can also <a href="mailto:hello@martinshandmade.com" class="mail-to">email us</a>.</p>
           </header>
 
           <div class="row card-wrapper text-inputs">
@@ -178,6 +179,165 @@
   </div>
 </div>
 
+<div id="login-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="nav-close"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 400 400"
+   height="400"
+   width="400"
+   version="1.1"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     id="path3365"
+     d="M 58.578644,342.67136 44.436508,328.52922 185.85786,187.10786 327.27922,45.686508 341.42136,59.828644 355.56349,73.970779 214.14214,215.39214 72.720779,356.81349 58.578644,342.67136 Z" />
+  <path
+     d="M 341.42136,342.67135 327.27922,356.81349 185.85786,215.39214 44.436508,73.970778 58.578644,59.828638 72.720779,45.686508 214.14214,187.10786 355.56349,328.52922 341.42136,342.67135 Z"
+     id="path3378" />
+</svg>
+
+      </div>
+
+      <form class="modal-form">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Welcome Back!</h2>
+            <p>Login now to shop the Martin's Pretzels online store, or wait until you're ready to checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="" id="email" required="true">
+            </div>
+            <div class="card sm-input-group">
+              <label for="password" class="text-label">Password</label>
+              <input type="password" name="password" value="" id="password">
+            </div>
+          </div>
+
+          <button type="submit" name="login" class="btn">Login</button>
+          <p>New users,&nbsp;<a id="register-link" href="#">register here.</a><br>
+            Forgot your password?&nbsp;<a href="#">Request reset.</a>
+          </p>
+          <!-- <p> <br> Forgot your password? <br> Register as a new user.</p> -->
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="register-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="nav-close"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 400 400"
+   height="400"
+   width="400"
+   version="1.1"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     id="path3365"
+     d="M 58.578644,342.67136 44.436508,328.52922 185.85786,187.10786 327.27922,45.686508 341.42136,59.828644 355.56349,73.970779 214.14214,215.39214 72.720779,356.81349 58.578644,342.67136 Z" />
+  <path
+     d="M 341.42136,342.67135 327.27922,356.81349 185.85786,215.39214 44.436508,73.970778 58.578644,59.828638 72.720779,45.686508 214.14214,187.10786 355.56349,328.52922 341.42136,342.67135 Z"
+     id="path3378" />
+</svg>
+
+      </div>
+
+      <form class="modal-form" action="index.html" method="post">
+        <div class="row-wrapper">
+
+          <header class="row modal-header">
+            <h2>Register</h2>
+            <p>New users can register now to start shopping, or just wait until checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="">
+            </div>
+            <div class="card sm-input-group">
+              <label for="enter-pw" class="text-label">Enter Password</label>
+              <input type="password" name="enter-pw" value="">
+            </div>
+            <div class="card sm-input-group">
+              <label for="reenter-pw" class="text-label">Re-enter password</label>
+              <input type="password" name="reenter-pw" value="">
+            </div>
+          </div>
+
+          <!-- <button type="submit" class="row btn">Sign Up</button> -->
+          <div class="row btn">
+            Sign Up
+          </div>
+          <div class="row">
+            <p>Returning user?&nbsp;<a id="login-from-register" href="#">Login here.</a></p>
+
+          </div>
+
+        </div>
+      </form>
+
+      <div class="row-wrapper" id="thank-you">
+        <h2>Thank You!</h2>
+        <p>You will receive a confirmation email shortly.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <div class="page-wrap">
 
@@ -272,10 +432,10 @@
     </nav>
     <nav class="col-third">
       <ul class="shop-nav">
-        <li>Login</li>
+        <li id="login-link">Login</li>
         <li>
           <div class="shop-icon">
-            <img src="assets/img/cart.png" alt="Shopping Cart" class="shop-icon"/>
+            <a href="./checkout/cart"><img src="assets/img/cart.png" alt="Shopping Cart" class="shop-icon"/></a>
           </div>
         </li>
       </ul>
@@ -286,12 +446,12 @@
 
   <main>
 
-    <section id="home">
-  <div class="about bg-img-full col-wrapper">
+    <section id="home" class="bg-img-wide">
+  <div class="about col-wrapper">
     <div class="col-third">
       <div class="about-logo">
         <div class="logo-wrapper">
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -932,10 +1092,11 @@
     </g>
   </g>
 </svg>
-
+ -->
+          <img src="./assets/img/MartinsPretzels_transp_partial2.png" alt="Martins Pretzels Logo">
         </div>
-        <div class="order-link">
-          <a href="#order" class="btn">Order Now</a>
+        <div id="order-link">
+          <a href="#order" class="btn white-btn">Order Now</a>
         </div>
       </div>
     </div>
@@ -948,235 +1109,244 @@
   </div>
 </section>
 
+<!-- <section class="horz-bar"></section> -->
+
 
     <section id="order">
-  <div class="card-wrapper">
-    
-    <div class="card shop-item">
-      <div class="shop-img item-1"><h1>Item 1</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Salted Pretzels </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
-          </div>
-          <div class="size">
-            <p>
-              3lb Box
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $14.29 + tax <br> &amp; shipping
-            </p>
-          </div>
+  <div class="row-wrapper">
+    <header class="row">
+      <h1>Order Online</h1>
+    </header>
+    <div class="row card-wrapper">
+
+      <div class="card shop-item">
+        <div class="shop-img item-1"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Salted Pretzels </h3>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-2"><h1>Item 2</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Unsalted Hearth </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                3lb Box
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $14.29 + tax <br> &amp; shipping
+              </p>
+            </div>
           </div>
-          <div class="size">
-            <p>
-              6lb Box
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $26.99 + tax <br> &amp; shipping
-            </p>
-          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
       </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-3"><h1>Item 3</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Whole Wheat </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
-          </div>
-          <div class="size">
-            <p>
-              3lb Box
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $28.58 + tax <br> &amp; shipping
-            </p>
-          </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-2"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Unsalted Hearth </h3>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-4"><h1>Item 4</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Special Orders </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                6lb Box
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $26.99 + tax <br> &amp; shipping
+              </p>
+            </div>
           </div>
-          <div class="size">
-            <p>
-              4lb Brokens
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $15.99 + tax <br> &amp; shipping
-            </p>
-          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
       </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-5"><h1>Item 5</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Gift Tin </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
-          </div>
-          <div class="size">
-            <p>
-              1.75 lb
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $18.99 + tax <br> &amp; shipping
-            </p>
-          </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-3"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Whole Wheat </h3>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-6"><h1>Item 6</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Gift Bucket </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                3lb Box
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $28.58 + tax <br> &amp; shipping
+              </p>
+            </div>
           </div>
-          <div class="size">
-            <p>
-              3lb
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $22.99 + tax <br> &amp; shipping
-            </p>
-          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
       </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-4"><h1>Item 7</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Hoppy Caramel Nuggets </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
-          </div>
-          <div class="size">
-            <p>
-              Half lb
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $10.00 + tax <br> &amp; shipping
-            </p>
-          </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-4"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Special Orders </h3>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-    
-    <div class="card shop-item">
-      <div class="shop-img item-1"><h1>Item 8</h1></div>
-      <hr>
-      <div class="card-title">
-        <h3> Flavored Pieces </h3>
-      </div>
-      <div class="item-form">
-        <div class="options">
-          <div class="qty">
-            <p>
-              1
-            </p>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                4lb Brokens
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $15.99 + tax <br> &amp; shipping
+              </p>
+            </div>
           </div>
-          <div class="size">
-            <p>
-              Half lb
-            </p>
-          </div>
-          <div class="price">
-            <p>
-              $5.00 + tax <br> &amp; shipping
-            </p>
-          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
         </div>
-        <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
       </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-5"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Gift Tin </h3>
+        </div>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                1.75 lb
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $18.99 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-6"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Gift Bucket </h3>
+        </div>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                3lb
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $22.99 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-7"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Hoppy Caramel Nuggets </h3>
+        </div>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                Half lb
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $10.00 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card shop-item">
+        <div class="shop-img item-8"><h1></h1></div>
+        <hr>
+        <div class="card-title">
+          <h3> Flavored Pieces </h3>
+        </div>
+        <div class="item-form">
+          <div class="options">
+            <div class="qty">
+              <p>
+                1
+              </p>
+            </div>
+            <div class="size">
+              <p>
+                Half lb
+              </p>
+            </div>
+            <div class="price">
+              <p>
+                $5.00 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+          <button type="submit" name="button" class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
     </div>
-    
+
   </div>
+
 </section>
 <section class="press">
   <div class="row-wrapper">
@@ -1200,16 +1370,11 @@
 
   <div id="at-market" class="row-wrapper">
 
-    <header class="row col-wrapper">
-      <div class="col-two-third">
+    <header class="row">
         <h1>Find Us at Market</h1>
-      </div>
-      <div class="col-third">
-
-      </div>
     </header>
 
-    <div class="row col-wrapper">
+    <!-- <div class="row col-wrapper">
 
       <div class="col-two-third">
         <div class="white-box">
@@ -1227,16 +1392,16 @@
       </div>
 
 
-    </div>
+    </div> -->
 
 
-    
+
     <div class="row row-wrapper">
       <div class="row region">
         <h2>NYC Greenmarkets</h2>
       </div>
       <div class="row market-list card-wrapper">
-        
+
         <div class="card market">
           <div class="card-title">
             <h3>Union Square Greenmarket</h3>
@@ -1249,7 +1414,7 @@
             <li>17th Street & Broadway</li>
           </ul>
         </div>
-        
+
         <div class="card market">
           <div class="card-title">
             <h3>79th St Greenmarket</h3>
@@ -1262,7 +1427,7 @@
             <li>Columbus Ave b/t 78th & 79th Sts</li>
           </ul>
         </div>
-        
+
         <div class="card market">
           <div class="card-title">
             <h3>Borough Hall Greenmarket</h3>
@@ -1275,16 +1440,16 @@
             <li>Cadman Plz W at Montague St</li>
           </ul>
         </div>
-        
+
       </div>
     </div>
-    
+
     <div class="row row-wrapper">
       <div class="row region">
         <h2>Upstate Markets</h2>
       </div>
       <div class="row market-list card-wrapper">
-        
+
         <div class="card market">
           <div class="card-title">
             <h3>Central NY Regional Market</h3>
@@ -1297,7 +1462,7 @@
             <li>Syracuse, NY</li>
           </ul>
         </div>
-        
+
         <div class="card market">
           <div class="card-title">
             <h3>Watertown Farm & Craft Market</h3>
@@ -1310,10 +1475,10 @@
             <li>Watertown, NY</li>
           </ul>
         </div>
-        
+
       </div>
     </div>
-    
+
 
 
 
@@ -1321,7 +1486,7 @@
 </section>
 
 
-<section id="on-the-menu">
+<!-- <section id="on-the-menu">
   <div class="row-wrapper">
 
     <header class="row">
@@ -1337,7 +1502,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div id="city-bakery" class="row col-wrapper">
       <div class="col-third empty-col">
@@ -1370,173 +1535,176 @@
     <hr class="row"> -->
 
 
-  </div>
-</section>
+  <!-- </div>
+</section> -->
 
 
     <section id="wholesale">
   <div class="row-wrapper">
+    <header class="row">
+      <h1>Wholesale Accounts</h1>
+    </header>
     <div class="half-row wholesale-card">
       <h2>We're looking for retail partners who share our passion for fresh, handcrafted, slow food.</h2>
       <div id="wholesale-inquiry">
-        <div class="btn">Let's talk!</div>
+        <div class="btn white-btn shadow-btn">Let's talk!</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="partners">
+<!-- <section id="partners">
   <div class="row-wrapper">
       <header class="row">
         <h3>We're proud to partner with these fine restaurants, retailers and companies.</h3>
       </header>
       <div class="row card-wrapper">
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> ABC Kitchen </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Brooklyn Brewery </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> City Bakery </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Craft Bar </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> The Brooklyn Kitchen </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Warby Parker </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Back 40 West </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Lincoln Plaza Cinema </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Birdbath </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Wichcraft </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Roni-Sue Chocolates </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Stinky Bkln </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Good Batch </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Top Hops Beer Shop </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Little Branch </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Middle Branch </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Mr. Purple </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Perilla </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> The Irvington </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> The Richardson </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> W Hotel Union Square </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Quad Cinema </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> The Roof NYC </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Kingside at the Viceroy <br> Hotel </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Gastronomie 491 </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Whiskey Blue </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5> Anthony Road Vineyards </h5>
         </div>
-        
+
         <div class="card">
           <div class="logo"></div>
           <h5>  </h5>
         </div>
-        
+
       </div>
 
 
   </div>
-</section>
+</section> -->
 
 
 
@@ -1549,7 +1717,7 @@
       <p>
         We'd love to hear from you!
       </p>
-      <div id="contact-btn" class="btn">
+      <div id="contact-btn" class="btn gray-btn">
         Contact Us
       </div>
       <p>
@@ -1559,8 +1727,10 @@
 
     <div class="col-third row-wrapper mid-footer">
       <div class="row">
-        <div class="martins-logo">
-          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <a href="/martins/#home">
+          <div class="martins-logo">
+            <img src="./assets/img/MartinsPretzels_transp_full.png" alt="Martin's Pretzels logo">
+            <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="assets/css/main.css"?>
 <svg id="svg5877" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599.99998 430.06033" height="121.37mm" width="169.33mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
  <defs id="defs5879">
@@ -1809,8 +1979,9 @@
   </g>
  </g>
 </svg>
-
-        </div>
+ -->
+          </div>
+        </a>
       </div>
 
       <div class="row social-media">
@@ -1872,7 +2043,7 @@
 
   <div class="site-credit">
     <p>
-      site by <a href="http://jgaehring.com">jgaehring.com</a>
+      Made with &hearts; by <a href="http://www.metarhythm.com/">Metarhythm</a> &amp; <a href="http://jgaehring.com">jgaehring.com</a> .
     </p>
   </div>
 
@@ -1884,6 +2055,8 @@
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script> -->
     <script type="text/javascript" src="assets/js/functions.js"></script>
   </body>
 
