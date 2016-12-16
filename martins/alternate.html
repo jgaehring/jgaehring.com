@@ -445,8 +445,24 @@
 
 
   <main>
+    <style media="screen">
+      #home.bg-img-wide {
+        height: 72rem;
+        background-image: url('./assets/img/IMG_5124.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 0px 350px }
+        @media (min-width: 600px) {
+          #home.bg-img-wide {
+            height: 60rem;
+            background-position: 0px 100px } }
+        @media (min-width: 950px) {
+          #home.bg-img-wide {
+            height: 60rem;
+            background-position: 0px -350px } }
 
-    <section id="home" class="bg-img-wide" style="background-image: url('./assets/img/ethang.jpg')">
+    </style>
+    <section id="home" class="bg-img-wide">
   <div class="about col-wrapper">
     <div class="col-third">
       <div class="about-logo">
