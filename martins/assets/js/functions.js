@@ -1,4 +1,4 @@
-$(function() {
+// $(function() {
 
   // Toggling Main Nav
 
@@ -100,5 +100,26 @@ $(function() {
   })
   $('#expiry-year').menu()
 
+  $('.shop-item .option').selectmenu({
+    classes: {
+      'ui-selectmenu-button': 'option',
+      // 'ui-selectmenu-button-closed': 'option',
+    },
+    width: false
+  })
+  $('.shop-item .option').menu()
 
+
+// Press
+
+
+$('.press-carousel').slick( {
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  mobileFirst: true,
 });
+
+
+// CLOSE JQUERY READY FUNCTION
+// });
