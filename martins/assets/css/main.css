@@ -187,10 +187,11 @@ section {
     flex: 2; }
   .col-wrapper .col-full {
     flex: 3; }
+  .col-wrapper .col-half {
+    flex: 1 1 50%; }
 
 .bg-img-wide {
   width: 100%;
-  position: absolute;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
@@ -683,199 +684,236 @@ textarea {
  * Home (About) Section
  */
 #home {
-  background-image: url("../img/IMG_4699.jpg");
-  background-position: bottom; }
-
-#home.bg-img-wide {
-  position: static;
-  background-size: cover; }
-
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 63rem; }
+  background-image: url("../img/IMG_5124.jpg");
+  height: 72rem;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0px 33rem; }
   @media (min-width: 600px) {
-    .about {
-      flex-direction: row;
-      height: 45rem; } }
-  @media (max-width: 950px) {
-    .about h1 {
-      font-size: 3rem; } }
-  .about .about-logo {
-    height: 22.5rem;
-    margin: 1.5rem 0 0 0;
+    #home {
+      height: 90rem; } }
+  @media (min-width: 600px) and (min-width: 725px) {
+    #home {
+      height: 81rem;
+      background-position: 0px 12rem; } }
+  @media (min-width: 600px) and (min-width: 950px) {
+    #home {
+      height: 75rem;
+      background-position: 0px -3rem; } }
+  @media (min-width: 600px) and (min-width: 1400px) {
+    #home {
+      background-position: 0px -12rem; } }
+
+  @media (max-width: 725px) {
+    #home .col-wrapper {
+      flex-flow: column; } }
+  #home .col-half {
+    flex-basis: 100%;
+    height: auto; }
+    @media (min-width: 600px) {
+      #home .col-half {
+        margin: 1.5rem;
+        flex-basis: 50%;
+        height: auto; } }
+    @media (min-width: 950px) {
+      #home .col-half {
+        margin-top: 0; } }
+  #home .home-logo-wrapper {
+    width: 100%;
+    height: 18rem;
     text-align: center; }
     @media (min-width: 600px) {
-      .about .about-logo {
-        margin: 0rem; } }
-    .about .about-logo .logo-wrapper {
-      position: relative;
-      height: 18rem; }
-      @media (min-width: 600px) {
-        .about .about-logo .logo-wrapper {
-          top: 2.25rem;
-          height: 9rem; } }
-      @media (min-width: 725px) {
-        .about .about-logo .logo-wrapper {
-          height: 10.5rem; } }
-      @media (min-width: 950px) {
-        .about .about-logo .logo-wrapper {
-          height: 13.5rem; } }
-      .about .about-logo .logo-wrapper img {
-        height: 100%; }
-    .about .about-logo #order-link {
-      margin: 3rem 0 0 0; }
-      @media (min-width: 600px) {
-        .about .about-logo #order-link {
-          margin: 0;
-          position: relative;
-          top: 4.5rem; } }
-  .about .about-blurb {
+      #home .home-logo-wrapper {
+        height: 24rem; } }
+    @media (min-width: 725px) {
+      #home .home-logo-wrapper {
+        height: 18rem; } }
+    @media (min-width: 950px) {
+      #home .home-logo-wrapper {
+        height: 21rem; } }
+    @media (min-width: 1200px) {
+      #home .home-logo-wrapper {
+        height: 24rem; } }
+  #home .home-logo {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/MartinsPretzels_transp_partial2.png"); }
+    @media (min-width: 725px) {
+      #home .home-logo {
+        height: 18rem;
+        width: 100%; } }
+    @media (min-width: 950px) {
+      #home .home-logo {
+        height: 21rem; } }
+    @media (min-width: 1200px) {
+      #home .home-logo {
+        height: 24rem; } }
+  #home #order-link {
+    margin: 0; }
+    @media (min-width: 725px) {
+      #home #order-link {
+        margin: 3rem 0 0 0; } }
+  #home .about-blurb {
     background: white;
     border: 4px solid black;
     border-radius: 4px;
     margin: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     padding: 1.5rem; }
+    #home .about-blurb h2 {
+      font-weight: bold; }
     @media (min-width: 600px) {
-      .about .about-blurb {
+      #home .about-blurb {
         margin: 0.75rem;
         margin-top: 0; } }
     @media (min-width: 725px) {
-      .about .about-blurb {
-        margin: 1.5rem; } }
+      #home .about-blurb {
+        margin: 0;
+        margin-top: 1.5rem; } }
     @media (min-width: 950px) {
-      .about .about-blurb {
-        margin: 3rem; } }
-
-/**
- * Order Now
- */
-.shop-item {
-  flex-basis: 14.5rem; }
-  @media (min-width: 385px) {
-    .shop-item {
-      flex-basis: 12.75rem; } }
-  @media (min-width: 950px) {
-    .shop-item {
-      flex-basis: 13rem; } }
-  .shop-item h1 {
-    color: white;
-    line-height: 10.5rem; }
-
-.shop-img {
-  display: inline-block;
-  height: 10.5rem;
-  width: 10.5rem; }
-
-.item-1 {
-  background-color: white;
-  background-image: url("../img/salt-transp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-2 {
-  background-color: white;
-  background-image: url("../img/nosalt-transp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-3 {
-  background-color: white;
-  background-image: url("../img/ww-salt-transp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-4 {
-  background-color: white;
-  background-image: url("../img/special-orders.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-5 {
-  background-color: white;
-  background-image: url("../img/tin-labeled.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-6 {
-  background-color: white;
-  background-image: url("../img/bucket-labeled.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-7 {
-  background-color: white;
-  background-image: url("../img/nugs-labeled.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.item-8 {
-  background-color: white;
-  background-image: url("../img/flavored-labeled.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.options {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
-
-.qty {
-  flex: 1 1 4rem;
-  text-align: center;
-  border-bottom: #211e1d solid 1px;
-  border-right: #211e1d solid 1px; }
-
-.size {
-  flex: 2 2 8rem;
-  text-align: center;
-  border-bottom: #211e1d solid 1px; }
-
-.price {
-  flex: 3 3 12rem;
-  text-align: center; }
-
-.qty p, .size p, .price p {
-  font-size: 1.5rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem; }
-
-@media (min-width: 385px) and (max-width: 950px) {
-  .add-to-cart {
-    padding: 0 0.75rem 0 0.75rem; } }
+      #home .about-blurb {
+        margin-top: 3rem; } }
 
 /**
  * Press
  */
-.press {
+#press {
   background-color: white;
   margin-bottom: 6rem; }
-
-.quote-card {
-  background-color: #bcc2c8;
-  margin: 1.5rem 0; }
-  .quote-card blockquote {
-    padding: 1.5rem 1.5rem; }
-    .quote-card blockquote > p, .quote-card blockquote footer {
+  @media (max-width: 600px) {
+    #press .half-row {
+      width: 80%; } }
+  @media (max-width: 1200px) {
+    #press .row-wrapper {
+      max-width: 100%; } }
+  #press .press-carousel {
+    background-color: #67757f;
+    margin: 1.5rem 0; }
+    #press .press-carousel blockquote {
+      padding: 4.5rem 1.5rem 3rem 1.5rem;
       color: white;
-      text-shadow: 0 0 10px #5c6871; }
-    .quote-card blockquote > p {
+      text-shadow: 0 0 10px #131211; }
+      @media (min-width: 385px) {
+        #press .press-carousel blockquote {
+          padding: 3rem 1.5rem 1.5rem 1.5rem; } }
+  @media (min-width: 385px) and (min-width: 600px) {
+    #press .press-carousel blockquote {
+      padding: 1.5rem; } }
+
+      #press .press-carousel blockquote h5 {
+        white-space: normal;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem; }
+      #press .press-carousel blockquote p {
+        white-space: normal;
+        font-weight: normal;
+        margin: 0;
+        text-align: right;
+        font-style: italic; }
+
+/**
+ * Order Now
+ */
+#order-form {
+  margin-bottom: 6rem; }
+  #order-form #gift-tin .img-wrapper {
+    border-radius: 50%;
+    overflow: hidden; }
+    #order-form #gift-tin .img-wrapper .item-img {
+      position: relative;
+      left: -4.125rem; }
+  #order-form #special-orders .img-wrapper {
+    border-radius: 50%;
+    overflow: hidden; }
+    #order-form #special-orders .img-wrapper .item-img {
+      height: 120%;
+      position: relative;
+      right: 6.125rem;
+      bottom: 2rem; }
+  #order-form #flavored-pieces .img-wrapper {
+    border-radius: 50%;
+    overflow: hidden; }
+    #order-form #flavored-pieces .img-wrapper .item-img {
+      height: 110%;
+      position: relative;
+      right: 1.125rem; }
+  #order-form .shop-item {
+    flex-basis: 14.5rem; }
+    @media (min-width: 600px) {
+      #order-form .shop-item {
+        margin: 1.5rem; } }
+    @media (min-width: 950px) {
+      #order-form .shop-item {
+        flex-basis: 16rem; } }
+    #order-form .shop-item h1 {
+      color: white;
+      line-height: 10.5rem; }
+    #order-form .shop-item .img-wrapper {
+      display: inline-block;
+      height: 10.5rem;
+      width: 10.5rem; }
+      #order-form .shop-item .img-wrapper .item-img {
+        display: inline-block;
+        height: 100%; }
+    #order-form .shop-item .options {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap; }
+    #order-form .shop-item .qty {
+      flex: 1 1 3rem;
+      text-align: center;
+      border-bottom: #211e1d solid 1px;
+      border-right: #211e1d solid 1px; }
+      #order-form .shop-item .qty input {
+        width: auto;
+        border: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: white;
+        color: #211e1d; }
+    #order-form .shop-item .price {
+      flex: 3 3 12rem;
+      text-align: center; }
+    #order-form .shop-item .qty p, #order-form .shop-item .option p, #order-form .shop-item .price p {
       font-size: 1.5rem;
-      font-weight: bold; }
-    .quote-card blockquote > footer {
-      text-align: right;
-      font-style: italic;
-      padding-right: 4em; }
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem; }
+    @media (min-width: 385px) and (max-width: 950px) {
+      #order-form .shop-item .add-to-cart {
+        padding: 0 0.75rem 0 0.75rem; } }
+    #order-form .shop-item .unit-values {
+      display: none; }
+    #order-form .shop-item .option {
+      flex: 2 2 9rem;
+      text-align: center;
+      border-bottom: #211e1d solid 1px;
+      text-align: center; }
+      #order-form .shop-item .option span.ui-menu-item, #order-form .shop-item .option span.ui-selectmenu-text {
+        margin-top: 0.75rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: white;
+        color: #211e1d; }
+      #order-form .shop-item .option:hover {
+        background-color: white;
+        color: #211e1d; }
+
+/** jQueryUI styles for Items' options menu */
+.option.ui-selectmenu-button.ui-button {
+  background-color: white;
+  color: #211e1d;
+  border: none;
+  border-bottom: #211e1d solid 1px; }
+
+.option.ui-selectmenu-button.ui-button:hover {
+  background-color: white;
+  color: #211e1d; }
 
 #find-us {
   margin-bottom: 6rem; }
