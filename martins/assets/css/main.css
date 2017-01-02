@@ -674,7 +674,7 @@ textarea {
   color: #211e1d; }
 
 .horz-bar {
-  background-image: url("../img/bar_horz.png");
+  background-image: url("/martins/assets/img/bar_horz.png");
   background-repeat: repeat-x;
   background-size: contain;
   height: 6px;
@@ -684,7 +684,7 @@ textarea {
  * Home (About) Section
  */
 #home {
-  background-image: url("../img/IMG_5124.jpg");
+  background-image: url("/martins/assets/img/IMG_5124.jpg");
   height: 72rem;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -741,7 +741,7 @@ textarea {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/MartinsPretzels_transp_partial2.png"); }
+    background-image: url("/martins/assets/img/MartinsPretzels_transp_partial2.png"); }
     @media (min-width: 725px) {
       #home .home-logo {
         height: 18rem;
@@ -947,7 +947,7 @@ textarea {
 #abc-kitchen h2, #abc-kitchen p {
   text-align: left; }
 #abc-kitchen .story-banner {
-  background-image: url("../img/calamari.jpg");
+  background-image: url("/martins/assets/img/calamari.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   height: 12rem; }
@@ -955,12 +955,12 @@ textarea {
 #wholesale .row-wrapper {
   height: 57rem;
   margin-bottom: 3rem;
-  background-image: url("../img/retail-line.jpg");
+  background-image: url("/martins/assets/img/retail-line.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain; }
 #wholesale .wholesale-card {
-  background-image: url("../img/bg-pattern_brand-blue.png");
+  background-image: url("/martins/assets/img/bg-pattern_brand-blue.png");
   background-size: 200%;
   background-position: center;
   padding: 1.5rem;
