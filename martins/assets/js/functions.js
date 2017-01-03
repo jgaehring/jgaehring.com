@@ -100,14 +100,14 @@
   })
   $('#expiry-year').menu()
 
-  $('.shop-item .option').selectmenu({
+  $('.shop-item select.option').selectmenu({
     classes: {
       'ui-selectmenu-button': 'option',
       // 'ui-selectmenu-button-closed': 'option',
     },
     width: false
   })
-  $('.shop-item .option').menu()
+  $('.shop-item select.option').menu()
 
 
 // Press
