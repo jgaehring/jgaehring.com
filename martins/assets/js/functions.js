@@ -3,7 +3,7 @@
   // Toggling Main Nav
 
   $('.nav-toggle').on('click', function() {
-    $('header, .nav-toggle, .nav-open, .nav-close').toggleClass('is-open');
+    $('.page-header, .nav-toggle, .nav-open, .nav-close, .mobile-nav').toggleClass('is-open');
   })
 
   // MODALS
@@ -100,10 +100,18 @@
   })
   $('#expiry-year').menu()
 
+  $('#test-menu').selectmenu({
+    width: false
+  })
+  $('test-menu').menu()
+
   $('.shop-item select.option').selectmenu({
     classes: {
       'ui-selectmenu-button': 'option',
       // 'ui-selectmenu-button-closed': 'option',
+    },
+    icons: {
+      button: 'svg-chevron-down'
     },
     width: false
   })

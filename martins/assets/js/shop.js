@@ -25,12 +25,12 @@ const itemProto = {
     let optionIndex = this.getOptionIndex();
     let displayPrice = $(id).find(".price p");
     let unitPrice = $(id)
-    .find(".unit-values div:nth-child(" + (optionIndex + 1).toString() + ")  .unit-price")
-    .prop('innerHTML')
-    .match(/\d+\.?\d+/g)[0];
+      .find(".unit-values div:nth-child(" + (optionIndex + 1).toString() + ")  .unit-price")
+      .prop('innerHTML')
+      .match(/\d+\.?\d+/g)[0];
     let displayOption = $(id)
-    .find(".unit-values div:nth-child(" + (optionIndex + 1).toString() + ")  .option-name")
-    .prop('innerHTML');
+      .find(".unit-values div:nth-child(" + (optionIndex + 1).toString() + ")  .option-name")
+      .prop('innerHTML');
     var totalPrice = qty * unitPrice;
     totalPrice = totalPrice.toFixed(2);
     displayPrice.text("$" + totalPrice + " + tax & shipping");
