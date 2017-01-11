@@ -25,6 +25,7 @@
   openModal( $('#wholesale-inquiry'), $('#wholesale-modal') );
   openModal( $('#register-link'), $('#register-modal') );
   openModal( $('#login-from-register'), $('#login-modal') );
+  openModal( $('.add-to-cart'), $('#cart-modal') );
 
 
   // Closing Modals
@@ -44,12 +45,14 @@
   closeModal( $('#wholesale-modal .close-modal'), $('#wholesale-modal') );
   closeModal( $('#register-modal .close-modal'), $('#register-modal') );
   closeModal( $('#register-link'), $('#login-modal') );
-  closeModal( $('#login-from-register'), $('#register-modal'))
+  closeModal( $('#login-from-register'), $('#register-modal') )
+  closeModal( $('#cart-modal .close-modal'), $('#cart-modal') );
+  closeModal( $('#cart-modal .btn.keep-shopping'), $('#cart-modal') );
 
 
   // TODO: Allow modal to be closed by clicking outside modal-content
 
-  // Thank you after registering user
+  // Load thank you message after registering user
 
   $('#register-modal .btn').on('click', function() {
     $('#register-modal form').hide();
@@ -63,8 +66,24 @@
     }, 2500)
   })
 
+  // Load "Item Removed" message after clicking "Remove" from cart
 
-// jQueryUI
+  $('#cart-modal .remove.btn').on('click', function() {
+    $('#cart-modal form').hide();
+    $('#removed-msg').css('display', 'inline-block');
+    setTimeout(function() {
+      $('#cart-modal').addClass('is-closing');
+      $('#cart-modal').removeClass('is-open');
+      setTimeout(function() {
+        $('#cart-modal').removeClass('is-closing');
+        $('#cart-modal form').show();
+        $('#removed-msg').hide();
+      }, 300);
+    }, 1500);
+  });
+
+
+// Initializaing jQueryUI widgets
 
   $('#billing-state').selectmenu({
     width: false
@@ -118,7 +137,7 @@
   $('.shop-item select.option').menu()
 
 
-// Press
+// Press Quote Carousel
 
 
 $('.press-carousel').slick( {

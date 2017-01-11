@@ -38,6 +38,23 @@ const itemProto = {
     console.log(totalPrice);
   },
 
+  getCartMsg: function getCartMsg() {
+    let btn = $(this.id).find('.btn.add-to-cart');
+    let selectedName = this.name;
+    let optionIndex = this.getOptionIndex();
+    selectedOption = this.options[optionIndex].optionName;
+    selectedQty = $(this.id + " .qty input").val();
+    let displayPrice = $(this.id).find(".price p").prop('innerHTML');
+    let cartMsg =
+      "<tr><td><h4>" + selectedQty + "</h4></td>" +
+      "<td><h4>" + selectedName + "</h4></td>" +
+      "<td><h4>" + selectedOption + "</h4></td>" +
+      "<td><h4>" + displayPrice + "</h4></td></tr>"
+    return cartMsg;
+
+  },
+
+
   // Method for calling `calcPrice` at page-load, and then whenever the user makes changes to the form.
   itemListener: function itemListener(item) {
     this.calcPrice()
@@ -61,6 +78,12 @@ const itemProto = {
         element.calcPrice()
       }
     );
+    });
+    // Generate message in Cart Modal when "Add to Cart" is clicked
+    let btn = $(this.id).find('.btn.add-to-cart');
+    let cartMsg = $('#cart-modal .checkout-wrapper tbody');
+    $(btn).on('click', function() {
+      cartMsg.html(item.getCartMsg());
     });
   },
 };
