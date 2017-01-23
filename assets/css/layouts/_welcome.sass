@@ -70,16 +70,18 @@
     text-indent: 1.5rem
 
     .avatar
+      margin: 0.5*$baseline
       text-align: center
-      margin: $baseline
       @media screen and (max-width: 359px)
         display: none
+      @media screen and (min-width: 600px)
+        margin: $baseline
 
       img
         width: 12vw
         max-width: 100px
-        border-radius: 50%
-        box-shadow: 0px 5px 5px #777
+        // border-radius: 50%
+        // box-shadow: 0px 5px 5px #777
 
 
     span
