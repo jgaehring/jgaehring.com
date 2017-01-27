@@ -51,7 +51,7 @@
   <div class="col-wrapper nav-wrapper">
     <nav class="col-two-third">
       <ul class="other-nav">
-        <li><a href="/">Home</a></li>
+        <li><a href="/martins"/>Home</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -87,14 +87,14 @@
 
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
-              <label for="first-name" class="text-label">First Name</label><br>
+              <label for="first-name" class="text-label">Full Name</label><br>
               <input type="text" id="first-name" name="first-name" value="" required="true">
             </div>
 
-            <div class="card sm-input-group">
+            <!-- <div class="card sm-input-group">
               <label for="last-name" class="text-label">Last Name</label><br>
               <input type="text" id="last-name" name="last-name" value="" required="true">
-            </div>
+            </div> -->
 
             <div class="card lg-input-group">
               <label for="email-input" class="text-label">Email Address</label><br>
@@ -125,7 +125,7 @@
         </div>
       </div>
 
-      <form class="modal-form">
+      <form class="modal-form" action="/martins/logged-in.html">
         <div class="row-wrapper">
           <header class="row modal-header">
             <h2>Welcome Back!</h2>
@@ -135,11 +135,11 @@
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="" id="email" required="true">
+              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
             </div>
             <div class="card sm-input-group">
               <label for="password" class="text-label">Password</label>
-              <input type="password" name="password" value="" id="password">
+              <input type="password" name="password" value="blank" id="password">
             </div>
           </div>
 
@@ -165,7 +165,7 @@
         </div>
       </div>
 
-      <form class="modal-form" action="index.html" method="post">
+      <form class="modal-form" action="logged-in.html">
         <div class="row-wrapper">
 
           <header class="row modal-header">
@@ -176,22 +176,22 @@
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="">
+              <input type="text" name="email" value="homer@springfieldpower.com">
             </div>
             <div class="card sm-input-group">
               <label for="enter-pw" class="text-label">Enter Password</label>
-              <input type="password" name="enter-pw" value="">
+              <input type="password" name="enter-pw" value="blank">
             </div>
             <div class="card sm-input-group">
               <label for="reenter-pw" class="text-label">Re-enter password</label>
-              <input type="password" name="reenter-pw" value="">
+              <input type="password" name="reenter-pw" value="blank">
             </div>
           </div>
 
           <!-- <button type="submit" class="row btn">Sign Up</button> -->
-          <div class="row btn">
+          <button class="row btn" type="submit">
             Sign Up
-          </div>
+          </button>
           <div class="row">
             <p>Returning user?&nbsp;<a id="login-from-register" href="#">Login here.</a></p>
 
@@ -217,7 +217,6 @@
 
 
         <div class="row">
-
           <header>
             <h1>Invoice</h1>
             <p>A copy of this invoice will be emailed to you for your records.</p>
@@ -234,13 +233,10 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="row checkout-wrapper">
           <table>
             <thead>
               <tr>
-                <th><h5>Del.</h5></th>
+                <th></th>
                 <th class="table-item-name"> <h5>Item Name</h5> </th>
                 <th> <h5>Qty.</h5> </th>
                 <th> <h5>Unit Price</h5> </th>
@@ -250,7 +246,7 @@
             <tbody>
 
               <tr>
-                <td> <div class="del-item"><div class="svg-close"></div></div> </td>
+                <td></td>
                 <td class="table-item-name">
                   <h4>Salted Pretzels<br> <span>3lb Bag</span></h4>
                 </td>
@@ -266,9 +262,7 @@
               </tr>
 
               <tr>
-                <td>
-                  <div class="del-item"><div class="svg-close"></div></div>
-                </td>
+                <td></td>
                 <td class="table-item-name">
                   <h4>Unsalted Pretzels<br> <span>6lb Bag</span></h4>
                 </td>
@@ -300,7 +294,29 @@
 
               <tr class="totals">
                 <td colspan="4">
-                  <h4>Estimated Shipping for Zip Code: 09099 <br>Select Shipping Method</h4>
+                  <h4>Tax (8.875%) </h4>
+                </td>
+                <td>
+                  <h4>
+                    $4.93
+                  </h4>
+                </td>
+              </tr>
+
+              <tr class="totals">
+                <td colspan="4">
+                  <h4>Discount (15%) </h4>
+                </td>
+                <td>
+                  <h4>
+                    -$8.34
+                  </h4>
+                </td>
+              </tr>
+
+              <tr class="totals">
+                <td colspan="4">
+                  <h4>Shipping (UPS Ground)</h4>
                 </td>
                 <td>
                   <h4>$16.11</h4>
@@ -309,19 +325,10 @@
 
               <tr class="totals">
                 <td colspan="4">
-                  <h4>Enter Coupon Code: _____ <br>Discount:</h4>
-                </td>
-                <td>
-                  <h4></h4>
-                </td>
-              </tr>
-
-              <tr class="totals">
-                <td colspan="4">
                   <h4>Total</h4>
                 </td>
                 <td>
-                  <h4>$71.68</h4>
+                  <h4>$68.27</h4>
                 </td>
               </tr>
 
@@ -361,10 +368,20 @@
               <li>Exp. Date: 01 2020</li>
             </ul>
           </div>
+
+          <div class="card sm-input-group invoice-address">
+            <header>
+              <h2>Notes</h2>
+            </header>
+            <p>
+              Here are some notes provided by the customer.
+            </p>
+          </div>
+
         </div>
 
 
-          <div class="row">
+        <div class="row">
 
             <a href="/martins/index">
               <div class="btn">
@@ -373,10 +390,6 @@
             </a>
 
           </div>
-
-
-        </form>
-
 
 
       </div>
