@@ -82,8 +82,12 @@ const itemProto = {
     // Generate message in Cart Modal when "Add to Cart" is clicked
     let btn = $(this.id).find('.btn.add-to-cart');
     let cartMsg = $('#cart-modal .checkout-wrapper tbody');
+    let delBtn = $('#cart-modal .remove');
+    let delAction = $(this.id).find('.item-form').attr('action').match(/(\/\d)/g);;
+    console.log("/martins/delete_from_cart" + delAction);
     $(btn).on('click', function() {
       cartMsg.html(item.getCartMsg());
+      delBtn.prop('href', "/martins/delete_from_cart" + delAction);
     });
   },
 };

@@ -14,7 +14,7 @@
   <!-- <link rel="stylesheet" href="/martins/assets/css/jquery-ui.css"> -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/martins/assets/css/main.css">
-  <link rel="canonical" href="http://martinspretzels.com/">
+  <link rel="canonical" href="http://martinspretzels.com/logged-in.html">
 </head>
 
 
@@ -114,7 +114,7 @@
   </div>
 </div>
 
-<div id="login-modal" class="modal">
+<div id="logout-modal" class="modal">
   <div class="modal-bg">
     <div class="modal-content">
 
@@ -123,31 +123,54 @@
         </div>
       </div>
 
-      <form class="modal-form" action="/martins/logged-in.html">
+      <div class="modal-form">
         <div class="row-wrapper">
           <header class="row modal-header">
-            <h2>Welcome Back!</h2>
-            <p>Login now to shop the Martin's Pretzels online store, or wait until you're ready to checkout.</p>
+            <h2>Logout</h2>
+            <p>You are currently logged in as Lisa Simpson. Are you sure you want to logout?</p>
           </header>
 
-          <div class="row card-wrapper text-inputs">
+          <div class="row">
+
+            <a href="/" class="btn">
+              Logout
+            </a>
+            <!-- <button class="btn" type="submit" name="back">
+              Logout
+            </button> -->
+            <!-- <form class="" action="/martins/logout" method="">
+            </form> -->
+
+            <a href="#order" class="btn keep-shopping">
+              Keep Shopping
+            </a>
+            <!-- <button class="btn" type="button" name="complete">
+              Keep Shopping
+            </button> -->
+          <!-- <form class="" action="#" method="">
+          </form> -->
+
+          </div>
+
+
+          <!-- <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
+              <input type="text" name="email" value="" id="email" required="true">
             </div>
             <div class="card sm-input-group">
               <label for="password" class="text-label">Password</label>
-              <input type="password" name="password" value="blank" id="password">
+              <input type="password" name="password" value="" id="password">
             </div>
-          </div>
+          </div> -->
 
-          <button type="submit" name="login" class="btn">Login</button>
+          <!-- <button type="submit" name="login" class="btn">Login</button>
           <p>New users,&nbsp;<a id="register-link" href="#">register here.</a><br>
             Forgot your password?&nbsp;<a href="#">Request reset.</a>
-          </p>
+          </p> -->
           <!-- <p> <br> Forgot your password? <br> Register as a new user.</p> -->
         </div>
-      </form>
+      </div>
 
 
     </div>
@@ -335,18 +358,18 @@
     <nav class="col-third">
       <ul class="shop-nav">
 
-        <li id="login-link">
+        <!-- <li id="login-link">
           Login
-        </li>
-        <!-- <li id="logout-link">
-          Logout
         </li> -->
+        <li id="logout-link">
+          Logout
+        </li>
 
         <li>
           <div class="cart-icon">
-            <!-- <div class="cart-qty">
+            <div class="cart-qty">
               <h6>3</h6>
-            </div> -->
+            </div>
             <a href="/martins/checkout/cart">
               <div class="svg-cart">
               </div>
@@ -398,7 +421,7 @@
 
       <div id="salted-pretzels"class="card shop-item">
         <div class="img-wrapper">
-          <img src='/martins/assets/img/salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/salt-150.png 150w, /martins/assets/img/salt-250.png 250w' sizes='40vw' >
+          <img src='/martins/assets/img/salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/salt-150.png 150w, /assets/img/salt-250.png 250w' sizes='40vw' >
         </div>
         <hr>
         <div class="card-title">
@@ -471,7 +494,7 @@
 
       <div id="unsalted-hearth"class="card shop-item">
         <div class="img-wrapper">
-          <img src='/martins/assets/img/nosalt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/nosalt-150.png 150w, /martins/assets/img/nosalt-250.png 250w' sizes='40vw' >
+          <img src='/martins/assets/img/nosalt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/nosalt-150.png 150w, /assets/img/nosalt-250.png 250w' sizes='40vw' >
         </div>
         <hr>
         <div class="card-title">
@@ -544,7 +567,7 @@
 
       <div id="whole-wheat"class="card shop-item">
         <div class="img-wrapper">
-          <img src='/martins/assets/img/ww-salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/ww-salt-150.png 150w, /martins/assets/img/ww-salt-250.png 250w' sizes='40vw' >
+          <img src='/martins/assets/img/ww-salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/ww-salt-150.png 150w, /assets/img/ww-salt-250.png 250w' sizes='40vw' >
         </div>
         <hr>
         <div class="card-title">
@@ -649,7 +672,7 @@
 
       <div id="special-orders"class="card shop-item">
         <div class="img-wrapper">
-          <img src='/martins/assets/img/special-250.png' class='item-img' alt='' srcset='/martins/assets/img/special-150.png 150w, /martins/assets/img/special-250.png 250w' sizes='40vw' >
+          <img src='/martins/assets/img/special-250.png' class='item-img' alt='' srcset='/martins/assets/img/special-150.png 150w, /assets/img/special-250.png 250w' sizes='40vw' >
         </div>
         <hr>
         <div class="card-title">

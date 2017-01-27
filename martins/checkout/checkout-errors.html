@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!-- <link rel="stylesheet" href="/martins/assets/css/jquery-ui.css"> -->
   <link rel="stylesheet" href="/martins/assets/css/main.css">
-  <link rel="canonical" href="http://martinspretzels.com/checkout/checkout.html">
+  <link rel="canonical" href="http://martinspretzels.com/checkout/checkout-errors.html">
 </head>
 
 
@@ -232,11 +232,13 @@
               <div class="card-wrapper text-inputs">
                 <div class="card sm-input-group">
                   <label for="billing-first-name" class="text-label">First Name</label><br>
+                  <span class="error"><em>First name cannot be empty</em></span><br>
                   <input type="text" id="billing-first-name" name="billing-first-name" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="billing-last-name" class="text-label">Last Name</label><br>
+                  <span class="error"><em>Last name cannot be empty</em></span><br>
                   <input type="text" id="billing-last-name" name="billing-last-name" value="" required="true">
                 </div>
 
@@ -247,6 +249,7 @@
 
                 <div class="card lg-input-group">
                   <label for="billing-address-1" class="text-label">Address</label><br>
+                  <span class="error"><em>Address cannot be empty</em></span><br>
                   <input type="text" id="billing-address-1" name="billing-address-1" value="" required="true">
                   <label for="billing-addresss-2" class="text-label"></label><br>
                   <input type="text" id="billing-addresss-2" name="billing-address-2" value="" required="true">
@@ -254,12 +257,14 @@
 
                 <div class="card sm-input-group">
                   <label for="billing-city" class="text-label">City</label><br>
+                  <span class="error"><em>City cannot be empty</em></span><br>
                   <input type="text" id="billing-city" name="billing-city" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="billing-state" class="text-label">State</label><br>
-                  <select class="select-menu" type="text" id="billing-state" name="billing-state" value="" required="true">
+                  <span class="error"><em>State cannot be empty</em></span><br>
+                  <select type="text" id="billing-state" name="billing-state" value="" required="true">
                     <option value="NY">New York</option>
                     <option value="NJ">New Jersey</option>
                     <option value="OH">Ohio</option>
@@ -268,16 +273,19 @@
 
                 <div class="card sm-input-group">
                   <label for="billing-zip" class="text-label">Zip Code</label><br>
+                  <span class="error"><em>First name cannot be empty</em></span><br>
                   <input type="text" id="billing-zip" name="billing-zip" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="billing-country" class="text-label">Country</label><br>
+                  <span class="error"><em>Country cannot be empty</em></span><br>
                   <input type="text" id="billing-country" name="billing-country" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="billing-phone" class="text-label">Phone Number</label><br>
+                  <span class="error"><em>Phone Number cannot be empty</em></span><br>
                   <input type="text" id="billing-phone" name="billing-phone" value="" required="true">
                 </div>
 
@@ -286,7 +294,7 @@
 
             <p>
               <label for="shipping-is-billing">Shipping address is same as billing address</label>
-              <input id="shipping-is-billing" class="checkbox" type="checkbox" name="shipping-is-billing" onclick="sameAddress(this);" />
+              <input id="shipping-is-billing" type="checkbox" name="shipping-is-billing" onclick="sameAddress(this);" />
             </p>
 
           </div>
@@ -301,11 +309,13 @@
               <div class="card-wrapper text-inputs">
                 <div class="card sm-input-group">
                   <label for="shipping-first-name" class="text-label">First Name</label><br>
+                  <span class="error"><em>First name cannot be empty</em></span><br>
                   <input type="text" id="shipping-first-name" name="shipping-first-name" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="shipping-last-name" class="text-label">Last Name</label><br>
+                  <span class="error"><em>Last name cannot be empty</em></span><br>
                   <input type="text" id="shipping-last-name" name="shipping-last-name" value="" required="true">
                 </div>
 
@@ -316,6 +326,7 @@
 
                 <div class="card lg-input-group">
                   <label for="shipping-address-1" class="text-label">Address</label><br>
+                  <span class="error"><em>Address cannot be empty</em></span><br>
                   <input type="text" id="shipping-address-1" name="shipping-address-1" value="" required="true">
                   <label for="shipping-addresss-2" class="text-label"></label><br>
                   <input type="text" id="shipping-addresss-2" name="shipping-address-2" value="" required="true">
@@ -323,12 +334,14 @@
 
                 <div class="card sm-input-group">
                   <label for="shipping-city" class="text-label">City</label><br>
+                  <span class="error"><em>City cannot be empty</em></span><br>
                   <input type="text" id="shipping-city" name="shipping-city" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="shipping-state" class="text-label">State</label><br>
-                  <select type="text" id="shipping-state" class="select-menu" name="shipping-state" value="" required="true">
+                  <span class="error"><em>State cannot be empty</em></span><br>
+                  <select type="text" id="shipping-state" name="shipping-state" value="" required="true">
                     <option value="NY">New York</option>
                     <option value="NJ">New Jersey</option>
                     <option value="OH">Ohio</option>
@@ -337,16 +350,19 @@
 
                 <div class="card sm-input-group">
                   <label for="shipping-zip" class="text-label">Zip Code</label><br>
+                  <span class="error"><em>Zip Code cannot be empty</em></span><br>
                   <input type="text" id="shipping-zip" name="shipping-zip" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="shipping-country" class="text-label">Country</label><br>
+                  <span class="error"><em>Country cannot be empty</em></span><br>
                   <input type="text" id="shipping-country" name="shipping-country" value="" required="true">
                 </div>
 
                 <div class="card sm-input-group">
                   <label for="shipping-phone" class="text-label">Phone Number</label><br>
+                  <span class="error"><em>Phone number cannot be empty</em></span><br>
                   <input type="text" id="shipping-phone" name="shipping-phone" value="" required="true">
                 </div>
 
@@ -358,10 +374,10 @@
               <div class="card single-input-group">
                 <fieldset>
                   <label for="product" class="text-label">Shipping Method</label>
-                  <select name="product" id="shipping-method" class="select-menu">
+                  <select name="product" id="shipping-method">
                     <option value="GND" >UPS Ground</option>
                     <option value="2DA" >UPS 2nd Day Air</option>
-                    <option value="1DA" >UPS Next Day Air</option>
+                    <option value="1DA">UPS Next Day Air</option>
                   </select>
                 </fieldset>
               </div>

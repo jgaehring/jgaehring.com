@@ -300,9 +300,6 @@ a {
       @media (min-width: 600px) {
         .page-wrap > header div.nav-wrapper nav .shop-nav {
           justify-content: flex-end; } }
-    .page-wrap > header div.nav-wrapper nav .shop-icon {
-      height: 1.5rem;
-      width: 1.5rem; }
     .page-wrap > header div.nav-wrapper nav li {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -321,6 +318,24 @@ a {
       @media (min-width: 600px) {
         .page-wrap > header div.nav-wrapper nav li {
           font-size: 1rem; } }
+
+.cart-icon {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem; }
+  .cart-icon .cart-qty {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.75rem; }
+    @media (min-width: 600px) {
+      .cart-icon .cart-qty {
+        top: -0.65rem;
+        right: 0.25rem; } }
+    .cart-icon .cart-qty h6 {
+      text-align: center;
+      margin: 0;
+      line-height: 1rem;
+      font-weight: 500; }
 
 .mobile-nav {
   display: flex;
@@ -411,10 +426,6 @@ header.is-open {
     display: block; }
   .modal .btn {
     margin-bottom: 1.5rem; }
-  .modal a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
 
 @keyframes modalAnim {
   0% {
@@ -1240,20 +1251,25 @@ textarea {
     border-right: 0; }
   .checkout-wrapper tbody tr:first-child td {
     padding-top: 1.5rem; }
-
-.del-item {
-  width: 0.75rem;
-  height: 0.75rem;
-  padding: 0.375rem;
-  transition: 300ms;
-  vertical-align: top;
-  transition: 300ms; }
-  .del-item:hover {
-    transform: scale(2); }
-
-.table-item-name {
-  width: 100%;
-  text-align: left; }
+  .checkout-wrapper .del-item {
+    width: 0.75rem;
+    height: 0.75rem;
+    padding: 0.375rem;
+    transition: 300ms;
+    vertical-align: top;
+    transition: 300ms; }
+    .checkout-wrapper .del-item:hover {
+      transform: scale(2); }
+  .checkout-wrapper .table-item-name {
+    width: 100%;
+    text-align: left; }
+  .checkout-wrapper .table-qty {
+    text-align: center;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: normal; }
+  .checkout-wrapper form {
+    display: inline-block; }
 
 #thank-you {
   display: none;
@@ -1281,6 +1297,8 @@ textarea {
   margin-top: 3rem; }
 .checkout-wrapper a {
   text-decoration: none; }
+.checkout-wrapper span.error {
+  color: red; }
 
 #purchase-summary .row, #invoice .row {
   margin-bottom: 3rem; }
@@ -1300,15 +1318,21 @@ textarea {
   @media (min-width: 600px) {
     #addresses .invoice-address {
       flex: 0 0 40%; } }
-  #addresses .invoice-address ul {
+  #addresses .invoice-address ul, #addresses .invoice-address p {
     padding: 1.5rem;
     border: 2px solid #211e1d;
     border-radius: 0.375rem;
     text-align: left; }
-    #addresses .invoice-address ul li {
+    #addresses .invoice-address ul li, #addresses .invoice-address p li {
       font-weight: normal;
       font-size: 1.25rem;
       line-height: 1.5rem; }
+#addresses .edit-info {
+  border: none;
+  position: relative;
+  right: 0;
+  left: 90%;
+  cursor: pointer; }
 
 #payment-info {
   text-align: center; }

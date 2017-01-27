@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <form class="modal-form">
+      <form class="modal-form" action="/martins/logged-in.html">
         <div class="row-wrapper">
           <header class="row modal-header">
             <h2>Welcome Back!</h2>
@@ -38,11 +38,11 @@
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="" id="email" required="true">
+              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
             </div>
             <div class="card sm-input-group">
               <label for="password" class="text-label">Password</label>
-              <input type="password" name="password" value="" id="password">
+              <input type="password" name="password" value="blank" id="password">
             </div>
           </div>
 
@@ -92,7 +92,7 @@
   <div class="col-wrapper nav-wrapper">
     <nav class="col-two-third">
       <ul class="other-nav">
-        <li><a href="/">Home</a></li>
+        <li><a href="/martins"/>Home</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -128,14 +128,14 @@
 
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
-              <label for="first-name" class="text-label">First Name</label><br>
+              <label for="first-name" class="text-label">Full Name</label><br>
               <input type="text" id="first-name" name="first-name" value="" required="true">
             </div>
 
-            <div class="card sm-input-group">
+            <!-- <div class="card sm-input-group">
               <label for="last-name" class="text-label">Last Name</label><br>
               <input type="text" id="last-name" name="last-name" value="" required="true">
-            </div>
+            </div> -->
 
             <div class="card lg-input-group">
               <label for="email-input" class="text-label">Email Address</label><br>
@@ -166,7 +166,7 @@
         </div>
       </div>
 
-      <form class="modal-form">
+      <form class="modal-form" action="/martins/logged-in.html">
         <div class="row-wrapper">
           <header class="row modal-header">
             <h2>Welcome Back!</h2>
@@ -176,11 +176,11 @@
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="" id="email" required="true">
+              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
             </div>
             <div class="card sm-input-group">
               <label for="password" class="text-label">Password</label>
-              <input type="password" name="password" value="" id="password">
+              <input type="password" name="password" value="blank" id="password">
             </div>
           </div>
 
@@ -206,7 +206,7 @@
         </div>
       </div>
 
-      <form class="modal-form" action="index.html" method="post">
+      <form class="modal-form" action="logged-in.html">
         <div class="row-wrapper">
 
           <header class="row modal-header">
@@ -217,22 +217,22 @@
           <div class="row card-wrapper text-inputs">
             <div class="card sm-input-group">
               <label for="email" class="text-label">Email</label>
-              <input type="text" name="email" value="">
+              <input type="text" name="email" value="homer@springfieldpower.com">
             </div>
             <div class="card sm-input-group">
               <label for="enter-pw" class="text-label">Enter Password</label>
-              <input type="password" name="enter-pw" value="">
+              <input type="password" name="enter-pw" value="blank">
             </div>
             <div class="card sm-input-group">
               <label for="reenter-pw" class="text-label">Re-enter password</label>
-              <input type="password" name="reenter-pw" value="">
+              <input type="password" name="reenter-pw" value="blank">
             </div>
           </div>
 
           <!-- <button type="submit" class="row btn">Sign Up</button> -->
-          <div class="row btn">
+          <button class="row btn" type="submit">
             Sign Up
-          </div>
+          </button>
           <div class="row">
             <p>Returning user?&nbsp;<a id="login-from-register" href="#">Login here.</a></p>
 
@@ -260,109 +260,158 @@
 
         <div class="row">
           <h1>Shopping Cart</h1>
-          <table>
-            <thead>
-              <tr>
-                <th><h5>Del.</h5></th>
-                <th class="table-item-name"> <h5>Item Name</h5> </th>
-                <th> <h5>Qty.</h5> </th>
-                <th> <h5>Unit Price</h5> </th>
-                <th> <h5>Total</h5> </th>
-              </tr>
-            </thead>
-            <tbody>
+          <form class="" action="/martins/update_cart" method="post">
+            <table>
+              <thead>
+                <tr>
+                  <th><h5>Del.</h5></th>
+                  <th class="table-item-name"> <h5>Item Name</h5> </th>
+                  <th> <h5>Qty.</h5> </th>
+                  <th> <h5>Unit Price</h5> </th>
+                  <th> <h5>Total</h5> </th>
+                </tr>
+              </thead>
+              <tbody>
 
-              <tr>
-                <td> <div class="del-item"><div class="svg-close"></div></div> </td>
-                <td class="table-item-name">
-                  <h4>Salted Pretzels<br> <span>3lb Bag</span></h4>
-                </td>
-                <td>
-                  <h4>2</h4>
-                </td>
-                <td>
-                  <h4>$14.29</h4>
-                </td>
-                <td>
-                  <h4>$28.58</h4>
-                </td>
-              </tr>
+                <tr>
+                  <td> <div class="del-item">
+                    <a href="#">
+                      <div class="svg-close"></div>
+                    </a>
+                  </div> </td>
+                  <td class="table-item-name">
+                    <h4>Salted Pretzels<br> <span>3lb Bag</span></h4>
+                  </td>
+                  <td>
+                    <h4><input class="table-qty" type="number" name="quantity" value="2" min="1" max="20"></h4>
+                  </td>
+                  <td>
+                    <h4>$14.29</h4>
+                  </td>
+                  <td>
+                    <h4>$28.58</h4>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>
-                  <div class="del-item"><div class="svg-close"></div></div>
-                </td>
-                <td class="table-item-name">
-                  <h4>Unsalted Pretzels<br> <span>6lb Bag</span></h4>
-                </td>
-                <td>
-                  <h4>1</h4>
-                </td>
-                <td>
-                  <h4>$26.99</h4>
-                </td>
-                <td>
-                  <h4>$26.99</h4>
-                </td>
-              </tr>
+                <tr>
+                  <td> <div class="del-item">
+                    <a href="#">
+                      <div class="svg-close"></div>
+                    </a>
+                  </div> </td>
+                  <td class="table-item-name">
+                    <h4>Unsalted Pretzels<br> <span>6lb Bag</span></h4>
+                  </td>
+                  <td>
+                    <h4><input class="table-qty" type="number" name="quantity" value="1"></h4>
+                  </td>
+                  <td>
+                    <h4>$26.99</h4>
+                  </td>
+                  <td>
+                    <h4>$26.99</h4>
+                  </td>
+                </tr>
 
-              <tr class="totals">
-                <td colspan="5">
-                  &nbsp;
-                </td>
-              </tr>
+                <tr class="totals">
+                  <td colspan="5">
+                    &nbsp;
+                  </td>
+                </tr>
 
-              <tr class="totals">
-                <td colspan="4">
-                  <h4>Subtotal</h4>
-                </td>
-                <td>
-                  <h4>$55.57</h4>
-                </td>
-              </tr>
+                <tr class="totals">
+                  <td colspan="4">
+                    <h4>Subtotal</h4>
+                  </td>
+                  <td>
+                    <h4>$55.57</h4>
+                  </td>
+                </tr>
 
-              <tr class="totals">
-                <td colspan="4">
-                  <h4>Estimated Shipping for Zip Code: 11385 <br>Select Shipping Method</h4>
-                </td>
-                <td>
-                  <h4>$16.11</h4>
-                </td>
-              </tr>
+                <!-- <tr class="totals">
+                  <% if @discount_amount > 0 %>
+                  <td colspan="4">
+                    <h4>Discount (%15)</h4>
+                  </td>
+                  <td>
+                    <h4>$8.34</h4>
+                  </td>
+                </tr> -->
 
-              <tr class="totals">
-                <td colspan="4">
-                  <h4>Enter Coupon Code: _____ <br>Discount:</h4>
-                </td>
-                <td>
-                  <h4></h4>
-                </td>
-              </tr>
+                <tr class="totals">
+                  <td colspan="3">
+                    <h4>Enter Coupon Code: </h4>
+                  </td>
+                  <td>
+                    <h4>
+                      <input id='coupon' style="vertical-align: top" class='' type='text' name='coupon_code' size='8' maxlength='8'  />
+                    </h4>
+                  </td>
+                  <td>
+                    <h4></h4>
+                  </td>
+                </tr>
 
-              <tr class="totals">
-                <td colspan="4">
-                  <h4>Total</h4>
-                </td>
-                <td>
-                  <h4>$71.68</h4>
-                </td>
-              </tr>
+                <tr class="totals">
+                  <td colspan="3">
+                    <h4>Shipping Method:</h4>
+                  </td>
+                  <td>
+                    <h4>
+                      <select id="shipping-method" class="select-menu" name="product">
+                        <option value="GND">UPS Ground</option>
+                        <option value="1DA">UPS Next Day Air</option>
+                        <option value="2DA">UPS 2nd Day Air</option>
+                      </select>
+                    </h4>
+                  </td>
+                </tr>
 
-            </tbody>
-          </table>
+                <tr class="totals">
+                  <td colspan="3">
+                    <h4>Estimated Shipping for Zip Code:</h4>
+                  </td>
+                  <td>
+                    <h4>
+                      <input id="zipcode" type="text" name="zipcode" size="5" maxlength="5">
+                    </h4>
+                  </td>
+                  <td>
+                    <h4>$16.11</h4>
+                  </td>
+                </tr>
 
-          <a href="/martins/checkout/checkout">
-            <div class="btn">
-              Checkout
-            </div>
-          </a>
+                <tr class="totals">
+                  <td colspan="4">
+                    <h4>Total</h4>
+                  </td>
+                  <td>
+                    <h4>$71.68</h4>
+                  </td>
+                </tr>
 
+              </tbody>
+            </table>
+          </form>
         </div>
 
+        <div class="row">
+
+          <form class="" action="/martins/#order" method="">
+            <button class="btn" type="submit" name="continue">
+              Keep Shopping
+            </button>
+          </form>
+
+        <form class="" action="/martins/checkout/checkout" method="">
+          <button class="btn" type="submit" name="checkout">
+            Checkout
+          </button>
+        </form>
+
+        </div>
       </div>
-
     </section>
-
   </main>
 
   <footer id="contact" class="page-footer">

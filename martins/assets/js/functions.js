@@ -21,12 +21,33 @@
   }
 
   openModal( $('#login-link'), $('#login-modal') );
+  openModal( $('#logout-link'), $('#logout-modal') );
   openModal( $('#contact-btn'), $('#contact-modal') );
   openModal( $('#wholesale-inquiry'), $('#wholesale-modal') );
   openModal( $('#register-link'), $('#register-modal') );
   openModal( $('#login-from-register'), $('#login-modal') );
   openModal( $('.add-to-cart'), $('#cart-modal') );
 
+  // On clicking "Add to Cart", prevent form submission from refreshing page
+  const preventRefresh = function(form, event) {
+    $(form).on(event, function submitHandler(e) {
+      e.preventDefault();
+      actionUrl = $(this).attr('action');
+      $.ajax({
+        url: actionUrl,
+        type: 'post',
+        data: 'data',
+        success: function () {
+        },
+        error: function (jXHR, textStatus, errorThrown) {
+          console.log("Cart could not be updated. Error: ", errorThrown);
+        }
+      });
+    });
+  };
+
+  preventRefresh('.item-form', 'submit')
+  preventRefresh('#cart-modal .remove', 'click')
 
   // Closing Modals
 
@@ -41,6 +62,7 @@
   }
 
   closeModal( $('#login-modal .close-modal'), $('#login-modal') );
+  closeModal( $('#logout-modal .close-modal, #logout-modal .keep-shopping'), $('#logout-modal') );
   closeModal( $('#contact-modal .close-modal'), $('#contact-modal') );
   closeModal( $('#wholesale-modal .close-modal'), $('#wholesale-modal') );
   closeModal( $('#register-modal .close-modal'), $('#register-modal') );
@@ -85,44 +107,12 @@
 
 // Initializaing jQueryUI widgets
 
-  $('#billing-state').selectmenu({
-    width: false
+  $('.select-menu').selectmenu({
+    width: false,
   });
+  $('.select-menu').menu();
 
-  $('#billing-state').menu()
-
-  $('#shipping-is-billing').checkboxradio()
-
-  $('#shipping-state').selectmenu({
-    width: false
-  });
-  $('#shipping-state').menu();
-
-  $('#shipping-method').selectmenu({
-    width: false
-  });
-  $('#shipping-method').menu();
-
-  $('#card-type').selectmenu({
-    width: false
-  });
-  $('#card-type').menu();
-
-  $('#expiry-month').selectmenu({
-    width: false
-  })
-  $('#expiry-month').menu()
-
-
-  $('#expiry-year').selectmenu({
-    width: false
-  })
-  $('#expiry-year').menu()
-
-  $('#test-menu').selectmenu({
-    width: false
-  })
-  $('test-menu').menu()
+  $('.checkbox').checkboxradio();
 
   $('.shop-item select.option').selectmenu({
     classes: {
@@ -133,8 +123,8 @@
       button: 'svg-chevron-down'
     },
     width: false
-  })
-  $('.shop-item select.option').menu()
+  });
+  $('.shop-item select.option').menu();
 
 
 // Press Quote Carousel
