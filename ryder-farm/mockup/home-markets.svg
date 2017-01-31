@@ -15,7 +15,7 @@
    id="svg5007"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="home-csa-2-b.svg">
+   sodipodi:docname="home-markets.svg">
   <defs
      id="defs5009" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-427.85715"
-     inkscape:cy="740.00008"
+     inkscape:zoom="1.4"
+     inkscape:cx="321.08173"
+     inkscape:cy="184.95946"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6313"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1056"
@@ -229,13 +229,15 @@
            id="text5584"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
-             id="tspan5586"
              x="599.82874"
              y="951.60223"
-             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle">Join Our CSA!</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+             id="tspan4795">Find us at market</tspan></text>
         <g
            id="g5598"
-           transform="translate(0,29.698624)">
+           transform="translate(0,29.698624)"
+           onclick="window.parent.location='markets.html';"
+           onmouseover="this.style.cursor='pointer'">
           <g
              id="g6313">
             <rect
@@ -252,7 +254,9 @@
                x="501.96866"
                y="1004"
                id="text5590"
-               sodipodi:linespacing="125%"><tspan
+               sodipodi:linespacing="125%"
+               onclick="window.parent.location='markets.html'"
+               onmouseover="this.style.cursor='pointer'"><tspan
                  sodipodi:role="line"
                  id="tspan5592"
                  x="501.96866"

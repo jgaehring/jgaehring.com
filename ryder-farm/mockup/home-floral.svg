@@ -15,7 +15,7 @@
    id="svg5007"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="home-floral-2-b.svg">
+   sodipodi:docname="home-floral.svg">
   <defs
      id="defs5009" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-427.85715"
-     inkscape:cy="740.00008"
+     inkscape:zoom="2.8"
+     inkscape:cx="158.42968"
+     inkscape:cy="274.92219"
      inkscape:document-units="px"
-     inkscape:current-layer="g4225"
+     inkscape:current-layer="g6313"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1056"
@@ -199,7 +199,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -235,7 +235,9 @@
              id="tspan4818">Floral Design</tspan></text>
         <g
            id="g5598"
-           transform="translate(0,29.698624)">
+           transform="translate(0,29.698624)"
+           onclick="window.parent.location='floral.html';"
+           onmouseover="this.style.cursor='pointer'">
           <g
              id="g6313">
             <rect
@@ -252,7 +254,9 @@
                x="501.96866"
                y="1004"
                id="text5590"
-               sodipodi:linespacing="125%"><tspan
+               sodipodi:linespacing="125%"
+               onmouseover="this.style.cursor='pointer'"
+               onclick="window.parent.location='floral.html'"><tspan
                  sodipodi:role="line"
                  id="tspan5592"
                  x="501.96866"
