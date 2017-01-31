@@ -15,7 +15,7 @@
    id="svg5007"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="home-floral-2-b.svg">
+   sodipodi:docname="home-intern.svg">
   <defs
      id="defs5009" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-427.85715"
+     inkscape:cx="69.285706"
      inkscape:cy="740.00008"
      inkscape:document-units="px"
      inkscape:current-layer="g4225"
@@ -209,7 +209,7 @@
      id="layer1"
      transform="translate(-42.857153,613.3521)">
     <rect
-       style="opacity:1;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09995696;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09995696;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5553"
        width="1199.9"
        height="1199.9001"
@@ -229,13 +229,14 @@
            id="text5584"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
+             id="tspan5586"
              x="599.82874"
              y="951.60223"
-             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="tspan4818">Floral Design</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle">Internships</tspan></text>
         <g
            id="g5598"
-           transform="translate(0,29.698624)">
+           transform="translate(0,29.698624)"
+           onclick="window.parent.location='intern.html';">
           <g
              id="g6313">
             <rect

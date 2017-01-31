@@ -15,7 +15,7 @@
    id="svg5007"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="home-csa-2-b.svg">
+   sodipodi:docname="home-csa.svg">
   <defs
      id="defs5009" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-427.85715"
-     inkscape:cy="740.00008"
+     inkscape:cx="13.571426"
+     inkscape:cy="968.57151"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4216"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1056"
@@ -199,7 +199,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -219,46 +219,44 @@
     <g
        id="g4216"
        transform="translate(-158.75242,-605.61234)">
-      <g
-         id="g4225">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="599.82874"
+      <text
+         sodipodi:linespacing="125%"
+         id="text5584"
+         y="951.60223"
+         x="599.82874"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle"
            y="951.60223"
-           id="text5584"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan5586"
-             x="599.82874"
-             y="951.60223"
-             style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle">Join Our CSA!</tspan></text>
+           x="599.82874"
+           id="tspan5586"
+           sodipodi:role="line">Join Our CSA!</tspan></text>
+      <g
+         transform="translate(0,29.698624)"
+         id="g5598"
+         onclick="window.parent.location='csa.html';">
         <g
-           id="g5598"
-           transform="translate(0,29.698624)">
-          <g
-             id="g6313">
-            <rect
-               style="opacity:0.69899998;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="rect5588"
-               width="256.66663"
-               height="61.666668"
-               x="471.66669"
-               y="961.66663"
-               ry="0.31418201" />
-            <text
-               xml:space="preserve"
-               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               x="501.96866"
+           id="g6313">
+          <rect
+             ry="0.31418201"
+             y="961.66663"
+             x="471.66669"
+             height="61.666668"
+             width="256.66663"
+             id="rect5588"
+             style="opacity:0.69899998;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text5590"
+             y="1004"
+             x="501.96866"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:30px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';text-align:start;letter-spacing:4px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1"
                y="1004"
-               id="text5590"
-               sodipodi:linespacing="125%"><tspan
-                 sodipodi:role="line"
-                 id="tspan5592"
-                 x="501.96866"
-                 y="1004"
-                 style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:30px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Medium';text-align:start;letter-spacing:4px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1">Learn More</tspan></text>
-          </g>
+               x="501.96866"
+               id="tspan5592"
+               sodipodi:role="line">Learn More</tspan></text>
         </g>
       </g>
     </g>

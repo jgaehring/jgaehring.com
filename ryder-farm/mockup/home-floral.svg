@@ -15,7 +15,7 @@
    id="svg5007"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="home-markets-2-b.svg">
+   sodipodi:docname="home-floral.svg">
   <defs
      id="defs5009" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-427.85715"
-     inkscape:cy="740.00008"
+     inkscape:cx="-387.85715"
+     inkscape:cy="968.57151"
      inkscape:document-units="px"
      inkscape:current-layer="g4225"
      showgrid="false"
@@ -232,10 +232,11 @@
              x="599.82874"
              y="951.60223"
              style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:90px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-             id="tspan4795">Find us at market</tspan></text>
+             id="tspan4818">Floral Design</tspan></text>
         <g
            id="g5598"
-           transform="translate(0,29.698624)">
+           transform="translate(0,29.698624)"
+           onclick="window.parent.location='floral.html';">
           <g
              id="g6313">
             <rect
