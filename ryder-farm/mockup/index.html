@@ -4,46 +4,45 @@
   <link rel="stylesheet" href="mockup.css">
 </head>
 <body>
-  <aside id="main-nav" class="svg-container menu">
-    <object type="image/svg+xml" data="home-sidebar.svg">
-      Internships
-      <img src="home-sidebar.svg" alt="sidebar">
-    </object>
 
-  </aside>
-  <main>
-    <section id="about"class="svg-container">
-      <object type="image/svg+xml" data="home-about.svg">
-        About us
-        <img src="home-about.svg" alt="About us">
-      </object>
-    </section>
-    <section id="csa"class="svg-container">
-      <object type="image/svg+xml" data="home-csa.svg">
-        Join our CSA
-        <img src="home-csa.svg" alt="CSA">
-      </object>
-    </section>
-    <section id="intern"class="svg-container">
-      <object type="image/svg+xml" data="home-intern.svg">
-        Internships
-        <img src="home-intern.svg" alt="internships">
-      </object>
-    </section>
-    <section id="foral"class="svg-container">
-      <object type="image/svg+xml" data="home-floral.svg">
-        Floral Design
-        <img src="home-floral.svg" alt="Floral Design">
-      </object>
-    </section>
-    <section id="market"class="svg-container">
-      <object type="image/svg+xml" data="home-markets.svg">
-        Find us at market
-        <img src="home-markets.svg" alt="Markets">
-      </object>
-    </section>
+<div class="iframe-container">
 
-  </main>
+  <iframe id="desktop-mockup" class="mockup-container" src="desktop/index.html">
+  </iframe>
+
+  <iframe id="mobile-mockup" class="mockup-container" src="mobile/index.html" style="display: none">
+  </iframe><br>
+
+  <div class="mockup-label">
+    <h1 id="view-state">Desktop View</h1>
+    <p><a id="view-toggle" href="#">Go to Mobile View</a></p>
+  </div>
+
+
+</div>
 
 </body>
+<script type="text/javascript">
+var toggle = document.getElementById('view-toggle');
+console.log(toggle);
+var mobileState = document.getElementById('mobile-mockup').style.display;
+var desktopState = document.getElementById('desktop-mockup').style.display;
+toggle.addEventListener('click', function (event) {
+  console.log("mobileState is ", mobileState);
+  console.log("desktopState is ", desktopState);
+  if (document.getElementById('mobile-mockup').style.display == 'none') {
+    document.getElementById('desktop-mockup').style.display = 'none';
+    document.getElementById('mobile-mockup').style.display = 'inline-block';
+    document.getElementById('view-state').innerHTML = "Mobile View"
+    this.innerHTML = "Go To Desktop View"
+  } else {
+    document.getElementById('mobile-mockup').style.display = 'none';
+    document.getElementById('desktop-mockup').style.display = 'inline-block';
+    document.getElementById('view-state').innerHTML = "Desktop View"
+    document.getElementById('view-toggle').innerHTML = "Go To Mobile View"
+
+  };
+});
+
+</script>
 </html>
