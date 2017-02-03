@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="-76.37723"
+     inkscape:cx="-251.13362"
      inkscape:cy="163.67816"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,7 +91,7 @@
          style="fill:#050505" />
     </g>
     <rect
-       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5619"
        width="323.24316"
        height="81.670471"
@@ -105,7 +105,7 @@
        height="81.670471"
        width="323.24316"
        id="rect4168"
-       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        onclick="window.parent.location='about.html';"
        onmouseover="this.style.cursor='pointer'" />
     <text
@@ -123,7 +123,7 @@
          y="360.9039"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:start;writing-mode:lr-tb;text-anchor:start">CSA</tspan></text>
     <rect
-       style="opacity:0.69899998;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4170"
        width="323.24316"
        height="81.670471"
@@ -151,7 +151,7 @@
        height="81.670471"
        width="323.24316"
        id="rect4172"
-       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        onclick="window.parent.location='floral.html';"
        onmouseover="this.style.cursor='pointer'" />
     <text
@@ -169,7 +169,7 @@
          y="593.06567"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:start;writing-mode:lr-tb;text-anchor:start">Floral Design</tspan></text>
     <rect
-       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.69899998;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.09621845;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4174"
        width="323.24316"
        height="81.670471"

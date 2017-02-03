@@ -24,6 +24,9 @@
 
 </body>
 <script type="text/javascript">
+
+var mobileMockup
+
 var toggle = document.getElementById('view-toggle');
 console.log(toggle);
 var mobileState = document.getElementById('mobile-mockup').style.display;
@@ -36,14 +39,59 @@ toggle.addEventListener('click', function (event) {
     document.getElementById('mobile-mockup').style.display = 'inline-block';
     document.getElementById('view-state').innerHTML = "Mobile View"
     this.innerHTML = "Go To Desktop View"
+    mobileMockup.setMenuListener();
+
   } else {
     document.getElementById('mobile-mockup').style.display = 'none';
     document.getElementById('desktop-mockup').style.display = 'inline-block';
-    document.getElementById('view-state').innerHTML = "Desktop View"
-    document.getElementById('view-toggle').innerHTML = "Go To Mobile View"
-
+    document.getElementById('view-state').innerHTML = "Desktop View";
+    document.getElementById('view-toggle').innerHTML = "Go To Mobile View";
   };
 });
+
+
+
+var mobileMockup = {
+  setMenuListener: function setMenuListener () {
+
+    console.log("mobileMockup: ", this);
+
+    this.mobileIframe = document.getElementById('mobile-mockup');
+    this.mobileInnerDoc = this.mobileIframe.contentDocument || this.mobileIframe.contentWindow.document;
+    this.mobileSVG = this.mobileInnerDoc.getElementById('mobile-nav-svg').contentDocument
+    console.log("svg: ", this.mobileSVG);
+
+    this.openMobileMenu = this.mobileSVG.getElementById('open-menu');
+    console.log("open-menu: ", this.openMobileMenu);
+    this.openMobileMenu.addEventListener('click', function (event) {
+      mobileMockup.menuOpen = mobileMockup.mobileSVG.getElementById('menu-open');
+      console.log("'menu-open': ", mobileMockup.menuOpen);
+      mobileMockup.mobileInnerDoc.getElementById('mobile-nav').style.overflowY = 'visible';
+      mobileMockup.menuOpen.style.display = 'block';
+      mobileMockup.menuClosed = mobileMockup.mobileSVG.getElementById('menu-closed');
+      console.log("'menu-closed': ", mobileMockup.menuClosed);
+      mobileMockup.menuClosed.style.display = 'none';
+    });
+
+    this.closeMobileMenu = this.mobileSVG.getElementById('close-menu');
+    console.log("close-menu", this.closeMobileMenu);
+    this.closeMobileMenu.addEventListener('click', function (event) {
+      mobileMockup.menuOpen = mobileMockup.mobileSVG.getElementById('menu-open');
+      console.log("'menu-open': ", mobileMockup.menuOpen);
+      mobileMockup.mobileInnerDoc.getElementById('mobile-nav').style.overflowY = 'hidden';
+      mobileMockup.menuOpen.style.display = 'none';
+      mobileMockup.menuClosed = mobileMockup.mobileSVG.getElementById('menu-closed');
+      console.log("'menu-closed': ", mobileMockup.menuClosed);
+      mobileMockup.menuClosed.style.display = 'block';
+    });
+  },
+};
+
+if (mobileMockup.mobileSVG) {
+  mobileMockup.mobileSVG.onload = function () {
+    mobileMockup.setMenuListener();
+  }
+};
 
 </script>
 </html>

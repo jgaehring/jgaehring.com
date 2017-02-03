@@ -4,47 +4,50 @@
   <link rel="stylesheet" href="../mockup.css">
 </head>
 <body>
-  <h1>Coming Soon...</h1>
-  <!-- <aside id="main-nav" class="svg-container menu">
-    <object type="image/svg+xml" data="home-sidebar.svg">
-      Internships
-      <img src="home-sidebar.svg" alt="sidebar">
+  <aside id="mobile-nav" class="svg-container menu">
+    <object id="mobile-nav-svg" type="image/svg+xml" data="menu.svg">
+      Menu
+      <img src="menu.svg" alt="menu">
     </object>
 
   </aside>
-  <main>
-    <section id="about"class="svg-container">
-      <object type="image/svg+xml" data="home-about.svg">
-        About us
-        <img src="home-about.svg" alt="About us">
-      </object>
-    </section>
-    <section id="csa"class="svg-container">
-      <object type="image/svg+xml" data="home-csa.svg">
-        Join our CSA
-        <img src="home-csa.svg" alt="CSA">
-      </object>
-    </section>
-    <section id="intern"class="svg-container">
-      <object type="image/svg+xml" data="home-intern.svg">
-        Internships
-        <img src="home-intern.svg" alt="internships">
-      </object>
-    </section>
-    <section id="foral"class="svg-container">
-      <object type="image/svg+xml" data="home-floral.svg">
-        Floral Design
-        <img src="home-floral.svg" alt="Floral Design">
-      </object>
-    </section>
-    <section id="market"class="svg-container">
-      <object type="image/svg+xml" data="home-markets.svg">
-        Find us at market
-        <img src="home-markets.svg" alt="Markets">
-      </object>
-    </section>
+  <main id="mobile-main">
 
-  </main> -->
+    <object id="home-about" type="image/svg+xml" data="home-about.svg">
+      About
+      <img src="home-about.svg" alt="About">
+    </object>
+
+    <object id="home-csa" type="image/svg+xml" data="home-csa.svg">
+      About
+      <img src="home-csa.svg" alt="About">
+    </object>
+
+    <object id="home-intern" type="image/svg+xml" data="home-intern.svg">
+      About
+      <img src="home-intern.svg" alt="About">
+    </object>
+
+    <object id="home-floral" type="image/svg+xml" data="home-floral.svg">
+      About
+      <img src="home-floral.svg" alt="About">
+    </object>
+
+    <object id="home-markets" type="image/svg+xml" data="home-markets.svg">
+      About
+      <img src="home-markets.svg" alt="About">
+    </object>
+
+
+  </main>
 
 </body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+</script>
 </html>

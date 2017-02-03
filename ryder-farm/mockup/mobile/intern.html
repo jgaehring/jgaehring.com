@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../mockup.css">
+</head>
+<body>
+  <aside id="mobile-nav" class="svg-container menu">
+    <object id="mobile-nav-svg" type="image/svg+xml" data="menu.svg">
+      Menu
+      <img src="menu.svg" alt="menu">
+    </object>
+
+  </aside>
+  <main id="mobile-main">
+
+    <object id="intern" type="image/svg+xml" data="intern.svg">
+      Internships
+      <img src="intern.svg" alt="Internships">
+    </object>
+
+  </main>
+
+</body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+</script>
+</html>
