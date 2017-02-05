@@ -37,7 +37,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="201.9959"
+     inkscape:cx="-279.43267"
      inkscape:cy="608.62118"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -237,7 +237,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -359,7 +359,7 @@
            x="367.85715"
            y="112.96156"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-           id="tspan11623">	</tspan><tspan
+           id="tspan11623" /><tspan
            dx="0 0 0 0.53385305 0 0 0 0 0.53385687 0 0 0.53384924 0 0 0 0 0 0.5338645 0 0 0 0 0 0 0 0.53384924 0 0 0 0 0.53383398 0 0 0 0 0 0 0 0.53383398 0 0 0 0 0 0 0 0 0 0 0 0 0.5338645"
            x="373.00037"
            y="112.96156"
@@ -429,7 +429,7 @@
            x="367.85715"
            y="287.96155"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-           id="tspan11655">	</tspan><tspan
+           id="tspan11655" /><tspan
            dx="0 0 0 0 0 0 0.32551813 0 0 0 0 0 0.32551813 0 0 0 0 0 0.3255105 0 0 0 0.3255105 0 0 0 0 0 0.32552576 0 0 0 0 0 0 0 0 0 0 0 0.32554102 0 0 0 0 0 0 0 0 0 0 0 0.32554102 0 0 0 0 0 0.3255105"
            x="372.79205"
            y="287.96155"
@@ -578,7 +578,7 @@
            x="367.85715"
            y="1108.1088"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-           id="tspan11737">	</tspan><tspan
+           id="tspan11737" /><tspan
            dx="0 0 0 0.53385305 0 0 0 0 0.53385687 0 0 0.53384924 0 0 0 0 0 0.5338645 0 0 0 0 0 0 0 0.53384924 0 0 0 0 0.53383398 0 0 0 0 0 0 0 0.53383398 0 0 0 0 0 0 0 0 0 0 0 0 0.5338645"
            x="373.00037"
            y="1108.1088"
@@ -648,7 +648,7 @@
            x="367.85715"
            y="1283.1088"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-           id="tspan11769">	</tspan><tspan
+           id="tspan11769" /><tspan
            dx="0 0 0 0 0 0 0.32551813 0 0 0 0 0 0.32551813 0 0 0 0 0 0.3255105 0 0 0 0.3255105 0 0 0 0 0 0.32552576 0 0 0 0 0 0 0 0 0 0 0 0.32554102 0 0 0 0 0 0 0 0 0 0 0 0.32554102 0 0 0 0 0 0.3255105"
            x="372.79205"
            y="1283.1088"
@@ -773,7 +773,7 @@
          y="1667.5112"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu" /></text>
     <g
-       id="g5989"
+       id="apply-btn"
        transform="translate(42.85715,578.5254)">
       <rect
          style="opacity:0.69899998;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

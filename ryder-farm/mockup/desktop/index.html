@@ -5,7 +5,7 @@
 </head>
 <body>
   <aside id="main-nav" class="svg-container menu">
-    <object type="image/svg+xml" data="home-sidebar.svg">
+    <object id="sidebar-svg" type="image/svg+xml" data="home-sidebar.svg">
       Internships
       <img src="home-sidebar.svg" alt="sidebar">
     </object>
@@ -46,4 +46,23 @@
   </main>
 
 </body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  var sidebarSVG = document.getElementById('sidebar-svg').contentDocument || document.getElementById('sidebar-svg').contentWindow.document;
+  console.log("sidebarSVG:", sidebarSVG);
+  var csaApplyBtn = sidebarSVG.getElementById('csa-apply');
+  console.log("csaApplyBtn:",csaApplyBtn);
+  csaApplyBtn.addEventListener('click', function() {
+    document.location = 'csa.html';
+  });
+  var internApplyBtn = sidebarSVG.getElementById('intern-apply');
+  console.log("internApplyBtn:",internApplyBtn);
+  internApplyBtn.addEventListener('click', function() {
+    document.location = 'intern.html';
+  });
+};
+
+</script>
 </html>

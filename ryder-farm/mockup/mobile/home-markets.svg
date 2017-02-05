@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="176.92171"
-     inkscape:cy="39.474414"
+     inkscape:cx="51.410257"
+     inkscape:cy="483.94153"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -88,7 +88,7 @@
          x="202.65657"
          y="114.15399"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:40.00000381px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Light';text-align:center;writing-mode:lr-tb;text-anchor:middle"
-         id="tspan4571">Find us at market</tspan></text>
+         id="tspan4571">Locations</tspan></text>
     <g
        id="g4573"
        transform="matrix(0.55583327,0,0,0.55583325,-130.74821,2.817328)"

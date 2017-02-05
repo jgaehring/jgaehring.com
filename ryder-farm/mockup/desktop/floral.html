@@ -12,8 +12,8 @@
 
   </aside>
   <main>
-    <section id="floral" class="svg-container">
-      <object type="image/svg+xml" data="floral.svg">
+    <section class="svg-container">
+      <object id="floral-svg" type="image/svg+xml" data="floral.svg">
         Floral Design
         <img src="floral.svg" alt="Floral Design">
       </object>
@@ -21,4 +21,22 @@
   </main>
 
 </body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  var floralSVG = document.getElementById('floral-svg').contentDocument || document.getElementById('floral-svg').contentWindow.document;
+  console.log("floralSVG:",floralSVG);
+  var contactBtn = floralSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
+};
+
+</script>
 </html>

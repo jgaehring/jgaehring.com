@@ -12,8 +12,8 @@
 
   </aside>
   <main>
-    <section id="about"class="svg-container">
-      <object type="image/svg+xml" data="about.svg">
+    <section class="svg-container">
+      <object id="about-svg" type="image/svg+xml" data="about.svg">
         About us
         <img src="about.svg" alt="About us">
       </object>
@@ -21,4 +21,22 @@
   </main>
 
 </body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  var aboutSVG = document.getElementById('about-svg').contentDocument || document.getElementById('about-svg').contentWindow.document;
+  console.log("aboutSVG:", aboutSVG);
+  var contactBtn = aboutSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
+};
+
+</script>
 </html>

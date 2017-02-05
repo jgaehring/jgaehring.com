@@ -12,8 +12,8 @@
 
   </aside>
   <main>
-    <section id="csa" class="svg-container">
-      <object type="image/svg+xml" data="csa.svg">
+    <section class="svg-container">
+      <object id="csa-svg" type="image/svg+xml" data="csa.svg">
         CSA
         <img src="csa.svg" alt="CSA">
       </object>
@@ -21,4 +21,22 @@
   </main>
 
 </body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  var csaSVG = document.getElementById('csa-svg').contentDocument || document.getElementById('csa-svg').contentWindow.document;
+  console.log("csaSVG:", csaSVG);
+  var contactBtn = csaSVG.getElementById('apply-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'apply-csa.html';
+  });
+};
+
+</script>
 </html>
