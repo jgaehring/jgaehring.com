@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="176.40509"
-     inkscape:cy="252.31615"
+     inkscape:cx="31.779002"
+     inkscape:cy="327.47493"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -298,7 +298,7 @@
              id="g4718">
             <polygon
                id="polygon4720"
-               points="136.798,107 107,136.798 226.202,256 107,375.202 136.798,405 256,285.798 375.202,405 405,375.202 285.798,256 405,136.798 375.202,107 256,226.202 " />
+               points="226.202,256 107,375.202 136.798,405 256,285.798 375.202,405 405,375.202 285.798,256 405,136.798 375.202,107 256,226.202 136.798,107 107,136.798 " />
           </g>
         </g>
       </g>
@@ -307,6 +307,55 @@
          id="path4732"
          d="m 0,763.33211 375.52421,-0.12627"
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="csa-apply"
+         transform="matrix(0.59341344,0,0,0.59341344,-124.55684,330.42303)"
+         onmouseover="this.style.cursor='pointer'">
+        <rect
+           ry="13.131983"
+           y="355.1777"
+           x="598.82324"
+           height="33.335041"
+           width="80.812172"
+           id="rect6982"
+           style="opacity:1;fill:#888888;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text6978"
+           y="377.36279"
+           x="611.22638"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="377.36279"
+             x="611.22638"
+             id="tspan6980"
+             sodipodi:role="line">Apply</tspan></text>
+      </g>
+      <g
+         onmouseover="this.style.cursor='pointer'"
+         transform="matrix(0.59341344,0,0,0.59341344,-100.27113,388.99446)"
+         id="intern-apply"
+         inkscape:label="">
+        <rect
+           style="opacity:1;fill:#888888;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4200"
+           width="80.812172"
+           height="33.335041"
+           x="598.82324"
+           y="355.1777"
+           ry="13.131983" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="611.22638"
+           y="377.36279"
+           id="text4202"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4204"
+             x="611.22638"
+             y="377.36279">Apply</tspan></text>
+      </g>
     </g>
   </g>
 </svg>

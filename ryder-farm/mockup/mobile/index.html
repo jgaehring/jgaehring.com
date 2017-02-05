@@ -49,5 +49,21 @@ window.onload = function () {
   parent.mobileMockup.setMenuListener();
 };
 
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  var sidebarSVG = document.getElementById('mobile-nav-svg').contentDocument || document.getElementById('mobile-nav-svg').contentWindow.document;
+  console.log("sidebarSVG:", sidebarSVG);
+  var csaApplyBtn = sidebarSVG.getElementById('csa-apply');
+  console.log("csaApplyBtn:",csaApplyBtn);
+  csaApplyBtn.addEventListener('click', function() {
+    document.location = 'csa.html';
+  });
+  var internApplyBtn = sidebarSVG.getElementById('intern-apply');
+  console.log("internApplyBtn:",internApplyBtn);
+  internApplyBtn.addEventListener('click', function() {
+    document.location = 'intern.html';
+  });
+};
+
 </script>
 </html>
