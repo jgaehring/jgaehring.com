@@ -13,7 +13,7 @@
   </aside>
   <main id="mobile-main">
 
-    <object id="markets" type="image/svg+xml" data="markets.svg">
+    <object id="markets-svg" type="image/svg+xml" data="markets.svg">
       Markets
       <img src="markets.svg" alt="Markets">
     </object>
@@ -23,10 +23,19 @@
 </body>
 <script type="text/javascript">
 
- parent.mobileMockup);
-  window.onload = function () {
+window.onload = function () {
     parent.mobileMockup.setMenuListener();
   };
+
+window.onload = function () {
+  var marketsSVG = document.getElementById('markets-svg').contentDocument || document.getElementById('markets-svg').contentWindow.document;
+  console.log("marketsSVG:",marketsSVG);
+  var contactBtn = marketsSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
+};
 
 </script>
 </html>

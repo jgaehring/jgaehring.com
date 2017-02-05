@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../mockup.css">
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+  </head>
+  <body>
+
+    <aside id="mobile-nav" class="svg-container menu">
+      <object id="mobile-nav-svg" type="image/svg+xml" data="menu.svg">
+        Menu
+        <img src="menu.svg" alt="menu">
+      </object>
+
+    </aside>
+    <main id="mobile-main">
+
+      <form class="" action="index.html" method="">
+        <fieldset>
+          <h2>Your Contact Info</h2>
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" name="" value=""><br>
+          <label for="last-name">Last Name</label>
+          <input id="last-name" type="text" name="" value=""><br>
+          <label for="email">Email Address</label>
+          <input id="email " type="email" name="" value="">
+        </fieldset>
+        <fieldset>
+          <h2>Area of Interest</h2>
+          <label for="general-inquiry">General Inquiry</label>
+          <input id="general-inquiry" type="checkbox" name="general-inquiry" value=""><br>
+          <label for="csa-inquiry">CSA (Community Supported Agriculture)</label>
+          <input id="csa-inquiry" type="checkbox" name="csa-inquiry" value=""><br>
+          <label for="intern-inquiry">Internships</label>
+          <input id="intern-inquiry" type="checkbox" name="intern-inquiry" value=""><br>
+          <label for="floral-inquiry">Floral Design</label>
+          <input id="floral-inquiry" type="checkbox" name="floral-inquiry" value=""><br>
+          <label for="location-inquiry">Markets, Farm Stand &amp; Other Locations</label>
+          <input id="location-inquiry" type="checkbox" name="location-inquiry" value=""><br>
+          <label for="event-inquiry">Events</label>
+          <input id="event-inquiry" type="checkbox" name="event-inquiry" value=""><br>
+          <label for="wholesale-inquiry">Wholesale</label>
+          <input id="wholesale-inquiry" type="checkbox" name="wholesale-inquiry" value="">
+        </fieldset>
+        <fieldset>
+          <h2>Message</h2>
+          <label for="message">Enter your message below:</label><br>
+          <textarea name="message" rows="8" cols="40"></textarea>
+        </fieldset>
+        <button type="submit" name="button">Submit</button>
+      </form>
+
+    </main>
+
+
+  </body>
+  <script type="text/javascript">
+
+  window.onload = function () {
+    console.log("The page 'markets.html' loaded!");
+    parent.mobileMockup.setMenuListener();
+  };
+
+  window.onload = function () {
+    var aboutSVG = document.getElementById('about-svg').contentDocument || document.getElementById('about-svg').contentWindow.document;
+    console.log("aboutSVG:", aboutSVG);
+    var contactBtn = aboutSVG.getElementById('contact-btn');
+    console.log("contactBtn:",contactBtn);
+    contactBtn.addEventListener('click', function() {
+      document.location = 'contact.html';
+    });
+  };
+
+  </script>
+</html>

@@ -13,7 +13,7 @@
   </aside>
   <main id="mobile-main">
 
-    <object id="csa" type="image/svg+xml" data="csa.svg">
+    <object id="csa-svg" type="image/svg+xml" data="csa.svg">
       CSA
       <img src="csa.svg" alt="CSA">
     </object>
@@ -26,6 +26,16 @@
 window.onload = function () {
   console.log("The page 'markets.html' loaded!");
   parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  var csaSVG = document.getElementById('csa-svg').contentDocument || document.getElementById('csa-svg').contentWindow.document;
+  console.log("csaSVG:", csaSVG);
+  var contactBtn = csaSVG.getElementById('apply-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'apply-csa.html';
+  });
 };
 
 </script>

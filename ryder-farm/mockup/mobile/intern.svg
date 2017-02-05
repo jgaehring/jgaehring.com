@@ -57,7 +57,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="151.18511"
+     inkscape:cx="-19.025594"
      inkscape:cy="287.07575"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -99,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -167,7 +167,7 @@
            x="150.86256"
            y="26.435369"
            style="font-size:18.73736191px;text-align:start;text-anchor:start"
-           id="tspan6126"> </tspan></tspan></text>
+           id="tspan6126" /></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.68686867px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -218,7 +218,7 @@
            y="1880.9427"
            id="tspan6246">Heading 2</tspan></tspan></text>
     <g
-       id="g5989"
+       id="apply-btn"
        transform="matrix(0.59217173,0,0,0.59217173,-149.70526,1844.8304)">
       <rect
          style="opacity:0.69899998;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -252,7 +252,7 @@
            height="47.477169"
            x="24.243662"
            y="308.15225" /></flowRegion><flowPara
-         id="flowPara5573"></flowPara></flowRoot>    <rect
+         id="flowPara5573" /></flowRoot>    <rect
        style="opacity:1;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5588"
        width="326.27927"
@@ -281,7 +281,7 @@
          id="tspan5774"><tspan
            x="36.821266"
            y="133.60892"
-           id="tspan5776">	</tspan><tspan
+           id="tspan5776" /><tspan
            dx="2.9465494 0 0 2.9465513 0 0 0 0 2.9465475 0 0 2.9465475 0 0 0 0 0 2.9465475 0 0 0 0 0 0 0 2.9465475 0 0 0 0 2.9465628"
            id="tspan5778">Ut enim ad minim veniam, quis nostrud </tspan></tspan><tspan
          sodipodi:role="line"
@@ -346,7 +346,7 @@
          y="330.48392"
          id="tspan5814"><tspan
            x="35.357422"
-           id="tspan5816">	</tspan><tspan
+           id="tspan5816" /><tspan
            dx="1.7496743 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496848 0 0 0 1.7496848 0 0 0 0 0 1.7496696"
            id="tspan5818">Lorem ipsum dolor sit amet, consectetur </tspan></tspan><tspan
          sodipodi:role="line"
@@ -446,7 +446,7 @@
          id="tspan5682"><tspan
            x="37.613979"
            y="1040.7262"
-           id="tspan5684">	</tspan><tspan
+           id="tspan5684" /><tspan
            dx="2.7202067 0 0 2.7202077 0 0 0 0 2.7202077 0 0 2.7202077 0 0 0 0 0 2.7202077 0 0 0 0 0 0 0 2.7201924 0 0 0 0 2.7202077"
            id="tspan5686">Ut enim ad minim veniam, quis nostrud </tspan></tspan><tspan
          sodipodi:role="line"
@@ -511,7 +511,7 @@
          y="1237.6012"
          id="tspan5722"><tspan
            x="35.357422"
-           id="tspan5724">	</tspan><tspan
+           id="tspan5724" /><tspan
            dx="1.7496743 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496848 0 0 0 1.7496848 0 0 0 0 0 1.7496696"
            id="tspan5726">Lorem ipsum dolor sit amet, consectetur </tspan></tspan><tspan
          sodipodi:role="line"
@@ -651,7 +651,7 @@
          id="tspan5914"><tspan
            x="35.993237"
            y="1915.8954"
-           id="tspan5916">	</tspan><tspan
+           id="tspan5916" /><tspan
            dx="3.1830907 0 0 3.1830897 0 0 0 0 3.1830897 0 0 3.1830897 0 0 0 0 0 3.1830897 0 0 0 0 0 0 0 3.1830897 0 0 0 0 3.1830897"
            id="tspan5918">Ut enim ad minim veniam, quis nostrud </tspan></tspan><tspan
          sodipodi:role="line"
@@ -716,7 +716,7 @@
          y="2112.7705"
          id="tspan5954"><tspan
            x="35.357422"
-           id="tspan5956">	</tspan><tspan
+           id="tspan5956" /><tspan
            dx="1.7496743 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496772 0 0 0 0 0 1.7496848 0 0 0 1.7496848 0 0 0 0 0 1.7496696"
            id="tspan5958">Lorem ipsum dolor sit amet, consectetur </tspan></tspan><tspan
          sodipodi:role="line"

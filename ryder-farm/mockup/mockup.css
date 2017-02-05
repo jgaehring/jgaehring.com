@@ -101,3 +101,6 @@ object {
 .iframe-container a:visited {
   color: #eaeaea;
 }
+.iframe-container a {
+  color: white;
+}

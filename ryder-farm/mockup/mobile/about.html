@@ -13,7 +13,7 @@
   </aside>
   <main id="mobile-main">
 
-    <object id="about" type="image/svg+xml" data="about.svg">
+    <object id="about-svg" type="image/svg+xml" data="about.svg">
       About
       <img src="about.svg" alt="About">
     </object>
@@ -26,6 +26,16 @@
 window.onload = function () {
   console.log("The page 'markets.html' loaded!");
   parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  var aboutSVG = document.getElementById('about-svg').contentDocument || document.getElementById('about-svg').contentWindow.document;
+  console.log("aboutSVG:", aboutSVG);
+  var contactBtn = aboutSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
 };
 
 </script>

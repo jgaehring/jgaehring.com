@@ -57,10 +57,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="-99.837794"
+     inkscape:cx="-270.0485"
      inkscape:cy="448.7002"
      inkscape:document-units="px"
-     inkscape:current-layer="g5989"
+     inkscape:current-layer="layer1"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -218,7 +218,7 @@
            y="1880.9427"
            id="tspan6246">Heading 2</tspan></tspan></text>
     <g
-       id="g5989"
+       id="apply-btn"
        transform="matrix(0.59217173,0,0,0.59217173,-149.70526,1844.8304)">
       <rect
          style="opacity:0.69899998;fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#f60000;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
