@@ -6,11 +6,10 @@ import styles from './header.module.css'
 const Header = () => (
   <div className={styles.header} >
     <nav className={styles.nav}>
-      <h1>
-        <Link to="/" >
-          <img src={logo} />
-        </Link>
-      </h1>
+      <Link to="/" >
+        <img src={logo} />
+      </Link>
+      <Link to="/page-2/">Go to page 2</Link>
     </nav>
   </div>
 )
