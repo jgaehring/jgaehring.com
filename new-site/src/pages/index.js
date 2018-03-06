@@ -18,6 +18,12 @@ const IndexPage = () => (
         <p>For nearly two decades, I've been helping farmers build a more open food system. Today, I'm working to give those farmers better access to the software, data and other tools that they need to feed their communities in the 21<sup>st</sup> century.</p>
       </div>
     </section>
+    <section>
+      <header>
+        <h1>Writings</h1>
+        <p>These are some things I've written.</p>
+      </header>
+    </section>
   </div>
 )
 

@@ -25,3 +25,8 @@
 .home img {
   margin: 0;
 }
+
+.home section header {
+  grid-column: 1 / span 6;
+  text-align: center;
+}
