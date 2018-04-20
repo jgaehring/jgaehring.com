@@ -17,7 +17,8 @@ const typography = new Typography({
   ],
   headerFontFamily: ['PT Serif', 'serif'],
   headerWeight: '700',
-  bodyFontFamily: ['PT Mono', 'monospace']
+  bodyFontFamily: ['PT Mono', 'monospace'],
+  includeNormalize: true
 });
 
 export default typography;

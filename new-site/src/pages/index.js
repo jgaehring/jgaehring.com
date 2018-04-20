@@ -20,7 +20,9 @@ const IndexPage = () => (
     </section>
     <section>
       <header>
-        <h1>Writings</h1>
+        <Link to="/blog">
+          <h1>Writings</h1>
+        </Link>
         <p>These are some things I've written.</p>
       </header>
     </section>

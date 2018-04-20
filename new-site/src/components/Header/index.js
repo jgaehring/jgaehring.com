@@ -9,7 +9,6 @@ const Header = () => (
       <Link to="/" >
         <img src={logo} />
       </Link>
-      <Link to="/page-2/">Go to page 2</Link>
     </nav>
   </div>
 )

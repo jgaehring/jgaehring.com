@@ -1,10 +1,13 @@
 import React from 'react';
+import Header from '../components/Header';
+import styles from './blog-post.module.css';
 
 export default function BlogTemplate({ data }) {
   const { markdownRemark: post } = data;
   return (
     <div>
-      <h1>{post.frontmatter.title}</h1>
+      <Header/>
+      <h1 className={styles.title}>{post.frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
