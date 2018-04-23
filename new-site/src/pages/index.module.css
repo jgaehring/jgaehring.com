@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
+}
+
+.about {
   height: 60vh;
   margin: 20vh 0;
 }
@@ -22,16 +25,12 @@
   grid-row: 2 / span 1;
 }
 
-.home img {
-  margin: 0;
+.contact {
+  text-align: center;
 }
 
-.home section header {
+.blog  header {
   grid-column: 1 / span 6;
   text-align: center;
 }
 
-#contact {
-  text-align: center;
-  
-}

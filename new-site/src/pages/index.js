@@ -7,7 +7,7 @@ import { FaGithub } from 'react-icons/lib/fa'
 
 const IndexPage = () => (
   <div className={styles.home}>
-    <section>
+    <section className={styles.about}>
       <div className={styles.logo} >
         <img src={logo} />
         &mdash; &bull;&bull;&bull; &mdash;
@@ -17,7 +17,7 @@ const IndexPage = () => (
       </div>
       <div className={styles.blurb} >
         <p>For nearly two decades, I've been helping farmers build a more open food system. Today, I'm working to give those farmers better access to the software, data and other tools that they need to feed their communities in the 21<sup>st</sup> century.</p>
-        <h3 id={styles.contact}>
+        <h3 className={styles.contact}>
           &#123;{/*Use HTML code for curly braces b/c of jsx*/}
           <a href="mailto:jamie@jgaehring.com" target='_blank'>jamie@jgaehring.com</a>
           &#125;&nbsp;
@@ -25,12 +25,11 @@ const IndexPage = () => (
         </h3>
       </div>
     </section>
-    <section>
+    <section className={styles.blog}>
       <header>
-        <Link to="/blog">
-          <h1>Writings</h1>
-        </Link>
+        <h2>Writings</h2>
         <p>These are some things I've written.</p>
+        <p><Link to='/blog'>Go to blog.</Link></p>
       </header>
     </section>
   </div>
