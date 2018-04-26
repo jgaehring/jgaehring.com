@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styles from './index.module.css'
 import logo from '../assets/golden-russet-black.svg'
 import portrait from '../assets/portrait.jpg'
-import { FaGithub } from 'react-icons/lib/fa'
+import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
 
 const IndexPage = ({data}) => (
   <div className={styles.home}>
@@ -28,6 +28,8 @@ const IndexPage = ({data}) => (
         </h3>
         <h2>
           <a href="https://github.com/jgaehring" target='_blank'><FaGithub/></a>
+          &nbsp;
+          <a href="https://twitter.com/JamieGaehring" target='_blank'><FaTwitter/></a>
         </h2>
       </div>
     </section>
