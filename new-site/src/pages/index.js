@@ -17,12 +17,18 @@ const IndexPage = ({data}) => (
       </div>
       <div className={styles.blurb} >
         <p>For nearly two decades, I've been helping farmers build a more open food system. Today, I'm working to give those farmers better access to the software, data and other tools that they need to feed their communities in the 21<sup>st</sup> century.</p>
-        <h3 className={styles.contact}>
+      </div>
+    </section>
+    <section>
+      <div className={styles.contact}>
+        <h3>
           &#123;{/*Use HTML code for curly braces b/c of jsx*/}
           <a href="mailto:jamie@jgaehring.com" target='_blank'>jamie@jgaehring.com</a>
-          &#125;&nbsp;
-          <a href="https://github.com/jgaehring" target='_blank'><FaGithub/></a>
+          &#125;
         </h3>
+        <h2>
+          <a href="https://github.com/jgaehring" target='_blank'><FaGithub/></a>
+        </h2>
       </div>
     </section>
     <section className={styles.blog}>
