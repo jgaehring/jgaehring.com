@@ -5,6 +5,7 @@ import logo from '../assets/golden-russet-black.svg'
 import portrait from '../assets/portrait.jpg'
 import { FaGithub, FaTwitter } from 'react-icons/lib/fa'
 
+// TODO: Optimize images via https://www.gatsbyjs.org/packages/gatsby-image/
 const IndexPage = ({data}) => (
   <div className={styles.home}>
     <section className={styles.about}>
@@ -56,13 +57,8 @@ const IndexPage = ({data}) => (
 export default IndexPage
 
 /**
-  * TODO: Figure out how to put this into a reuseable component,
-  * which could be shared with `blog.js`. I haven't even decided
-  * how I want to filter and sort these yet (perhaps as a "highlights"
-  * reel?), but it would be nice to just pass props the reusable component 
-  * to handle that. Or perhaps use a higher order component somehow?
-  * Maybe extract the query itself to a composable function, so I 
-  * don't have to keep reusing all this query boilerplate.
+  * TODO: Use a `PostPreview` component and GraphQL fragment in 
+  * this query. See `src/blog.js` for more on how to implement.
 **/
 export const query = graphql`
   query BlogList {

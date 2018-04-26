@@ -20,6 +20,12 @@ export default ({data}) => (
   </div>
 );
 
+/** 
+  * TODO: Put the edges (not the sorting) into a GraphQL fragment 
+  * and export it with the markup for the each post into a 
+  * `PostPreview` component for reuse in the home page and elsewhere. 
+  * See: https://www.gatsbyjs.org/docs/querying-with-graphql/#fragments
+**/
 export const query = graphql`
   query BlogIndex {
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC } ) {
