@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../mockup.css">
+</head>
+<body>
+  <aside id="main-nav" class="svg-container menu">
+    <object type="image/svg+xml" data="markets-sidebar.svg">
+      sidebar
+      <img src="home-sidebar.svg" alt="sidebar">
+    </object>
+
+  </aside>
+  <main>
+    <section class="svg-container">
+      <object id="markets-svg" type="image/svg+xml" data="markets.svg">
+        Find us at market
+        <img src="markets.svg" alt="Find us at market">
+      </object>
+    </section>
+  </main>
+
+</body>
+<script type="text/javascript">
+
+window.onload = function () {
+    parent.mobileMockup.setMenuListener();
+  };
+
+window.onload = function () {
+  var marketsSVG = document.getElementById('markets-svg').contentDocument || document.getElementById('markets-svg').contentWindow.document;
+  console.log("marketsSVG:",marketsSVG);
+  var contactBtn = marketsSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
+};
+
+</script>
+</html>

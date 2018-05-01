@@ -1,16 +1,1299 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <title>Test Porffolio</title>
-  </head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Martin&#39;s Pretzels</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- <link rel="stylesheet" href="/martins/assets/css/jquery-ui.css"> -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/martins/assets/css/main.css">
+  <link rel="canonical" href="http://martinspretzels.com/">
+</head>
+
+
   <body>
-    <h1>Portfolio Pages</h1>
-    <h3>TODO:</h3>
-    <ul>
-      <li>Add all porfolio items to the 'static' folder and rebuild.</li>
-      <li>Figure out how to remove trailing slashes for static files (plugin not working), OR...</li>
-      <li>Just use a <a href="https://www.netlify.com/docs/redirects/">Netlify redirect</a>.</li>
-    </ul>
+
+    <div id="wholesale-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="index.html" method="post">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Wholesale Inquiries</h2>
+            <p>If you're interested in exploring a wholesale relationship with us, please fill out the brief contact form below and we will reply within a couple days with more information. You can also <a href="mailto:hello@martinshandmade.com" class="mail-to">email us</a>.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="first-name" class="text-label">First Name</label><br>
+              <input type="text" id="first-name" name="first-name" value="" required="true">
+            </div>
+
+            <div class="card sm-input-group">
+              <label for="last-name" class="text-label">Last Name</label><br>
+              <input type="text" id="last-name" name="last-name" value="" required="true">
+            </div>
+
+            <div class="card lg-input-group">
+              <label for="email-input" class="text-label">Email Address</label><br>
+              <input type="email" id="email-input" name="email" value="" required="true">
+            </div>
+
+            <div class="card lg-input-group">
+              <label for="organization" class="text-label">Company / Org.</label><br>
+              <input type="text" id="organization" name="organization" value="">
+            </div>
+          </div>
+
+          <button type="submit" name="button" class="row btn">Submit</button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div id="contact-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="index.html" method="post">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Contact Us</h2>
+            <p>Send us a brief message using the contact form below or <a href="mailto:hello@martinshandmade.com" class="mail-to">email us</a>.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="first-name" class="text-label">Full Name</label><br>
+              <input type="text" id="first-name" name="first-name" value="" required="true">
+            </div>
+
+            <!-- <div class="card sm-input-group">
+              <label for="last-name" class="text-label">Last Name</label><br>
+              <input type="text" id="last-name" name="last-name" value="" required="true">
+            </div> -->
+
+            <div class="card lg-input-group">
+              <label for="email-input" class="text-label">Email Address</label><br>
+              <input type="email" id="email-input" name="email" value="" required="true">
+            </div>
+
+            <div class="card lg-input-group">
+              <label for="message" class="text-label">Message</label><br>
+              <textarea id="message" name="message" rows="8" cols="40"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" name="button" class="row btn">Submit</button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div id="login-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="/martins/logged-in.html">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Welcome Back!</h2>
+            <p>Login now to shop the Martin's Pretzels online store, or wait until you're ready to checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
+            </div>
+            <div class="card sm-input-group">
+              <label for="password" class="text-label">Password</label>
+              <input type="password" name="password" value="blank" id="password">
+            </div>
+          </div>
+
+          <button type="submit" name="login" class="btn">Login</button>
+          <p>New users,&nbsp;<a id="register-link" href="#">register here.</a><br>
+            Forgot your password?&nbsp;<a href="#">Request reset.</a>
+          </p>
+          <!-- <p> <br> Forgot your password? <br> Register as a new user.</p> -->
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="register-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="logged-in.html">
+        <div class="row-wrapper">
+
+          <header class="row modal-header">
+            <h2>Register</h2>
+            <p>New users can register now to start shopping, or just wait until checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="homer@springfieldpower.com">
+            </div>
+            <div class="card sm-input-group">
+              <label for="enter-pw" class="text-label">Enter Password</label>
+              <input type="password" name="enter-pw" value="blank">
+            </div>
+            <div class="card sm-input-group">
+              <label for="reenter-pw" class="text-label">Re-enter password</label>
+              <input type="password" name="reenter-pw" value="blank">
+            </div>
+          </div>
+
+          <!-- <button type="submit" class="row btn">Sign Up</button> -->
+          <button class="row btn" type="submit">
+            Sign Up
+          </button>
+          <div class="row">
+            <p>Returning user?&nbsp;<a id="login-from-register" href="#">Login here.</a></p>
+
+          </div>
+
+        </div>
+      </form>
+
+      <div class="row-wrapper" id="thank-you">
+        <h2>Thank You!</h2>
+        <p>You will receive a confirmation email shortly.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="cart-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="/martins/#order" method="">
+        <div class="row-wrapper">
+
+          <header class="row modal-header">
+            <h2>Item Added</h2>
+            <h5></h5>
+          </header>
+
+          <div class="row checkout-wrapper">
+            <table>
+              <thead>
+                <thead>
+                  <tr>
+                    <th><h5>Qty.</h5> </th>
+                    <th class="table-item-name"> <h5>Item Name</h5> </th>
+                    <th> <h5>Option</h5> </th>
+                    <th> <h5>Total</h5> </th>
+                  </tr>
+                </thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h4>Salted Pretzels</h4>
+                  </td>
+                  <td>
+                    <h4>3lb Bag</h4>
+                  </td>
+                  <td>
+                    <h4>2</h4>
+                  </td>
+                  <td>
+                    <h4>$28.58</h4>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row">
+            <h3>Your cart total is now $71.68</h3>
+          </div>
+
+          <div class="row">
+            <a href="#order" class="btn remove">Remove</a>
+
+            <div class="btn keep-shopping">Keep Shopping</div>
+            <div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+
+      <form id="removed-msg" class="modal-form" action="/martins/#order" method="">
+        <div class="row-wrapper">
+          <header>
+            <h2>Item Removed</h2>
+          </header>
+        </div>
+      </form>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="page-wrap">
+
+  <div class="mobile-nav">
+
+  <div class="nav-toggle">
+
+    <div class="svg-menu nav-open">
+    </div>
+    <div class="svg-close nav-close">
+    </div>
+
+  </div>
+
+  <div class="mobile-logo">
+    <a href="/martins/#home">
+      <div class="svg-mobile-logo">
+      </div>
+    </a>
+  </div>
+
+  <div class="cart-icon">
+    <div class="cart-qty">
+      <h6>3</h6>
+    </div>
+    <a href="/martins/checkout/cart">
+      <div class="svg-cart">
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+<header class="page-header">
+  <div class="col-wrapper nav-wrapper">
+    <nav class="col-two-third">
+      <ul class="home-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#find-us">Find Us</a></li>
+        <li><a href="#wholesale">Wholesale</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="col-third">
+      <ul class="shop-nav">
+
+        <li id="login-link">
+          Login
+        </li>
+        <!-- <li id="logout-link">
+          Logout
+        </li> -->
+
+        <li>
+          <div class="cart-icon">
+            <!-- <div class="cart-qty">
+              <h6>3</h6>
+            </div> -->
+            <a href="/martins/checkout/cart">
+              <div class="svg-cart">
+              </div>
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main>
+
+    <section id="home" class="bg-img-wide">
+  <div class="row-wrapper">
+    <div class="row col-wrapper">
+
+      <div class="col-half">
+        <div class="home-logo">
+          <div class="svg-logo-black-white">
+          </div>
+        </div>
+        <div id="order-link">
+          <a href="#order" class="btn white-btn">Order Now</a>
+        </div>
+      </div>
+
+      <div class="col-half">
+        <div class="about-blurb">
+          <h2>Awesome Pretzels.</h2>
+          <h4>In the middle of the Great Depression, the Martin family began hand-crafting these extraordinary Pennsylvania Dutch Pretzels, which first appeared in New York’s Union Square Greenmarket in 1982. Since then, Martin’s Handmade Pretzels have won countless fans with their rich flavor and deep crunch.</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="order">
+  <div class="row-wrapper">
+    <header class="row">
+      <h1>Order Online</h1>
+      <p>Are you a chef or retailer? See our <a href="#wholesale">wholesale section</a>.</p>
+    </header>
+    <div id="order-form" class="row card-wrapper">
+
+      <div id="salted-pretzels"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/salt-150.png 150w, /martins/assets/img/salt-250.png 250w' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Salted Pretzels </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="3lb-box" value="3lb Box">
+                3lb Box
+              </option>
+
+              <option class="6lb-box" value="6lb Box">
+                6lb Box
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $14.29 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="salted-pretzels-3lb-box" class="unit">
+            <div class="option-id">
+              salted-pretzels-3lb-box
+            </div>
+            <div class="option-name">
+              3lb Box
+            </div>
+            <div class="unit-price">
+              14.29
+            </div>
+          </div>
+
+          <div id="salted-pretzels-6lb-box" class="unit">
+            <div class="option-id">
+              salted-pretzels-6lb-box
+            </div>
+            <div class="option-name">
+              6lb Box
+            </div>
+            <div class="unit-price">
+              26.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="unsalted-hearth"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/nosalt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/nosalt-150.png 150w, /martins/assets/img/nosalt-250.png 250w' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Unsalted Hearth </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="3lb-box" value="3lb Box">
+                3lb Box
+              </option>
+
+              <option class="6lb-box" value="6lb Box">
+                6lb Box
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $14.29 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="unsalted-hearth-3lb-box" class="unit">
+            <div class="option-id">
+              unsalted-hearth-3lb-box
+            </div>
+            <div class="option-name">
+              3lb Box
+            </div>
+            <div class="unit-price">
+              14.29
+            </div>
+          </div>
+
+          <div id="unsalted-hearth-6lb-box" class="unit">
+            <div class="option-id">
+              unsalted-hearth-6lb-box
+            </div>
+            <div class="option-name">
+              6lb Box
+            </div>
+            <div class="unit-price">
+              26.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="whole-wheat"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/ww-salt-transp.png' class='item-img' alt='' srcset='/martins/assets/img/ww-salt-150.png 150w, /martins/assets/img/ww-salt-250.png 250w' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Whole Wheat </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="salted-3lb" value="Salted 3lb">
+                Salted 3lb
+              </option>
+
+              <option class="salted-6lb" value="Salted 6lb">
+                Salted 6lb
+              </option>
+
+              <option class="unsalted-3lb" value="Unsalted 3lb">
+                Unsalted 3lb
+              </option>
+
+              <option class="unsalted-6lb" value="Unsalted 6lb">
+                Unsalted 6lb
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $14.29 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="whole-wheat-salted-3lb" class="unit">
+            <div class="option-id">
+              whole-wheat-salted-3lb
+            </div>
+            <div class="option-name">
+              Salted 3lb
+            </div>
+            <div class="unit-price">
+              14.29
+            </div>
+          </div>
+
+          <div id="whole-wheat-salted-6lb" class="unit">
+            <div class="option-id">
+              whole-wheat-salted-6lb
+            </div>
+            <div class="option-name">
+              Salted 6lb
+            </div>
+            <div class="unit-price">
+              26.99
+            </div>
+          </div>
+
+          <div id="whole-wheat-unsalted-3lb" class="unit">
+            <div class="option-id">
+              whole-wheat-unsalted-3lb
+            </div>
+            <div class="option-name">
+              Unsalted 3lb
+            </div>
+            <div class="unit-price">
+              14.29
+            </div>
+          </div>
+
+          <div id="whole-wheat-unsalted-6lb" class="unit">
+            <div class="option-id">
+              whole-wheat-unsalted-6lb
+            </div>
+            <div class="option-name">
+              Unsalted 6lb
+            </div>
+            <div class="unit-price">
+              26.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="special-orders"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/special-250.png' class='item-img' alt='' srcset='/martins/assets/img/special-150.png 150w, /martins/assets/img/special-250.png 250w' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Special Orders </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="4lb-brokens" value="4lb Brokens">
+                4lb Brokens
+              </option>
+
+              <option class="8lb-brokens" value="8lb Brokens">
+                8lb Brokens
+              </option>
+
+              <option class="6lb-extra-dark" value="6lb Extra Dark">
+                6lb Extra Dark
+              </option>
+
+              <option class="6lb-extra-salty" value="6lb Extra Salty">
+                6lb Extra Salty
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $15.99 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="special-orders-4lb-brokens" class="unit">
+            <div class="option-id">
+              special-orders-4lb-brokens
+            </div>
+            <div class="option-name">
+              4lb Brokens
+            </div>
+            <div class="unit-price">
+              15.99
+            </div>
+          </div>
+
+          <div id="special-orders-8lb-brokens" class="unit">
+            <div class="option-id">
+              special-orders-8lb-brokens
+            </div>
+            <div class="option-name">
+              8lb Brokens
+            </div>
+            <div class="unit-price">
+              28.99
+            </div>
+          </div>
+
+          <div id="special-orders-6lb-extra-dark" class="unit">
+            <div class="option-id">
+              special-orders-6lb-extra-dark
+            </div>
+            <div class="option-name">
+              6lb Extra Dark
+            </div>
+            <div class="unit-price">
+              18.99
+            </div>
+          </div>
+
+          <div id="special-orders-6lb-extra-salty" class="unit">
+            <div class="option-id">
+              special-orders-6lb-extra-salty
+            </div>
+            <div class="option-name">
+              6lb Extra Salty
+            </div>
+            <div class="unit-price">
+              18.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="gift-tin"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/gift-tin-old.jpg' class='item-img' alt='' srcset='' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Gift Tin </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="1.75lb" value="1.75lb">
+                1.75lb
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $18.99 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="gift-tin-1.75lb" class="unit">
+            <div class="option-id">
+              gift-tin-1.75lb
+            </div>
+            <div class="option-name">
+              1.75lb
+            </div>
+            <div class="unit-price">
+              18.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="gift-bucket"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/bucket-old.gif' class='item-img' alt='' srcset='' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Gift Bucket </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="3lb" value="3lb">
+                3lb
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $22.99 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="gift-bucket-3lb" class="unit">
+            <div class="option-id">
+              gift-bucket-3lb
+            </div>
+            <div class="option-name">
+              3lb
+            </div>
+            <div class="unit-price">
+              22.99
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="hoppy-caramel-nuggets"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/nugs-old.jpg' class='item-img' alt='' srcset='' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Hoppy Caramel Nuggets </h3>
+          <h6>  </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="1/2lb-bag" value="1/2lb Bag">
+                1/2lb Bag
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $10.0 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="hoppy-caramel-nuggets-1/2lb-bag" class="unit">
+            <div class="option-id">
+              hoppy-caramel-nuggets-1/2lb-bag
+            </div>
+            <div class="option-name">
+              1/2lb Bag
+            </div>
+            <div class="unit-price">
+              10.0
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div id="flavored-pieces"class="card shop-item">
+        <div class="img-wrapper">
+          <img src='/martins/assets/img/flavors-old.jpg' class='item-img' alt='' srcset='' sizes='40vw' >
+        </div>
+        <hr>
+        <div class="card-title">
+          <h3> Flavored Pieces </h3>
+          <h6> (half-pound) </h6>
+        </div>
+
+        <form class="item-form" action="/martins/add_to_cart/5" method="post">
+          <div class="options">
+            <div class="qty">
+              <p>
+                <input type="number" name="" min="1" max="20" value="1">
+              </p>
+            </div>
+            <select class="option">
+
+              <option class="ranch" value="Ranch">
+                Ranch
+              </option>
+
+              <option class="buffalo-wings" value="Buffalo Wings">
+                Buffalo Wings
+              </option>
+
+              <option class="hickory-smoked" value="Hickory Smoked">
+                Hickory Smoked
+              </option>
+
+              <option class="honey-mustard" value="Honey Mustard">
+                Honey Mustard
+              </option>
+
+            </select>
+            <div class="price">
+              <p class="display-price">
+                $5.0 + tax <br> &amp; shipping
+              </p>
+            </div>
+          </div>
+            <button type="submit" class="btn add-to-cart">
+              Add to Cart
+            </button>
+        </form>
+
+        <div class="unit-values">
+
+
+          <div id="flavored-pieces-ranch" class="unit">
+            <div class="option-id">
+              flavored-pieces-ranch
+            </div>
+            <div class="option-name">
+              Ranch
+            </div>
+            <div class="unit-price">
+              5.0
+            </div>
+          </div>
+
+          <div id="flavored-pieces-buffalo-wings" class="unit">
+            <div class="option-id">
+              flavored-pieces-buffalo-wings
+            </div>
+            <div class="option-name">
+              Buffalo Wings
+            </div>
+            <div class="unit-price">
+              5.0
+            </div>
+          </div>
+
+          <div id="flavored-pieces-hickory-smoked" class="unit">
+            <div class="option-id">
+              flavored-pieces-hickory-smoked
+            </div>
+            <div class="option-name">
+              Hickory Smoked
+            </div>
+            <div class="unit-price">
+              5.0
+            </div>
+          </div>
+
+          <div id="flavored-pieces-honey-mustard" class="unit">
+            <div class="option-id">
+              flavored-pieces-honey-mustard
+            </div>
+            <div class="option-name">
+              Honey Mustard
+            </div>
+            <div class="unit-price">
+              5.0
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <section id="press">
+  <div class="row-wrapper">
+    <div class="half-row">
+      <div class="press-carousel">
+
+        <blockquote cite="http://" id="saveur">
+          <h5>Perfect Handmade Pennsylvania Dutch-style Martin’s Pretzels...the standard against which all pretzels should be judged.</h5>
+          <p>&mdash;&nbsp;Saveur</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="business-week">
+          <h5>Those who snack in times of stress will find no finer hard pretzels than the hand-twisted beauties from Martin’s.</h5>
+          <p>&mdash;&nbsp;Business Week</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="zagat">
+          <h5>2011/12 (& since 2003) New York City Marketplace Quality Rating: Extraordinary to Perfection</h5>
+          <p>&mdash;&nbsp;Zagat</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="ny-eats">
+          <h5>Martin’s Pretzels are to Mr. Pretzel what a BMW is to a Yugo.</h5>
+          <p>&mdash;&nbsp;New York Eats</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="food-and-wine">
+          <h5>Crunchy, plump and full of toasty flavor, Martin’s Pretzels are superb.</h5>
+          <p>&mdash;&nbsp;Food & Wine</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="vogue">
+          <h5>Martin’s are a Mennonite family who have grown famous in these parts for their wonderfully crisp hand-twisted, hand-baked salted pretzels.</h5>
+          <p>&mdash;&nbsp;Vogue</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="science-channel">
+          <h5>AS SEEN ON: Science Channel: How Do They Do It?</h5>
+          <p>&mdash;&nbsp;Season 5, Episode 7: 'Pretzels, Gondolas, Pearls'</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="food-tv">
+          <h5>AS SEEN ON: Food TV</h5>
+          <p>&mdash;&nbsp;the Snack Food Episode</p>
+        </blockquote>
+
+        <blockquote cite="http://" id="sex-and-the-city">
+          <h5>AS SEEN ON: Sex and The City</h5>
+          <p>&mdash;&nbsp;Season 5, Episode 7: 'Critical Condition'</p>
+        </blockquote>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="find-us">
+  <div id="at-market" class="row-wrapper">
+
+    <header class="row">
+        <h1>Find Us at Market</h1>
+    </header>
+
+
+    <div class="row row-wrapper">
+      <div class="row region">
+        <h2>NYC Greenmarkets</h2>
+      </div>
+      <div class="row market-list card-wrapper">
+
+        <div class="card market">
+          <div class="card-title">
+            <h3>Union Square Greenmarket</h3>
+          </div>
+          <hr>
+          <ul>
+            <li>Monday, Wednesday, Friday & Saturday</li>
+            <li>8am - 6pm</li>
+            <li>Year Round</li>
+            <li>17th Street & Broadway</li>
+          </ul>
+        </div>
+
+        <div class="card market">
+          <div class="card-title">
+            <h3>79th St Greenmarket</h3>
+          </div>
+          <hr>
+          <ul>
+            <li>Sunday</li>
+            <li>9am - 3pm</li>
+            <li>Year Round</li>
+            <li>Columbus Ave b/t 78th & 79th Sts</li>
+          </ul>
+        </div>
+
+        <div class="card market">
+          <div class="card-title">
+            <h3>Borough Hall Greenmarket</h3>
+          </div>
+          <hr>
+          <ul>
+            <li>Tuesday</li>
+            <li>8am - 3pm</li>
+            <li>Jun - Dec</li>
+            <li>Cadman Plz W at Montague St</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row row-wrapper">
+      <div class="row region">
+        <h2>Upstate Markets</h2>
+      </div>
+      <div class="row market-list card-wrapper">
+
+        <div class="card market">
+          <div class="card-title">
+            <h3>Central NY Regional Market</h3>
+          </div>
+          <hr>
+          <ul>
+            <li>Thursday & Saturday?</li>
+            <li>8am - 4:30pm</li>
+            <li>seasonal?</li>
+            <li>Syracuse, NY</li>
+          </ul>
+        </div>
+
+        <div class="card market">
+          <div class="card-title">
+            <h3>Watertown Farm & Craft Market</h3>
+          </div>
+          <hr>
+          <ul>
+            <li>Saturday?</li>
+            <li>time?</li>
+            <li>Jun - Sept</li>
+            <li>Watertown, NY</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+    <section id="wholesale">
+  <div class="row-wrapper">
+    <header class="row">
+      <h1>Wholesale Accounts</h1>
+    </header>
+    <div class="half-row wholesale-card">
+      <h2>We're looking for retail partners who share our passion for fresh, handcrafted, slow food.</h2>
+      <div id="wholesale-inquiry">
+        <div class="btn white-btn shadow-btn">Let's talk!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <footer id="contact" class="page-footer">
+  <div class="col-wrapper">
+
+    <div class="col-third left-footer">
+      <p>
+        We'd love to hear from you!
+      </p>
+      <div id="contact-btn" class="btn gray-btn">
+        Contact Us
+      </div>
+      <p>
+        Email all inquiries to <a href="mailto:ethan@martinshandmade.com" class="mail-to">ethan@martinshandmade.com</a>
+      </p>
+    </div>
+
+    <div class="col-third row-wrapper mid-footer">
+      <div class="row">
+        <a href="/martins/#home">
+          <div class="martins-logo">
+            <div class="svg-logo-black-transp">
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row social-media">
+
+        <a href="https://www.instagram.com/martinspretzels/" target="_blank">
+          <div class="logo-container">
+            <div class="svg-instagram"></div>
+          </div>
+        </a>
+
+        <a href="https://twitter.com/martinspretzels" target="_blank">
+          <div class="logo-container">
+            <div class="svg-twitter"></div>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/martinspretzels/" target="_blank">
+          <div class="logo-container">
+            <div class="svg-facebook"></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="col-third right-footer">
+      <p>
+        You can also send <span id="handmade">handmade</span> letters to these addresses:
+      </p>
+      <div class="card-wrapper mail-addr">
+        <div class="card">
+          <p>
+            Martin’s Handmade Pretzels <br> 511 Ave of the Americas #279 <br> New York, NY 10011
+          </p>
+
+        </div>
+        <div class="card">
+          <p>
+            Martin’s Pretzel Bakery <br> 30849 St. Rt. 26 <br> Theresa, NY 13691
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-credit">
+    <p>
+      Made with &hearts; by <a href="http://www.metarhythm.com/">Metarhythm</a> &amp; <a href="http://jgaehring.com">jgaehring.com</a> .
+    </p>
+  </div>
+
+</footer>
+
+
+</div>
+
+
+    <!-- <script type="text/javascript" src="/martins/assets/js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="/martins/assets/js/jquery-ui.min.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="/martins/assets/js/functions.js"></script>
+    <script type="text/javascript" src="/martins/assets/js/shop.js"></script>
   </body>
+
 </html>

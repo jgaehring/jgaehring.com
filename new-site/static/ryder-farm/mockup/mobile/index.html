@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../mockup.css">
+</head>
+<body>
+  <aside id="mobile-nav" class="svg-container menu">
+    <object id="mobile-nav-svg" type="image/svg+xml" data="menu.svg">
+      Menu
+      <img src="menu.svg" alt="menu">
+    </object>
+
+  </aside>
+  <main id="mobile-main">
+
+    <object id="home-about" type="image/svg+xml" data="home-about.svg">
+      About
+      <img src="home-about.svg" alt="About">
+    </object>
+
+    <object id="home-csa" type="image/svg+xml" data="home-csa.svg">
+      About
+      <img src="home-csa.svg" alt="About">
+    </object>
+
+    <object id="home-intern" type="image/svg+xml" data="home-intern.svg">
+      About
+      <img src="home-intern.svg" alt="About">
+    </object>
+
+    <object id="home-floral" type="image/svg+xml" data="home-floral.svg">
+      About
+      <img src="home-floral.svg" alt="About">
+    </object>
+
+    <object id="home-markets" type="image/svg+xml" data="home-markets.svg">
+      About
+      <img src="home-markets.svg" alt="About">
+    </object>
+
+
+  </main>
+
+</body>
+<script type="text/javascript">
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  parent.mobileMockup.setMenuListener();
+};
+
+window.onload = function () {
+  console.log("The page 'markets.html' loaded!");
+  var sidebarSVG = document.getElementById('mobile-nav-svg').contentDocument || document.getElementById('mobile-nav-svg').contentWindow.document;
+  console.log("sidebarSVG:", sidebarSVG);
+  var csaApplyBtn = sidebarSVG.getElementById('csa-apply');
+  console.log("csaApplyBtn:",csaApplyBtn);
+  csaApplyBtn.addEventListener('click', function() {
+    document.location = 'csa.html';
+  });
+  var internApplyBtn = sidebarSVG.getElementById('intern-apply');
+  console.log("internApplyBtn:",internApplyBtn);
+  internApplyBtn.addEventListener('click', function() {
+    document.location = 'intern.html';
+  });
+};
+
+</script>
+</html>

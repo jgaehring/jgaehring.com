@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../mockup.css">
+</head>
+<body>
+  <aside id="mobile-nav" class="svg-container menu">
+    <object id="mobile-nav-svg" type="image/svg+xml" data="menu.svg">
+      Menu
+      <img src="menu.svg" alt="menu">
+    </object>
+
+  </aside>
+  <main id="mobile-main">
+
+    <object id="markets-svg" type="image/svg+xml" data="markets.svg">
+      Markets
+      <img src="markets.svg" alt="Markets">
+    </object>
+
+  </main>
+
+</body>
+<script type="text/javascript">
+
+window.onload = function () {
+    parent.mobileMockup.setMenuListener();
+  };
+
+window.onload = function () {
+  var marketsSVG = document.getElementById('markets-svg').contentDocument || document.getElementById('markets-svg').contentWindow.document;
+  console.log("marketsSVG:",marketsSVG);
+  var contactBtn = marketsSVG.getElementById('contact-btn');
+  console.log("contactBtn:",contactBtn);
+  contactBtn.addEventListener('click', function() {
+    document.location = 'contact.html';
+  });
+};
+
+</script>
+</html>
