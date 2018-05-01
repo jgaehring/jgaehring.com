@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Martin&#39;s Pretzels</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/martins/assets/css/jquery-ui.css"> -->
+  <link rel="stylesheet" href="/martins/assets/css/main.css">
+  <link rel="canonical" href="http://martinspretzels.com/checkout/checkout.html">
+</head>
+
+
+  <body>
+
+    <div class="page-wrap">
+
+  <div class="mobile-nav">
+
+  <div class="nav-toggle">
+
+    <div class="svg-menu nav-open">
+    </div>
+    <div class="svg-close nav-close">
+    </div>
+
+  </div>
+
+  <div class="mobile-logo">
+    <a href="/martins/#home">
+      <div class="svg-mobile-logo">
+      </div>
+    </a>
+  </div>
+
+  <div class="cart-icon">
+    <div class="svg-cart">
+    </div>
+
+  </div>
+
+</div>
+
+<header class="page-header">
+  <div class="col-wrapper nav-wrapper">
+    <nav class="col-two-third">
+      <ul class="other-nav">
+        <li><a href="/martins"/>Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="col-third">
+      <ul class="shop-nav">
+        <li id="login-link">Login</li>
+        <li>
+          <div class="shop-icon">
+            <div class="svg-cart">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="contact-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="index.html" method="post">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Contact Us</h2>
+            <p>Send us a brief message using the contact form below or <a href="mailto:hello@martinshandmade.com" class="mail-to">email us</a>.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="first-name" class="text-label">Full Name</label><br>
+              <input type="text" id="first-name" name="first-name" value="" required="true">
+            </div>
+
+            <!-- <div class="card sm-input-group">
+              <label for="last-name" class="text-label">Last Name</label><br>
+              <input type="text" id="last-name" name="last-name" value="" required="true">
+            </div> -->
+
+            <div class="card lg-input-group">
+              <label for="email-input" class="text-label">Email Address</label><br>
+              <input type="email" id="email-input" name="email" value="" required="true">
+            </div>
+
+            <div class="card lg-input-group">
+              <label for="message" class="text-label">Message</label><br>
+              <textarea id="message" name="message" rows="8" cols="40"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" name="button" class="row btn">Submit</button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div id="login-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="/martins/logged-in.html">
+        <div class="row-wrapper">
+          <header class="row modal-header">
+            <h2>Welcome Back!</h2>
+            <p>Login now to shop the Martin's Pretzels online store, or wait until you're ready to checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="lisa@springfield.edu" id="email" required="true">
+            </div>
+            <div class="card sm-input-group">
+              <label for="password" class="text-label">Password</label>
+              <input type="password" name="password" value="blank" id="password">
+            </div>
+          </div>
+
+          <button type="submit" name="login" class="btn">Login</button>
+          <p>New users,&nbsp;<a id="register-link" href="#">register here.</a><br>
+            Forgot your password?&nbsp;<a href="#">Request reset.</a>
+          </p>
+          <!-- <p> <br> Forgot your password? <br> Register as a new user.</p> -->
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</div>
+
+<div id="register-modal" class="modal">
+  <div class="modal-bg">
+    <div class="modal-content">
+
+      <div class="close-modal">
+        <div class="svg-close">
+        </div>
+      </div>
+
+      <form class="modal-form" action="logged-in.html">
+        <div class="row-wrapper">
+
+          <header class="row modal-header">
+            <h2>Register</h2>
+            <p>New users can register now to start shopping, or just wait until checkout.</p>
+          </header>
+
+          <div class="row card-wrapper text-inputs">
+            <div class="card sm-input-group">
+              <label for="email" class="text-label">Email</label>
+              <input type="text" name="email" value="homer@springfieldpower.com">
+            </div>
+            <div class="card sm-input-group">
+              <label for="enter-pw" class="text-label">Enter Password</label>
+              <input type="password" name="enter-pw" value="blank">
+            </div>
+            <div class="card sm-input-group">
+              <label for="reenter-pw" class="text-label">Re-enter password</label>
+              <input type="password" name="reenter-pw" value="blank">
+            </div>
+          </div>
+
+          <!-- <button type="submit" class="row btn">Sign Up</button> -->
+          <button class="row btn" type="submit">
+            Sign Up
+          </button>
+          <div class="row">
+            <p>Returning user?&nbsp;<a id="login-from-register" href="#">Login here.</a></p>
+
+          </div>
+
+        </div>
+      </form>
+
+      <div class="row-wrapper" id="thank-you">
+        <h2>Thank You!</h2>
+        <p>You will receive a confirmation email shortly.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <main>
+    <section id="checkout">
+      <form class="row-wrapper checkout-wrapper" action="index.html" method="post">
+
+        <header class="row">
+          <h1>Checkout</h1>
+          <p>Please complete all fields below. Your phone number will be used only if we have questions about your order.</p>
+        </header>
+
+        <div class="row col-wrapper checkout-form">
+
+          <div class="col-third">
+            <fieldset>
+
+              <header>
+                <h2>Billing Information</h2>
+              </header>
+
+              <div class="card-wrapper text-inputs">
+                <div class="card sm-input-group">
+                  <label for="billing-first-name" class="text-label">First Name</label><br>
+                  <input type="text" id="billing-first-name" name="billing-first-name" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-last-name" class="text-label">Last Name</label><br>
+                  <input type="text" id="billing-last-name" name="billing-last-name" value="" required="true">
+                </div>
+
+                <div class="card lg-input-group">
+                  <label for="billing-company" class="text-label">Company</label><br>
+                  <input type="text" id="billing-company" name="billing-company" value="" required="false">
+                </div>
+
+                <div class="card lg-input-group">
+                  <label for="billing-address-1" class="text-label">Address</label><br>
+                  <input type="text" id="billing-address-1" name="billing-address-1" value="" required="true">
+                  <label for="billing-addresss-2" class="text-label"></label><br>
+                  <input type="text" id="billing-addresss-2" name="billing-address-2" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-city" class="text-label">City</label><br>
+                  <input type="text" id="billing-city" name="billing-city" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-state" class="text-label">State</label><br>
+                  <select class="select-menu" type="text" id="billing-state" name="billing-state" value="" required="true">
+                    <option value="NY">New York</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="OH">Ohio</option>
+                  </select>
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-zip" class="text-label">Zip Code</label><br>
+                  <input type="text" id="billing-zip" name="billing-zip" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-country" class="text-label">Country</label><br>
+                  <input type="text" id="billing-country" name="billing-country" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="billing-phone" class="text-label">Phone Number</label><br>
+                  <input type="text" id="billing-phone" name="billing-phone" value="" required="true">
+                </div>
+
+              </div>
+            </fieldset>
+
+            <p>
+              <label for="shipping-is-billing">Shipping address is same as billing address</label>
+              <input id="shipping-is-billing" class="checkbox" type="checkbox" name="shipping-is-billing" onclick="sameAddress(this);" />
+            </p>
+
+          </div>
+
+          <div class="col-third">
+
+            <fieldset>
+
+              <header>
+                <h2>Shipping Information</h2>
+              </header>
+              <div class="card-wrapper text-inputs">
+                <div class="card sm-input-group">
+                  <label for="shipping-first-name" class="text-label">First Name</label><br>
+                  <input type="text" id="shipping-first-name" name="shipping-first-name" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-last-name" class="text-label">Last Name</label><br>
+                  <input type="text" id="shipping-last-name" name="shipping-last-name" value="" required="true">
+                </div>
+
+                <div class="card lg-input-group">
+                  <label for="shipping-company" class="text-label">Company</label><br>
+                  <input type="text" id="shipping-company" name="shipping-company" value="" required="false">
+                </div>
+
+                <div class="card lg-input-group">
+                  <label for="shipping-address-1" class="text-label">Address</label><br>
+                  <input type="text" id="shipping-address-1" name="shipping-address-1" value="" required="true">
+                  <label for="shipping-addresss-2" class="text-label"></label><br>
+                  <input type="text" id="shipping-addresss-2" name="shipping-address-2" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-city" class="text-label">City</label><br>
+                  <input type="text" id="shipping-city" name="shipping-city" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-state" class="text-label">State</label><br>
+                  <select type="text" id="shipping-state" class="select-menu" name="shipping-state" value="" required="true">
+                    <option value="NY">New York</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="OH">Ohio</option>
+                  </select>
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-zip" class="text-label">Zip Code</label><br>
+                  <input type="text" id="shipping-zip" name="shipping-zip" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-country" class="text-label">Country</label><br>
+                  <input type="text" id="shipping-country" name="shipping-country" value="" required="true">
+                </div>
+
+                <div class="card sm-input-group">
+                  <label for="shipping-phone" class="text-label">Phone Number</label><br>
+                  <input type="text" id="shipping-phone" name="shipping-phone" value="" required="true">
+                </div>
+
+              </div>
+            </fieldset>
+
+            <div class="card-wrapper">
+
+              <div class="card single-input-group">
+                <fieldset>
+                  <label for="product" class="text-label">Shipping Method</label>
+                  <select name="product" id="shipping-method" class="select-menu">
+                    <option value="GND" >UPS Ground</option>
+                    <option value="2DA" >UPS 2nd Day Air</option>
+                    <option value="1DA" >UPS Next Day Air</option>
+                  </select>
+                </fieldset>
+              </div>
+
+              <div class="card lg-input-group">
+                <fieldset>
+                  <label for="notes" class="text-label">Additional Notes</label><br>
+                  <textarea id="notes" name="notes" rows="8" cols="40"></textarea>
+                </fieldset>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <form class="" action="/martins/checkout/cart.html" method="">
+            <button class="btn" type="submit" name="back">
+              Go Back
+            </button>
+          </form>
+
+
+          <form class="" action="/martins/checkout/summary.html" method="">
+            <button class="btn" type="submit" name="continue">
+              Continue
+            </button>
+          </form>
+
+        </div>
+
+
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact" class="page-footer">
+  <div class="col-wrapper">
+
+    <div class="col-third left-footer">
+      <p>
+        We'd love to hear from you!
+      </p>
+      <div id="contact-btn" class="btn gray-btn">
+        Contact Us
+      </div>
+      <p>
+        Email all inquiries to <a href="mailto:ethan@martinshandmade.com" class="mail-to">ethan@martinshandmade.com</a>
+      </p>
+    </div>
+
+    <div class="col-third row-wrapper mid-footer">
+      <div class="row">
+        <a href="/martins/#home">
+          <div class="martins-logo">
+            <div class="svg-logo-black-transp">
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row social-media">
+
+        <a href="https://www.instagram.com/martinspretzels/" target="_blank">
+          <div class="logo-container">
+            <div class="svg-instagram"></div>
+          </div>
+        </a>
+
+        <a href="https://twitter.com/martinspretzels" target="_blank">
+          <div class="logo-container">
+            <div class="svg-twitter"></div>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/martinspretzels/" target="_blank">
+          <div class="logo-container">
+            <div class="svg-facebook"></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="col-third right-footer">
+      <p>
+        You can also send <span id="handmade">handmade</span> letters to these addresses:
+      </p>
+      <div class="card-wrapper mail-addr">
+        <div class="card">
+          <p>
+            Martin’s Handmade Pretzels <br> 511 Ave of the Americas #279 <br> New York, NY 10011
+          </p>
+
+        </div>
+        <div class="card">
+          <p>
+            Martin’s Pretzel Bakery <br> 30849 St. Rt. 26 <br> Theresa, NY 13691
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-credit">
+    <p>
+      Made with &hearts; by <a href="http://www.metarhythm.com/">Metarhythm</a> &amp; <a href="http://jgaehring.com">jgaehring.com</a> .
+    </p>
+  </div>
+
+</footer>
+
+
+</div>
+
+<script>
+
+  function sameAddress(elem){
+      if(elem.checked) {
+      document.getElementsByName('shipping-first-name')[0].value = document.getElementsByName("billing-first-name")[0].value;
+      document.getElementsByName('shipping-last-name')[0].value = document.getElementsByName("billing-last-name")[0].value;
+      document.getElementsByName('shipping-address-1')[0].value = document.getElementsByName("billing-address-1")[0].value;
+      document.getElementsByName('shipping-address-2')[0].value = document.getElementsByName("billing-address-2")[0].value;
+      document.getElementsByName('shipping-city')[0].value = document.getElementsByName("billing-city")[0].value;
+      document.getElementsByName('shipping-state')[0].value = document.getElementsByName("billing-state")[0].value;
+      document.getElementsByName('shipping-zip')[0].value = document.getElementsByName("billing-zip")[0].value;
+      document.getElementsByName('shipping-country')[0].value = document.getElementsByName("billing-country")[0].value;
+      document.getElementsByName('shipping-phone')[0].value = document.getElementsByName("billing-phone")[0].value;
+      }
+  }
+
+</script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="/martins/assets/js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script type="text/javascript" src="/martins/assets/js/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="/martins/assets/js/functions.js"></script>
+  </body>
+
+</html>
