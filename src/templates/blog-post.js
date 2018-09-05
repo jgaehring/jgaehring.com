@@ -8,7 +8,7 @@ export default function BlogTemplate({ data }) {
   return (
     <div>
       <Helmet
-        title="Jamie Gaehring"
+        title={`${post.frontmatter.title} | Jamie Gaehring`}
         meta={[
           { name: 'description', content: post.excerpt },
         ]}
