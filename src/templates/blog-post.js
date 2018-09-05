@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet'
 import Header from '../components/Header';
 import styles from './blog-post.module.css';
 
@@ -6,6 +7,13 @@ export default function BlogTemplate({ data }) {
   const { markdownRemark: post } = data;
   return (
     <div>
+      <Helmet
+        title="Jamie Gaehring"
+        meta={[
+          { name: 'description', content: post.excerpt },
+        ]}
+      >
+      </Helmet>
       <Header/>
       <h1 className={styles.title}>{post.frontmatter.title}</h1>
       <div
@@ -24,6 +32,7 @@ export const pageQuery = graphql`
         path
         title
       }
+      excerpt
     }
   }
 `;
