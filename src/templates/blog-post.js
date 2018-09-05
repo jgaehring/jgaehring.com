@@ -6,7 +6,7 @@ import styles from './blog-post.module.css';
 export default function BlogTemplate({ data }) {
   const { markdownRemark: post } = data;
   return (
-    <div>
+    <div className={styles.post}>
       <Helmet
         title={`${post.frontmatter.title} | Jamie Gaehring`}
         meta={[
