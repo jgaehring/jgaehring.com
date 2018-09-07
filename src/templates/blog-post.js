@@ -16,6 +16,7 @@ export default function BlogTemplate({ data }) {
       </Helmet>
       <Header/>
       <h1 className={styles.title}>{post.frontmatter.title}</h1>
+      <h5>by Jamie Gaehring | {post.frontmatter.date}</h5>
       <div
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
