@@ -34,23 +34,23 @@ const IndexPage = ({data}) => (
         </h2>
       </div>
     </section>
-    {/* <section className={styles.blog}>
+    <section className={styles.blog}>
       <header>
         <h2>Writings</h2>
         <p>These are some things I've written. <Link to='/blog'>Go to blog.</Link></p>
       </header>
       {
         data.allMarkdownRemark.edges.map( ({node}) => 
-      <div key={node.id} className={styles.post}>
-      <Link to={`/${node.fields.slug}`}>
-      <h2>{node.frontmatter.title}</h2>
-      </Link>
-      <h6>{node.frontmatter.date}</h6>
-      <p>{node.excerpt}</p>
-      </div>
+          <div key={node.id} className={styles.post}>
+            <Link to={`/${node.fields.slug}`}>
+              <h2>{node.frontmatter.title}</h2>
+            </Link>
+            <h6>{node.frontmatter.date}</h6>
+            <p>{node.excerpt}</p>
+          </div>
         )
       }
-    </section> */}
+    </section>
   </div>
 )
 
