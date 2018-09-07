@@ -38,7 +38,7 @@ const IndexPage = ({data}) => (
     <section className={styles.blog}>
       <header>
         <h2>Writings</h2>
-        <p>These are some things I've written. <Link to='/blog'>Go to blog.</Link></p>
+        <p>A few ideas about ag & tech. <br/><Link to='/blog'>Go to blog.</Link></p>
       </header>
       {
         data.allMarkdownRemark.edges.map( ({node}, index) => 
