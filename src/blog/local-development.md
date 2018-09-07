@@ -4,7 +4,7 @@ date: "2018-09-03"
 title: "Local Development"
 ---
 
-About a year ago I started thinking more about what digital infrastructure is needed to sustain the profitability of local food producers, as well as the local industries that support them, including food distributors, retailers and (potentially) open source developers working to improve that infrastructure.
+About a year ago I started thinking more about what digital infrastructure is needed to maintain the profitability of local food producers, as well as that of the local industries supporting them. This would include food distributors, retailers and, potentially, open source developers working to improve that infrastructure.
 
 This line of thought goes back to when I first left my job at GrowNYC's [Greenmarket program](https://www.grownyc.org/greenmarket) and began pursuing a new career path as a software developer. I had the vaguest idea, even back then, that some sort of digital equivalent to the market was needed, but it's taken me a long time to refine and articulate that intuition.
 
