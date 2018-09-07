@@ -5,12 +5,16 @@ import styles from './blog-post.module.css';
 
 export default function BlogTemplate({ data }) {
   const { markdownRemark: post } = data;
+  const rootUrl = 'https://jgaehring.com/'
   return (
     <div className={styles.post}>
       <Helmet
         title={`${post.frontmatter.title} | Jamie Gaehring`}
         meta={[
           { name: 'description', content: post.excerpt },
+        ]}
+        link={[
+          { rel: 'canonical', href: rootUrl + data.markdownRemark.fields.slug }
         ]}
       >
       </Helmet>
@@ -32,6 +36,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+      }
+      fields {
+        slug
       }
       excerpt
     }
