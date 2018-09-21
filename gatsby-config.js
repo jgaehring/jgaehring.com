@@ -19,6 +19,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -35,7 +36,14 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: []
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+            },
+          },
+        ]
       }
     },
   ],
