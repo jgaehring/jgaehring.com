@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Layout from '../components/Layout';
 import Header from '../components/Header';
 import PostPreview from '../components/PostPreview';
 
 export default ({data}) => (
-  <div>
+  <Layout>
     <Header />
     <h1>Blog Index</h1>
     {
@@ -17,7 +17,7 @@ export default ({data}) => (
         />
       )
     }
-  </div>
+  </Layout>
 );
 
 export const query = graphql`

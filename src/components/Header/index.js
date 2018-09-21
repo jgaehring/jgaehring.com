@@ -7,7 +7,7 @@ const Header = () => (
   <div className={styles.header} >
     <nav className={styles.nav}>
       <Link to="/" >
-        <img src={logo} />
+        <img src={logo} alt="jgaehring.com logo"/>
       </Link>
     </nav>
   </div>
