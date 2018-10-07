@@ -8,7 +8,9 @@ export default ({data}) => (
     <Header />
     <h1>Blog Index</h1>
     {
-      data.allMarkdownRemark.edges.map( ({node}, index) => 
+      data.allMarkdownRemark.edges
+      .filter(({ node }) => node.collection === 'blog')
+      .map( ({node}, index) => 
         <PostPreview 
           key={`post-${index}`} 
           frontmatter={node.frontmatter} 
@@ -22,7 +24,7 @@ export default ({data}) => (
 
 export const query = graphql`
   query BlogIndex {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC } ) {
+    allMarkdownRemark( sort: {fields: [frontmatter___date], order: DESC } ) {
       totalCount
       edges {
         node {

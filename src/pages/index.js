@@ -58,7 +58,9 @@ const IndexPage = ({data}) => (
           <p>A few ideas about ag & tech. <br/><Link to='/blog'>Go to blog.</Link></p>
         </header>
         {
-          data.allMarkdownRemark.edges.map( ({node}, index) => 
+          data.allMarkdownRemark.edges
+          .filter(({ node }) => node.collection === 'blog')
+          .map( ({node}, index) => 
             <PostPreview 
               key={`post-${index}`} 
               frontmatter={node.frontmatter} 
@@ -76,7 +78,7 @@ export default IndexPage
 
 export const query = graphql`
   query BlogList {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC } ) {
+    allMarkdownRemark( sort: {fields: [frontmatter___date], order: DESC } ) {
       totalCount
       edges {
         node {

@@ -33,7 +33,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
   
-  // filter: { collection: { eq: "blog" } }
   return new Promise( (resolve, reject) => {
     graphql(`
       {
