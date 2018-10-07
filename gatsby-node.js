@@ -10,6 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
+    node.collection = getNode(node.parent).sourceInstanceName;
     const slug = createFilePath({ 
       node, 
       getNode, 
@@ -19,7 +20,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node, 
       name: 'slug',
-      value: `blog${slug}`
+      value: `${node.collection}${slug}`
+    });
+    createNodeField({
+      node, 
+      name: 'collection',
+      value: `${node.collection}`
     });
   }
 };
@@ -27,6 +33,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
   
+  // filter: { collection: { eq: "blog" } }
   return new Promise( (resolve, reject) => {
     graphql(`
       {
@@ -39,6 +46,7 @@ exports.createPages = ({ actions, graphql }) => {
         ) {
           edges {
             node {
+              collection
               fields {
                 slug
               }
@@ -51,10 +59,16 @@ exports.createPages = ({ actions, graphql }) => {
       if (result.errors) {
         return Promise.reject(result.errors);
       }
+      
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        console.log("NODE:\n", JSON.stringify(node))
+        const template = (node.collection === 'projects')
+        ? path.resolve(`src/templates/project-profile.js`)
+        : path.resolve(`src/templates/blog-post.js`)
+        
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`src/templates/blog-post.js`),
+          component: template,
           context: {
             slug: node.fields.slug,
           }
