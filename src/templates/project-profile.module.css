@@ -1,0 +1,15 @@
+.post {
+  margin: auto;
+  max-width: 675px;
+}
+
+.screenshot {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1875);
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 600) {
+  .screenshot {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1875);
+  }
+}
