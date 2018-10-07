@@ -17,9 +17,11 @@ const typography = new Typography({
     },
   ],
   includeNormalize: true,
-  headerWeight: '400',
   headerFontFamily: ['PT Mono', 'monospace'],
   bodyFontFamily: ['Montserrat', 'sans serif'],
+  headerWeight: '400',
+  headerColor: 'rgba(0, 0, 0, 0.85)',
+  bodyColor: 'rgba(0, 0, 0, 0.65)',
   overrideStyles: ({ rhythm }) => ({
     '@media only screen and (max-width:480px)': {
       html: {
