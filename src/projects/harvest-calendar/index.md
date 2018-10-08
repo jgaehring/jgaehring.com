@@ -1,9 +1,16 @@
 ---
 title: "Harvest Calendar Generator"
 path: "/harvest-calendar-react"
-date: "2018-09-06"
+date: "2018-10-06"
 cover: "./screenshot.png"
 thumb: "./thumnail.png"
+description: "Generates a customized, downloadable SVG visualization of when crops will be available for a specific farm."
+stack: 
+  - "React"
+  - "SVG"
+  - "CSS Grid Layout"
+link: "https://harvest.jgaehring.com"
+github: "https://github.com/jgaehring/harvest-calendar-react"
 ---
 
 For small farms and local farmers markets, a harvest calendar can be an effective marketing visualization. It shows customers when their favorite fruits and vegetables will be in season, or it can simply be used to browse what is currently available. However, for highly diversified farms and markets, with specialized growing practices and storage techniques, the harvest window and season of availability can vary tremendously between farmers, and vary year to year based on changes to one's crop plan. Those differences can be precisely what give those farms their competitive edge, and so those differences should be reflected in marketing materials.
