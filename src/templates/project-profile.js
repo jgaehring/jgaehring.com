@@ -3,11 +3,33 @@ import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './project-profile.module.css';
-import { FaGithub, FaCircle } from 'react-icons/lib/fa';
+import { FaGithub } from 'react-icons/lib/fa';
+import MDOpenInNew from 'react-icons/lib/md/open-in-new';
 
 export default function ProjectProfile({ data }) {
   const { markdownRemark: post } = data;
   const rootUrl = 'https://jgaehring.com/'
+
+  const ghLink = (
+    <a 
+      href={post.frontmatter.github}
+      target='_blank'
+      rel="noopener noreferrer"
+    >
+      <FaGithub className={styles.gh}/>
+    </a>
+  )
+  
+  const siteLink = (
+    <a 
+      href={post.frontmatter.link}
+      target='_blank'
+      rel="noopener noreferrer"
+    >
+      View&nbsp;<MDOpenInNew/>
+    </a>
+  )
+
   return (
     <Layout>
       <Helmet
@@ -37,22 +59,16 @@ export default function ProjectProfile({ data }) {
             <h2>{post.frontmatter.title}</h2>
           </div>
           <div className={styles.links}>
-            <a 
-              href={post.frontmatter.github}
-              target='_blank'
-              rel="noopener noreferrer"
-            >
-              <FaGithub className={styles.gh}/>
-            </a>
-            <a 
-              href={post.frontmatter.link}
-              target='_blank'
-              rel="noopener noreferrer"
-            >
-              Live
-              &nbsp;
-              <FaCircle className={styles.circle}/>
-            </a>
+            {
+              (post.frontmatter.link)
+                ? siteLink
+                : null
+            }
+            {
+              (post.frontmatter.github)
+                ? ghLink
+                : null
+            }
           </div>
           <div className={styles.description}>
             <p><i>{post.frontmatter.description}</i></p>

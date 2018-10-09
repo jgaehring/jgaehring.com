@@ -53,17 +53,6 @@
   font-size: 2rem;
 }
 
-.circle {
-  font-size: .85rem;
-  animation: liveBlink 1.5s ease-in-out infinite;
-}
-
-@keyframes liveBlink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .description {
   flex: 2 1 100%;
 }
