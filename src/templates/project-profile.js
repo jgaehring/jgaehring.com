@@ -22,19 +22,33 @@ export default function ProjectProfile({ data }) {
       </Helmet>
       <Header/>
       <div className={styles.preview}>
-        <img
-          alt={`Screenshot of ${post.frontmatter.title}`}
-          src={post.frontmatter.cover.publicURL}
-        />
+        <a
+          href={post.frontmatter.cover.publicURL}
+          target='_blank'
+          rel="noopener noreferrer"
+        >
+          <img
+            alt={`Screenshot of ${post.frontmatter.title}`}
+            src={post.frontmatter.cover.publicURL}
+          />
+        </a>
         <div className={styles.details}>
           <div  className={styles.title}>
             <h2>{post.frontmatter.title}</h2>
           </div>
           <div className={styles.links}>
-            <a href={post.frontmatter.github}>
+            <a 
+              href={post.frontmatter.github}
+              target='_blank'
+              rel="noopener noreferrer"
+            >
               <FaGithub className={styles.gh}/>
             </a>
-            <a href={post.frontmatter.link}>
+            <a 
+              href={post.frontmatter.link}
+              target='_blank'
+              rel="noopener noreferrer"
+            >
               Live
               &nbsp;
               <FaCircle className={styles.circle}/>
