@@ -8,23 +8,25 @@ export default ({ data }) => (
   <Layout>
     <Header/>
     <h1>Projects</h1>
-    {
-      data.allMarkdownRemark.edges
-      .map(({ node: { frontmatter, fields: { slug }} }, i) => (
-        <div className={styles.project} key={`project-${i}`}>
-          <Link to={`/${slug}`}>
-            <img 
-              src={frontmatter.thumb.publicURL}
-              alt={`Screenshot of ${frontmatter.title}`}
-            />
-          </Link>
-          <Link to={`/${slug}`}>
-            <h3>{frontmatter.title}</h3>
-          </Link>
-          <p><i>{frontmatter.description}</i></p>
-        </div>
-      ))
-    }
+    <div className={styles.projectsContainer} >
+      {
+        data.allMarkdownRemark.edges
+        .map(({ node: { frontmatter, fields: { slug }} }, i) => (
+          <div className={styles.project} key={`project-${i}`}>
+            <Link to={`/${slug}`}>
+              <img 
+                src={frontmatter.thumb.publicURL}
+                alt={`Screenshot of ${frontmatter.title}`}
+              />
+            </Link>
+            <Link to={`/${slug}`}>
+              <h3>{frontmatter.title}</h3>
+            </Link>
+            <p><i>{frontmatter.description}</i></p>
+          </div>
+        ))
+      }
+    </div>
   </Layout>
 )
 

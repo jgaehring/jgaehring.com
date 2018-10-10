@@ -1,5 +1,17 @@
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
 .project {
-  width: 50%;
+  flex: 0 1 45%;
+}
+
+@media (max-width: 675px) {
+  .project {
+    flex-basis: 100%;
+  }
 }
 
 .project img {
