@@ -56,7 +56,7 @@ export default function ProjectProfile({ data }) {
         </a>
         <div className={styles.details}>
           <div  className={styles.title}>
-            <h2>{post.frontmatter.title}</h2>
+            <h1>{post.frontmatter.title}</h1>
           </div>
           <div className={styles.links}>
             {
