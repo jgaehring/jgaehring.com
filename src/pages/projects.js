@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
+import styles from './projects.module.css';
 
 export default ({ data }) => (
   <Layout>
@@ -10,17 +11,17 @@ export default ({ data }) => (
     {
       data.allMarkdownRemark.edges
       .map(({ node: { frontmatter, fields: { slug }} }, i) => (
-        <div className='project' key={`project-${i}`}>
-          <Link to={`/${slug}`}>
-            <h3>{frontmatter.title}</h3>
-          </Link>
+        <div className={styles.project} key={`project-${i}`}>
           <Link to={`/${slug}`}>
             <img 
               src={frontmatter.thumb.publicURL}
               alt={`Screenshot of ${frontmatter.title}`}
             />
           </Link>
-          <p>{frontmatter.description}</p>
+          <Link to={`/${slug}`}>
+            <h3>{frontmatter.title}</h3>
+          </Link>
+          <p><i>{frontmatter.description}</i></p>
         </div>
       ))
     }
