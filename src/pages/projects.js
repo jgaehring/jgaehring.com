@@ -16,7 +16,7 @@ export default ({ data }) => (
           </Link>
           <Link to={`/${slug}`}>
             <img 
-              src={frontmatter.cover.publicURL}
+              src={frontmatter.thumb.publicURL}
               alt={`Screenshot of ${frontmatter.title}`}
             />
           </Link>
@@ -43,7 +43,9 @@ export const query = graphql`
             cover {
               publicURL
             }
-            thumb
+            thumb {
+              publicURL
+            }
             github
             link
             description

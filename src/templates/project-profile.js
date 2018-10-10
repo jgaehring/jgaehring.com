@@ -104,7 +104,6 @@ export const pageQuery = graphql`
         cover {
           publicURL
         }
-        thumb
         github
         link
         description
