@@ -44,16 +44,18 @@ export default function ProjectProfile({ data }) {
       </Helmet>
       <Header/>
       <div className={styles.preview}>
-        <a
-          href={post.frontmatter.cover.publicURL}
-          target='_blank'
-          rel="noopener noreferrer"
-        >
-          <img
-            alt={`Screenshot of ${post.frontmatter.title}`}
-            src={post.frontmatter.cover.publicURL}
-          />
-        </a>
+        <div className={styles.screenshotContainer}>
+          <a
+            href={post.frontmatter.cover.publicURL}
+            target='_blank'
+            rel="noopener noreferrer"
+          >
+            <img
+              alt={`Screenshot of ${post.frontmatter.title}`}
+              src={post.frontmatter.cover.publicURL}
+            />
+          </a>
+        </div>
         <div className={styles.details}>
           <div  className={styles.title}>
             <h1>{post.frontmatter.title}</h1>

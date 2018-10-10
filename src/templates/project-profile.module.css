@@ -12,8 +12,13 @@
   margin: 1rem;
 }
 
+.screenshot-container {
+  text-align: center;
+}
+
 .preview img {
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.125);
+  max-height: 50vh;
 }
 
 .details {
