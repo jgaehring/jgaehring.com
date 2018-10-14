@@ -15,11 +15,21 @@ const PostPreview = ({ frontmatter: { title, date }, fields: { slug }, excerpt }
 export const query = graphql`
   fragment PostPreviewFragment on MarkdownRemark {
     frontmatter {
+      date(formatString: "MMMM DD, YYYY")
       title
-      date(formatString: "DD MMMM, YYYY")
+      cover {
+        publicURL
+      }
+      thumb {
+        publicURL
+      }
+      github
+      link
+      description
+      stack
     }
     fields {
-      slug 
+      slug
     }
     excerpt
     collection

@@ -55,20 +55,50 @@ const IndexPage = ({data}) => (
       <section className={styles.blog}>
         <header>
           <h2>Writings</h2>
-          <p>A few ideas about ag & tech. <br/><Link to='/blog'>Go to blog.</Link></p>
+          <p>A few ideas about ag & tech. <br/>
+            <Link to='/blog'>Go to blog.</Link>
+          </p>
         </header>
         {
           data.allMarkdownRemark.edges
           .filter(({ node }) => node.collection === 'blog')
-          .map( ({node}, index) => 
-            <PostPreview 
-              key={`post-${index}`} 
-              frontmatter={node.frontmatter} 
-              excerpt={node.excerpt} 
-              fields={node.fields} 
+          .map( ({ node }, index) =>
+            <PostPreview
+              key={`post-${index}`}
+              frontmatter={node.frontmatter}
+              excerpt={node.excerpt}
+              fields={node.fields}
             />
           )
         }
+      </section>
+      <section className={styles.projects}>
+        <header>
+          <h2>Projects</h2>
+          <p>Here are some things I've made. <br/>
+            <Link to='/projects'>Go to projects.</Link>
+          </p>
+        </header>
+        <div className={styles.projectsContainer}>
+          {
+            data.allMarkdownRemark.edges
+            .filter(({ node }) => node.collection === 'projects')
+            .map(({ node: { frontmatter, fields: { slug } } }, i) =>
+            <div className={styles.project} key={`project-${i}`}>
+              <Link to={`/${slug}`}>
+                <img
+                  src={frontmatter.thumb.publicURL}
+                  alt={`Screenshot of ${frontmatter.title}`}
+                />
+              </Link>
+              <Link to={`/${slug}`}>
+                <h3>{frontmatter.title}</h3>
+              </Link>
+              <p><i>{frontmatter.description}</i></p>
+            </div>
+            )
+          }
+        </div>
       </section>
     </div>
   </Layout>
