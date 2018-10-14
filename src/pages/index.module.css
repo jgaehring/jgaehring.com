@@ -41,23 +41,3 @@ header {
   grid-column: 1 / span 6;
   text-align: center;
 }
-
-.projects-container {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.project {
-  flex: 0 1 45%;
-}
-
-@media (max-width: 675px) {
-  .project {
-    flex-basis: 100%;
-  }
-}
-
-.project img {
-  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.125);
-}

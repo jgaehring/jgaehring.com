@@ -1,64 +1,26 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import ProjectPreviews from '../components/ProjectPreviews'
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import styles from './projects.module.css';
 
 export default ({ data }) => (
   <Layout>
     <Header/>
     <h1>Projects</h1>
-    <div className={styles.projectsContainer} >
-      {
-        data.allMarkdownRemark.edges
-        .map(({ node: { frontmatter, fields: { slug }} }, i) => (
-          <div className={styles.project} key={`project-${i}`}>
-            <Link to={`/${slug}`}>
-              <img 
-                src={frontmatter.thumb.publicURL}
-                alt={`Screenshot of ${frontmatter.title}`}
-              />
-            </Link>
-            <Link to={`/${slug}`}>
-              <h3>{frontmatter.title}</h3>
-            </Link>
-            <p><i>{frontmatter.description}</i></p>
-          </div>
-        ))
-      }
-    </div>
+    <ProjectPreviews data={data}/>
   </Layout>
 )
 
 export const query = graphql`
   query ProjectsQuery {
-    allMarkdownRemark( 
+    allMarkdownRemark(
       filter: { collection: { eq: "projects" } }
-      sort: { fields: [frontmatter___date], order: DESC } 
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
       edges {
         node {
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            cover {
-              publicURL
-            }
-            thumb {
-              publicURL
-            }
-            github
-            link
-            description
-            stack
-          }
-          fields {
-            slug 
-          }
-          excerpt
-          collection
+          ...PostPreviewFragment
         }
       }
     }
