@@ -11,19 +11,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === 'MarkdownRemark') {
     const fileNode = getNode(node.parent);
     node.collection = getNode(node.parent).sourceInstanceName;
-    const slug = createFilePath({ 
-      node, 
-      getNode, 
-      basePath: 'src/blog', 
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: 'src/blog',
       trailingSlash: false
     });
     createNodeField({
-      node, 
+      node,
       name: 'slug',
       value: `${node.collection}${slug}`
     });
     createNodeField({
-      node, 
+      node,
       name: 'collection',
       value: `${node.collection}`
     });
@@ -32,7 +32,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  
+
   return new Promise( (resolve, reject) => {
     graphql(`
       {
@@ -58,13 +58,12 @@ exports.createPages = ({ actions, graphql }) => {
       if (result.errors) {
         return Promise.reject(result.errors);
       }
-      
+
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        console.log("NODE:\n", JSON.stringify(node))
         const template = (node.collection === 'projects')
         ? path.resolve(`src/templates/project-profile.js`)
         : path.resolve(`src/templates/blog-post.js`)
-        
+
         createPage({
           path: node.fields.slug,
           component: template,
@@ -75,5 +74,5 @@ exports.createPages = ({ actions, graphql }) => {
       })
       resolve();
     });
-  }) 
+  })
 };
