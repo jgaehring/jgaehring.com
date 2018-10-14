@@ -52,7 +52,9 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-prismjs',
-            options: {},
+            options: {
+              noInlineHighlight: true,
+            },
           },
         ]
       }
