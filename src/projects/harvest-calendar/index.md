@@ -5,7 +5,7 @@ date: "2018-10-06"
 cover: "./screenshot.png"
 thumb: "./thumbnail.png"
 description: "Generates a customized visualization of when specific crops will be available for a given farm, downloadable as an SVG."
-stack: 
+stack:
   - "React"
   - "SVG"
   - "CSS Grid Layout"
@@ -25,7 +25,7 @@ The original version of this project was written in [D3](https://d3js.org/). It 
 
 However, as I tried to add multiple user inputs that could all change repeatedly over time, I struggled to adapt the original D3 codebase for the purpose. I found that the D3 syntax, which is very declarative when working with a relatively static dataset, became less intuitive when trying to compensate for a constantly changing dataset. The enter/update/exit pattern especially seemed ill-equipped to deal with deep changes to nested properties, and the addition and deletion of whole nodes at will. The order in which each method was called and how its output was assigned became more critical, giving the whole structure a much more imperative feel.
 
-Eventually I decided to scrap the original codebase and start fresh, using pure [React](https://reactjs.org/) to handle the data and render the SVG. To my happy amazement, that rendering was simple enough to replicate; I was able to bang it out in a roughly one evening's work. The SVG markup could be represented as a functional, stateless component, which receives a single prop: an array of objects representing the individual crops, passed down from the main component which handled all the inputs from the form. This meant I didn't really lose much of D3's declarative nature.
+Eventually I decided to scrap the original codebase and start fresh, using pure [React](https://reactjs.org/) to handle the data and render the SVG. To my surprise, that rendering was incredibly easy to replicate; it only took about one evening's worth of work. The SVG markup could be represented as a functional, stateless component, which receives a single prop: an array of objects representing the individual crops, passed down from the main component which handled all the inputs from the form. This meant I didn't really lose much of D3's declarative nature.
 
 To compare some of the original D3:
 
@@ -45,7 +45,7 @@ crop.append("rect")
 In React, after mapping over the array of crops, I could represent the same thing in JSX quite easily:
 
 ```jsx
-<rect 
+<rect
   className="bar season-one"
   fill={barFill}
   height={barHeight}
@@ -74,7 +74,7 @@ const calcBarStart = (date) => {
 }
 ```
 
-The `calcDate()` and `gridUnit` constant were also required in the original D3 code as well. There D3 scaling function, `x()`, provided similar functionality to the `calcBarWidth()` and `calcBarStart()` in earlier parts of that codebase:
+The `calcDate()` function and `gridUnit` constant were required in the original D3 code as well, so the two versions are just about on par there. However, in the D3 version, there was also another helper function, `x()`, which was easy to miss, but played a vital role:
 
 ```js
 var x = d3.scaleTime()
@@ -82,6 +82,6 @@ var x = d3.scaleTime()
   .range([0, width]);
 ```
 
- Personally, I find it more intelligible in the React code, where the meaning isn't obscured by D3's API's.
- 
- I recognize that there are more data utilities in D3 that, with further time and exploration, could have made the D3 implementation a lot less painful. But React was equally up to the task, and I'm quite pleased with the result. Especially, I like how cleanly React represents what is essentially the same XML/SVG that will be rendered to the page in the end. In the future, I'll still consider D3 for handling static datasets. I may even use the CSV portion of the D3 library in this project, if I decide to reintroduce that capability. It is nice though to know that React can work so smoothly with SVG, while handling more dynamic datasets that would be unwieldy in D3.
+Essentially, D3's API is doing a lot of the heavy-lifting of scaling the time ranges to fit the scale of the chart, similar to what `calcBarWidth()` and `calcBarStart()` are doing in the React code. While the version I wrote in React may be a little more verbose, I personally find it much more intelligible, since the meaning isn't being obscured by D3's API's.
+
+I recognize that there are more data utilities in D3 that, with further time and exploration, could have made the D3 implementation a lot less painful. But React was equally up to the task, and I'm quite pleased with the result. Especially, I like how cleanly React represents what is essentially the same XML/SVG that will be rendered to the page in the end. In the future, I'll still consider D3 for handling static datasets. I may even use the CSV portion of the D3 library in this project, if I decide to reintroduce that capability. It is nice though to know that React can work so smoothly with SVG, while handling more dynamic datasets that would be unwieldy in D3.
