@@ -8,12 +8,18 @@ nav a, nav a:visited {
 }
 
 nav ul {
-  margin: 0 30%;
-  width: 40%;
+  margin: 0 20%;
+  width: 60%;
   display: inline-flex;
   justify-content: space-around;
 }
 
+@media (max-width: 675px) {
+  nav ul {
+    margin: 0 15%;
+    width: 70%;
+  }
+}
 nav li {
   display: inline-flex;
   list-style-type: none;
