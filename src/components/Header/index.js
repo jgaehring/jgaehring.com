@@ -4,13 +4,24 @@ import logo from '../../assets/golden-russet-black.svg'
 import styles from './header.module.css'
 
 const Header = () => (
-  <div className={styles.header} >
+  <header className={styles.header} >
+    <Link to="/">
+      <img src={logo} alt="jgaehring.com logo"/>
+    </Link>
     <nav className={styles.nav}>
-      <Link to="/" >
-        <img src={logo} alt="jgaehring.com logo"/>
-      </Link>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+      </ul>
     </nav>
-  </div>
+  </header>
 )
 
 export default Header

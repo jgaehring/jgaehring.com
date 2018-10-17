@@ -1,28 +1,31 @@
 .header {
   margin: 1.45rem auto;
-}
-
-.nav {
-  margin: 0 auto;
-  max-width: 960px;
   text-align: center;
 }
 
-.nav h1 {
-  margin: 0;
-}
-
-.nav a, .nav a:visited {
+nav a, nav a:visited {
   text-decoration: none;
 }
 
-.nav img {
+nav ul {
+  margin: 0 30%;
+  width: 40%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.header img {
   max-width: 225px;
   display: inline-block;
 }
 
 @media only screen and (max-width: 480px) {
-  .nav img {
+  .header img {
     max-width: 175px;
   };
 }
