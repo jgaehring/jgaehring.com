@@ -19,6 +19,11 @@ nav li {
   list-style-type: none;
 }
 
+.current {
+  color: rgba(0,0,0,.85);
+  border-bottom: solid 2px rgba(0,0,0,.85);
+}
+
 .header img {
   max-width: 225px;
   display: inline-block;

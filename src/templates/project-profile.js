@@ -6,12 +6,12 @@ import styles from './project-profile.module.css';
 import { FaGithub } from 'react-icons/lib/fa';
 import MDOpenInNew from 'react-icons/lib/md/open-in-new';
 
-export default function ProjectProfile({ data }) {
+export default function ProjectProfile({ data, location }) {
   const { markdownRemark: post } = data;
   const rootUrl = 'https://jgaehring.com/'
 
   const ghLink = (
-    <a 
+    <a
       href={post.frontmatter.github}
       target='_blank'
       rel="noopener noreferrer"
@@ -19,9 +19,9 @@ export default function ProjectProfile({ data }) {
       <FaGithub className={styles.gh}/>
     </a>
   )
-  
+
   const siteLink = (
-    <a 
+    <a
       href={post.frontmatter.link}
       target='_blank'
       rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function ProjectProfile({ data }) {
         ]}
       >
       </Helmet>
-      <Header/>
+      <Header pathname={location.pathname}/>
       <div className={styles.preview}>
         <div className={styles.screenshotContainer}>
           <a

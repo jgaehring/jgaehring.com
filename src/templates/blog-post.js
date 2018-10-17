@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './blog-post.module.css';
 
-export default function BlogTemplate({ data }) {
+export default function BlogTemplate({ data, location }) {
   const { markdownRemark: post } = data;
   const rootUrl = 'https://jgaehring.com/'
   return (
@@ -20,7 +20,7 @@ export default function BlogTemplate({ data }) {
           ]}
         >
         </Helmet>
-        <Header/>
+        <Header pathname={location.pathname}/>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
         <h5>by Jamie Gaehring | {post.frontmatter.date}</h5>
         <div

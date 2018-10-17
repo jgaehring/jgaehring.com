@@ -3,9 +3,9 @@ import ProjectPreviews from '../components/ProjectPreviews'
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
-export default ({ data }) => (
+export default ({ data, location }) => (
   <Layout>
-    <Header/>
+    <Header pathname={location.pathname}/>
     <h1>Projects</h1>
     <ProjectPreviews data={data}/>
   </Layout>
