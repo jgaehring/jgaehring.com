@@ -6,6 +6,7 @@
 
 .project {
   flex: 0 1 45%;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 675px) {
@@ -16,4 +17,5 @@
 
 .project img {
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.125);
+  margin-bottom: 1.5rem;
 }
