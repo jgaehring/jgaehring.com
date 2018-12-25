@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styles from './index.module.css';
 import PostPreview from '../components/PostPreview';
