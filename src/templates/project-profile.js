@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './project-profile.module.css';

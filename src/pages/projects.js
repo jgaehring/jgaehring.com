@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectPreviews from '../components/ProjectPreviews'
+import { graphql } from 'gatsby';
+import ProjectPreviews from '../components/ProjectPreviews';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
