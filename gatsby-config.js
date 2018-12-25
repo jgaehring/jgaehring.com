@@ -20,9 +20,9 @@ module.exports = {
         // Enables Google Optimize using your container Id
         // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
         // Any additional create only fields (optional)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        // cookieDomain: "example.com",
       },
     },
     'gatsby-plugin-remove-trailing-slashes',
