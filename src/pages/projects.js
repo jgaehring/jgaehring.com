@@ -16,7 +16,7 @@ export const query = graphql`
   query ProjectsQuery {
     allMarkdownRemark(
       filter: { collection: { eq: "projects" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___rank], order: ASC }
     ) {
       totalCount
       edges {

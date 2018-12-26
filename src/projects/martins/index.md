@@ -1,6 +1,7 @@
 ---
 title: "Martin's Pretzels"
 path: "/martins"
+rank: 4
 date: "2016-11-02"
 cover: "./screenshot.png"
 thumb: "./thumbnail.png"

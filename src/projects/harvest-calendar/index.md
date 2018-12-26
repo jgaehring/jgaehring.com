@@ -2,6 +2,7 @@
 title: "Harvest Calendar Generator"
 path: "/harvest-calendar-react"
 date: "2018-10-06"
+rank: 2
 cover: "./screenshot.png"
 thumb: "./thumbnail.png"
 description: "Generates a customized visualization of when specific crops will be available for a given farm, downloadable as an SVG."

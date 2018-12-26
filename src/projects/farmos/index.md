@@ -2,6 +2,7 @@
 title: "farmOS Client"
 path: "/farmos-client"
 date: "2018-10-06"
+rank: 1
 cover: "./screenshot.png"
 thumb: "./thumbnail.png"
 description: "An extensible client library for farmOS, with mobile & offline capabilities"

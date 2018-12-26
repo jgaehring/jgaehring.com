@@ -95,7 +95,7 @@ export default IndexPage
 
 export const query = graphql`
   query BlogList {
-    allMarkdownRemark( sort: {fields: [frontmatter___date], order: DESC } ) {
+    allMarkdownRemark( sort: { fields: [frontmatter___rank, frontmatter___date], order: ASC } ) {
       totalCount
       edges {
         node {
