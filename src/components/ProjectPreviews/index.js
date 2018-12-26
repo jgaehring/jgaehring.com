@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styles from './project-previews.module.css';
 
-const ProjectPreviews = ({ data }) => (
+const ProjectPreviews = ({data}) => {
+  console.log(data);
+  return (
   <div className={styles.projectsContainer} >
     {
-      data.allMarkdownRemark.edges
-      .filter(({ node }) => node.collection === 'projects')
-      .map(({
+      data.map(({
         node: {
           frontmatter: {
             title,
@@ -33,6 +33,6 @@ const ProjectPreviews = ({ data }) => (
       ))
     }
   </div>
-)
+)}
 
 export default ProjectPreviews;

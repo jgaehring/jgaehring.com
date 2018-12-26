@@ -8,7 +8,7 @@ export default ({ data, location }) => (
   <Layout>
     <Header pathname={location.pathname}/>
     <h1>Projects</h1>
-    <ProjectPreviews data={data}/>
+    <ProjectPreviews data={data.allMarkdownRemark.edges}/>
   </Layout>
 )
 
@@ -21,7 +21,7 @@ export const query = graphql`
       totalCount
       edges {
         node {
-          ...PostPreviewFragment
+          ...PreviewFragment
         }
       }
     }

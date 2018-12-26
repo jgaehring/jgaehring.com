@@ -90,7 +90,10 @@ const IndexPage = ({data}) => (
             <Link to='/projects'>Go to projects.</Link>
           </p>
         </header>
-        <ProjectPreviews data={data} />
+        <ProjectPreviews
+          data={data.allMarkdownRemark.edges
+            .filter(({ node }) => node.collection === 'projects')} 
+        />
       </section>
     </div>
   </Layout>
@@ -99,14 +102,32 @@ const IndexPage = ({data}) => (
 export default IndexPage
 
 export const query = graphql`
-  query BlogList {
+  query HomePagePreviews {
     allMarkdownRemark( sort: { fields: [frontmatter___rank, frontmatter___date], order: ASC } ) {
       totalCount
       edges {
         node {
-          ...PostPreviewFragment
+          ...PreviewFragment
         }
       }
     }
+  }
+`;
+
+export const fragment = graphql`
+  fragment PreviewFragment on MarkdownRemark {
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
+      thumb {
+        publicURL
+      }
+      description
+    }
+    fields {
+      slug
+    }
+    excerpt
+    collection
   }
 `;
