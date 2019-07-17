@@ -1,23 +1,26 @@
 ---
-title: "farmOS Client"
+title: "farmOS Field Kit"
 path: "/farmos-client"
 date: "2018-10-06"
 rank: 1
 cover: "./screenshot.png"
 thumb: "./thumbnail.png"
-description: "An extensible client library for farmOS, with mobile & offline capabilities"
+description: "An extensible hybrid app for farmOS, with offline capabilities"
 stack:
   - "Vue.js"
   - "Apache Cordova"
-link: "https://farmos.org/development/client/"
-github: "https://github.com/farmOS/farmOS-native"
+  - "Progressive Web App"
+link: "https://farmos.app"
+github: "https://github.com/farmOS/farmOS-client"
 ---
 
 ## Features
-[farmOS](https://farmOS.org) is a web-based application for farm management, planning and record keeping. While farmOS Core can run on any computer, phone or other device with a web-browser, farmOS Client is intended to provide more mobile-friendly, lightweight applications that farmers can use from anywhere on their farm. This way, they can update their farmOS records even if they're out of range of wifi or a cellular signal.
+[farmOS](https://farmOS.org) is a web-based application for farm management, planning and record keeping. While farmOS can run on any computer, phone or other device with a web-browser, farmOS Field Kit is intended to provide more mobile-friendly, lightweight applications that farmers can use from anywhere on their farm. This way, they can update their farmOS records even if they're out of range of wifi or a cellular signal.
 
-So far, the main use of the client library is to build native applications that run on iOS and Android devices. They should be available on app stores by the end of 2018 and are currently in alpha testing. As with farmOS Core, the client library and native applications are 100% open source.
+Field Kit is built using [Vue.js](https://vuejs.org) and is available at [farmos.app](https://farmos.app) as a Progressive Web App (PWA), or as native apps for Android and iOS (via [Cordova](https://cordova.apache.org/)). The Android app is currently in beta release on the [Play Store](https://play.google.com/store/apps/details?id=org.farmos.app), and the iOS app is on Test Flight, available [via invite](https://docs.google.com/forms/d/e/1FAIpQLSf0brjVUEKiwG1iw4D386iKgbpw5xQ-YJ3w-1iBdKXO-RyK0g/viewform?usp=sf_link). As with farmOS Core, Field Kit and native applications are 100% open source.
 
-The first features developed for the client library were commissioned by [Paicines Ranch](https://paicinesranch.com) in California. The ranch was already using farmOS to keep track of the grazing conditions for their livestock, but wanted to be able to take observations of the forage quality with their phones, while surveying the many paddocks spread out on their 7000 acres of pasture. Although farmOS could easily be loaded in their phone's browser, the moment they left the wifi range of their farm office, they could no longer make updates to farmOS, because that process was reliant on a connection to their farmOS server. The native application solves this by having its own persistent storage, which can be synced with the farmOS server at a later time when connectivity is restored. Farmers can also take pictures with their phones and easily include them with those observations, because the native app can access the phone's hardware directly.
+The first features developed for Field Kit were commissioned by [Paicines Ranch](https://paicinesranch.com) in California. The ranch was already using farmOS to keep track of the grazing conditions for their livestock, but wanted to be able to take observations of the forage quality with their phones, while surveying the many paddocks spread out on their 7000 acres of pasture. Although farmOS could easily be loaded in their phone's browser, the moment they left the wifi range of their farm office, they could no longer make updates to farmOS, because that process was reliant on a connection to their farmOS server. The native application solves this by having its own persistent storage, which can be synced with the farmOS server at a later time when connectivity is restored. Farmers can also take pictures with their phones and easily include them with those observations, because the native app can access the phone's hardware directly.
 
-While these features are only available in the native apps at the moment, one benefit of the client's architecture is that it can eventually be used to extend the functionality of the web-based farmOS Core, as well. The goal is to eventually make these offline capabilities a feature that comes with farmOS Core, straight out of the box. This is because the client library, while capable of running on native devices, is actually written with the language of the web: JavaScript. By using a common language that can run anywhere, efforts to develop the native application can be recycled for use in farmOS Core, and vice versa. And that is the real strength of the client, and why it is not merely an application, but a whole library of application components for extending functionality to multiple platforms.
+Working with [Knuth Farms](https://knuthfarms.com/) of Nebraska we expanded the features to function as a task scheduler. Upcoming activities could be generated by the farm manager and then synced to users' phones. Then the user could make live updates from the field, mark the task as complete, and later sync it back to the server.
+
+In the future we're aiming to expand the capabilities of the app even further with a concept we call "field modules." These are Vue plugins that can be lazy-loaded into the app based on data from the server. In this way we hope to provide highly customizable interfaces that can meet the needs of specific farms, while also avoiding feature bloat and UI clutter. Further discussion and a proof-of-concept can be found [on GitHub](https://github.com/farmOS/farmOS-client/issues/217).
