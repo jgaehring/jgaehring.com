@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import styles from './project-previews.module.css';
 
 const ProjectPreviews = ({data}) => {
-  console.log(data);
   return (
   <div className={styles.projectsContainer} >
     {
