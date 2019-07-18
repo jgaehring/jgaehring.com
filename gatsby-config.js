@@ -40,6 +40,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
