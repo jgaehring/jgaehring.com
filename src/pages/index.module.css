@@ -9,6 +9,11 @@ section.about, section.blog {
   margin: 20vh 0;
 }
 
+#more-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .logo {
   grid-column: 2 / span 2;
   justify-self: center;
@@ -32,9 +37,6 @@ section.about, section.blog {
 }
 .blog, .projects {
   margin: 0 0 20vh;
-}
-
-.contact h3 {
 }
 
 .blog header, .projects header {

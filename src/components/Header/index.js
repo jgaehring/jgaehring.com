@@ -29,6 +29,9 @@ const Header = ({ pathname }) => {
           {
             navLink(pathname, "/projects", "Projects")
           }
+          {
+            navLink(pathname, "/about", "About")
+          }
         </ul>
       </nav>
     </header>
