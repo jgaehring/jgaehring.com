@@ -30,6 +30,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
+const resolveTemplate = collectionName => {
+  switch (collectionName) {
+    case 'projects':
+      return path.resolve(`src/templates/project-profile.js`);
+    case 'blog':
+      return path.resolve(`src/templates/blog-post.js`);
+    case 'content':
+      return path.resolve(`src/templates/about.js`);
+    default:
+      return path.resolve(`src/templates/blog-post.js`);
+  }
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
@@ -49,6 +62,9 @@ exports.createPages = ({ actions, graphql }) => {
               fields {
                 slug
               }
+              frontmatter {
+                path
+              }
             }
           }
         }
@@ -60,15 +76,15 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const template = (node.collection === 'projects')
-        ? path.resolve(`src/templates/project-profile.js`)
-        : path.resolve(`src/templates/blog-post.js`)
-
+        const template = resolveTemplate(node.collection);
+        const slug = (node.collection === 'content')
+          ? node.frontmatter.path
+          : node.fields.slug;
         createPage({
-          path: node.fields.slug,
+          path: slug,
           component: template,
           context: {
-            slug: node.fields.slug,
+            slug,
           }
         })
       })
