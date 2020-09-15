@@ -30,7 +30,7 @@ const IndexPage = ({data}) => {
           </div>
           <div className={styles.blurb} >
             <p>
-              For nearly two decades, I've been helping farmers build a more open
+              For over two decades, I've been helping farmers build a more open
               food system. Today, I'm working to give those farmers better access
               to the software, data and other tools that they need to feed their
               communities in the 21<sup>st</sup> century. <a id={styles.moreLink} onClick={scrollToMore}>More.</a>
