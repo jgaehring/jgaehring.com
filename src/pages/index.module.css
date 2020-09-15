@@ -39,11 +39,7 @@ section.about, section.blog {
   margin: 0 0 20vh;
 }
 
-.blog header, .projects header {
+.blog header {
   grid-column: 1 / span 6;
   text-align: center;
-}
-
-.projects header {
-  margin-bottom: 3rem;
 }

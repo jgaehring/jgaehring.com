@@ -89,20 +89,6 @@ const IndexPage = ({data}) => {
             )
           }
         </section>
-        <section className={styles.projects}>
-          <header>
-            <h2>Projects</h2>
-            <p>
-              Here are some things I've made.
-              <br/>
-              <Link to='/projects'>Go to projects.</Link>
-            </p>
-          </header>
-          <ProjectPreviews
-            data={data.allMarkdownRemark.edges
-              .filter(({ node }) => node.collection === 'projects')} 
-          />
-        </section>
       </div>
     </Layout>
   )
