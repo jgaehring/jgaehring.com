@@ -13,13 +13,3 @@ I am a software developer specializing in resilient systems for capturing agricu
 Field Kit is open source and free&mdash;_free_ as in "free pizza", but more importanly, _free_ as in "free speech." I believe firmly that software users should be free to use that software as they see fit. This is especially true of the software used by farmers, so that they may be free to feed our communities as they know best, without threat of coercion, and with the guarantee that they will enjoy an equitable share of the value they produce.
 
 For more background on how I became involved with agriculture and software, as well as what inspires my work, you can read [my story](/blog/my-story).
-
-## Community activities
-- GOAT
-- ...
-
-
-## Technical expertise
-- Javascript (Vue, React, etc.)
-- ...
-
