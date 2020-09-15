@@ -8,6 +8,7 @@ export default ({ data, location }) => (
   <Layout>
     <Header pathname={location.pathname}/>
     <h1>Projects</h1>
+    <p>Some older projects of mine. I don't update this anymore.</p>
     <ProjectPreviews data={data.allMarkdownRemark.edges}/>
   </Layout>
 )
