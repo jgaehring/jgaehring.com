@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styles from './index.module.css';
 import PostPreview from '../components/PostPreview';
-import ProjectPreviews from '../components/ProjectPreviews';
 import logo from '../assets/golden-russet-black.svg';
 import portrait from '../assets/portrait.jpg';
 import { FaGithub, FaTwitter } from 'react-icons/lib/fa';
@@ -33,13 +32,14 @@ const IndexPage = ({data}) => {
               For over two decades, I've been helping farmers build a more open
               food system. Today, I'm working to give those farmers better access
               to the software, data and other tools that they need to feed their
-              communities in the 21<sup>st</sup> century. <a id={styles.moreLink} onClick={scrollToMore}>More.</a>
+              communities in the 21<sup>st</sup> century.&nbsp;
+              <a id={styles.moreLink} onClick={scrollToMore} href="#more">More.</a>
             </p>
           </div>
         </section>
         <section>
           <div className={styles.contact}>
-            <p ref={moreRef}><Link to="/about">About me.</Link></p>
+            <p id="more" ref={moreRef}><Link to="/about">About me.</Link></p>
             <h3>
               &#123;{/*Use HTML code for curly braces b/c of jsx*/}
               <a href="mailto:jamie@jgaehring.com"
