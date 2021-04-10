@@ -10,11 +10,14 @@ import { FaGithub, FaTwitter } from 'react-icons/lib/fa';
 
 const IndexPage = ({data}) => {
   const moreRef = useRef(null);
-  const scrollToMore = () => window.scrollTo({
-    left: 0,
-    top: moreRef.current.offsetTop - 100,
-    behavior: 'smooth',
-  });
+  const scrollToMore = e => {
+    e.preventDefault();
+    window.scrollTo({
+      left: 0,
+      top: moreRef.current.offsetTop - 100,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <Layout>
