@@ -35,6 +35,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
