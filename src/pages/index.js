@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import styles from './index.module.css';
 import PostPreview from '../components/PostPreview';
 import logo from '../assets/golden-russet-black.svg';
-import portrait from '../assets/portrait.jpg';
+import portrait from '../assets/portrait_2020.jpg';
 import { FaGithub, FaTwitter } from 'react-icons/lib/fa';
 
 const IndexPage = ({data}) => {
