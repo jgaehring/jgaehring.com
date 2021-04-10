@@ -6,7 +6,7 @@ title: "About"
 
 # Hello
 
-My name is Jamie Gaehring. 
+My name is Jamie Gaehring (he/him). 
 
 I am a software developer specializing in resilient systems for capturing agricultural data. I maintain farmOS Field Kit, an offline-first, multi-platform app, optimized for the challenging environment of daily farm operations.
 
