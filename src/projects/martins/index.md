@@ -10,7 +10,6 @@ stack:
   - jQuery
   - Sass
   - Jekyll
-link: "https://jgaehring.com/martins"
 ---
 
 ## History & Design
