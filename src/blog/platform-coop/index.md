@@ -15,6 +15,20 @@ Nate Chang, a User Experience Designer and Data Strategist, has graciously volun
 
 If you're not exactly into all the technical minutiae, fear not; we also hope to share these materials and insights with a broader audience in the form of a public presentation, which will provide a more digestible and high-level view of what we learn — something of a capstone event for these initial interviews and design sessions. Hopefully we can lay down a roadmap for future development, too, so stay tuned for that!
 
+### Technical Interviews & Open Design Sessions
+I'll update this space as more events are confirmed, but the first few are listed below along with details for how to join the meeting room.
+
+- __Fri, Aug 12, 5pm - 6pm EDT:__ Technical interview with Kip Curtis of OSU's Microfarm Project, and Walt Bonham & Jess Hudson of Richland Gro-Op.
+- __Late Aug or early Sep (TBD):__ Technical interview with Tianna Kennedy of 607 CSA.
+
+[Click here to join the session](https://8x8.vc/gracchus/multi-farm-info-architecture) or refer to the meeting details below.
+
+> __Meeting Details__  
+> URL: `https://https://8x8.vc/gracchus/multi-farm-info-architecture`  
+> Dial-in: [(209) 844-4600](tel:+1-209-844-4600,246916544#)  
+> PIN: `246 916 544`  
+> [Dial-in numbers outside the U.S.](https://8x8.vc/gracchus/static/dialInInfo.html?room=multi-farm-info-architecture)  
+
 ## The 'Why?'
 While the near-term goal of these interviews is to bring into focus some attainable software solutions that would aid these aggregation services, the long-term goal is what I've taken to calling "The Holy Grail of Ag-Tech", namely: __a software system that can connect detailed production data to aggregation, sales and marketing services — and vice versa__. So, as an example, once a farmer enters a seeding date and quantity into their crop plan, that kicks off a chain reaction that starts populating additional tables with days-to-harvest, projected yields and inventories, sales estimates, etc. Similarly, if a producer knows how many people purchased vegetable shares for the coming year's CSA, they can estimate how many row feet they'll need to plant for each crop. Bidirectional data flow is the key, which is why in some conversations I've referred to this as the "Projection API," though the concept is more general than a single application or service.
 
@@ -29,11 +43,4 @@ For farms and food hubs, this could take many forms, and may even entail multipl
 
 I truly believe that the development of such resilient systems is something that can only be achieved through a radically cooperative enterprise. The data underpinning the networks of agricultural production and food distribution is so inextricably complex; it is no accident that this complexity only skyrockets when due respect and full equity is granted to every person and creature involved, as well as the land and overall ecology that contributes to feeding a community. It is a reflection of the social and cultural complexities underpinning how we eat, grow and relate to one another and our environment. I don't think there can be a just and equitable software system, capable of handling all that informational complexity, if it doesn't have social and ecological cooperation baked right into the design and methodology of the system itself.
 
-## Event Schedule
-All of that will of course take time, and will certainly evolve in shape and form if it has any hope of ever being put into practice, but I hope anyone reading this who previously expressed interest in any of these events will now have a better idea what these initial events are about and what they're aiming for. The first events are listed below.
-
-__Technical Interviews & Open Design Sessions__
-- __Fri, Aug 12, 5pm - 6pm EDT:__ Technical interview with Kip Curtis of OSU's Microfarm Project, and Walt Bonham & Jess Hudson of Richland Gro-Op.
-- __late Aug or early Sep (TBC):__ Technical interview with Tianna Kennedy of 607 CSA.
-
-I'll update this space as more events are confirmed, and I hope to see you there!
+All of that will of course take time, and will certainly evolve in shape and form if it has any hope of ever being put into practice, but I hope anyone reading this who previously expressed interest in any of these events will now have a better idea what these initial events are about and what they're aiming for. I hope to see you there!
