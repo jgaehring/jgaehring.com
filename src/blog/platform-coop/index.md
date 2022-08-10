@@ -1,6 +1,7 @@
 ---
 title: Toward a Platform Cooperative for Food Sovereignty
 date: 2022-08-05
+changed: 2022-08-10
 path: /platform-coop
 ---
 
