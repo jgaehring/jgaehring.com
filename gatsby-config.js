@@ -67,6 +67,13 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`,
+              elements: ['h2'],
+            },
+          },
+          {
             resolve: 'gatsby-remark-prismjs',
             options: {
               noInlineHighlight: true,
