@@ -17,6 +17,7 @@ export default function BlogTemplate({ data, location }) {
   } = data;
   const rootUrl = 'https://jgaehring.com/';
   const url = rootUrl + slug;
+  const image = rootUrl + logo;
   return (
     <Layout>
       <div className={styles.post}>
@@ -24,17 +25,17 @@ export default function BlogTemplate({ data, location }) {
           title={`${title} | Jamie Gaehring`}
           meta={[
             { name: 'description', content: excerpt },
-            { name: 'image', content: logo },
+            { name: 'image', content: image },
             { property: 'og:url', content: url },
             { property: 'og:type', content: 'article' },
             { property: 'og:title', content: title },
             { property: 'og:description', content: excerpt },
-            { property: 'og:image', content: logo },
+            { property: 'og:image', content: image },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:creator', content: '@JamieGaehring' },
             { name: 'twitter:title', content: title },
             { name: 'twitter:description', content: excerpt },
-            { name: 'twitter:image', content: logo },
+            { name: 'twitter:image', content: image },
           ]}
           link={[{ rel: 'canonical', href: url }]}
         >
