@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './blog-post.module.css';
-import logo from '../assets/golden-russet-black.svg';
+import logo from '../assets/golden-russet-black.jpg';
 
 export default function BlogTemplate({ data, location }) {
   const {

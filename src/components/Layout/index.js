@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import './index.css';
 import favicon from '../../assets/favicon.ico';
-import logo from '../../assets/golden-russet-black.svg';
+import logo from '../../assets/golden-russet-black.jpg';
 
 
 const description = 'For nearly two decades, I\'ve been helping farmers build a '
