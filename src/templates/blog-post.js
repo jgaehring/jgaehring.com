@@ -15,8 +15,8 @@ export default function BlogTemplate({ data, location }) {
       html
     },
   } = data;
-  const rootUrl = 'https://jgaehring.com/';
-  const url = rootUrl + slug;
+  const rootUrl = 'https://jgaehring.com';
+  const url = rootUrl + '/' + slug;
   const image = rootUrl + logo;
   return (
     <Layout>
