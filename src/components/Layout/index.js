@@ -1,16 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import './index.css'
-import favicon from '../../assets/favicon.ico'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import './index.css';
+import favicon from '../../assets/favicon.ico';
+import logo from '../../assets/golden-russet-black.svg';
 
-const Layout = ({ children }) => (
+
+const description = 'For nearly two decades, I\'ve been helping farmers build a '
+  + 'more open food system. Today, I\'m working to give those farmers better '
+  + 'access to the software, data and other tools that they need to feed their '
+  + 'communities in the 21st century.';
+const keywords = 'agriculture, technology, software, data, open source, farming, hudson valley, new york city, new jersey, greenmarket, javascript, web development, local food';
+const title = 'Jamie Gaehring'
+
+const Layout = ({ children, location }) => (
   <div id='site-container'>
     <Helmet
-      title="Jamie Gaehring"
+      title={title}
       meta={[
-        { name: 'description', content: "For nearly two decades, I've been helping farmers build a more open food system. Today, I'm working to give those farmers better access to the software, data and other tools that they need to feed their communities in the 21st century." },
-        { name: 'keywords', content: 'agriculture, technology, software, data, open source, farming, hudson valley, new york city, new jersey, greenmarket, javascript, web development, local food' },
+        { name: 'description', content: description },
+        { name: 'keywords', content: keywords },
+        { name: 'image', content: logo },
+        { property: 'og:url', content: location },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:image', content: logo },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:creator', content: '@JamieGaehring' },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: logo },
       ]}
     >
       <link rel='shortcut icon' href={favicon} />

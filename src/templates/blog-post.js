@@ -4,28 +4,46 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './blog-post.module.css';
+import logo from '../assets/golden-russet-black.svg';
 
 export default function BlogTemplate({ data, location }) {
-  const { markdownRemark: post } = data;
-  const rootUrl = 'https://jgaehring.com/'
+  const {
+    markdownRemark: {
+      excerpt,
+      fields: { slug },
+      frontmatter: { title, date },
+      html
+    },
+  } = data;
+  const rootUrl = 'https://jgaehring.com/';
+  const url = rootUrl + slug;
   return (
     <Layout>
       <div className={styles.post}>
         <Helmet
-          title={`${post.frontmatter.title} | Jamie Gaehring`}
+          title={`${title} | Jamie Gaehring`}
           meta={[
-            { name: 'description', content: post.excerpt },
+            { name: 'description', content: excerpt },
+            { name: 'image', content: logo },
+            { property: 'og:url', content: url },
+            { property: 'og:type', content: 'article' },
+            { property: 'og:title', content: title },
+            { property: 'og:description', content: excerpt },
+            { property: 'og:image', content: logo },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:creator', content: '@JamieGaehring' },
+            { name: 'twitter:title', content: title },
+            { name: 'twitter:description', content: excerpt },
+            { name: 'twitter:image', content: logo },
           ]}
-          link={[
-            { rel: 'canonical', href: rootUrl + data.markdownRemark.fields.slug }
-          ]}
+          link={[{ rel: 'canonical', href: url }]}
         >
         </Helmet>
         <Header pathname={location.pathname}/>
-        <h1 className={styles.title}>{post.frontmatter.title}</h1>
-        <h5>by Jamie Gaehring | {post.frontmatter.date}</h5>
+        <h1 className={styles.title}>{title}</h1>
+        <h5>by Jamie Gaehring | {date}</h5>
         <div
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
     </Layout>
