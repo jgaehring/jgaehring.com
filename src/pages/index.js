@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
               food system. Today, I'm working to give those farmers better access
               to the software, data and other tools that they need to feed their
               communities in the 21<sup>st</sup> century.&nbsp;
-              <a id={styles.moreLink} onClick={scrollToMore} href="#more">More.</a>
+              <a id={styles.moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
             </p>
           </div>
         </section>

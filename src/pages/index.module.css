@@ -10,8 +10,19 @@
 }
 
 #more-link {
-  text-decoration: underline;
+  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: more-bounce;
+  animation-timing-function: ease-out;
+}
+@keyframes more-bounce {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-.25rem); }
+  40% { transform: translateY(0); }
+  100% { transform: translateY(0); }
 }
 
 .logo {
