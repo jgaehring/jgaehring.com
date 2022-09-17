@@ -75,22 +75,20 @@ const IndexPage = ({data}) => {
             <h2>Writings</h2>
             <p>
               A few ideas about ag & tech.
-              <br/>
-              <Link to='/blog'>Go to blog.</Link>
             </p>
           </header>
           {
-            data.allMarkdownRemark.edges
-            .filter(({ node }) => node.collection === 'blog')
-            .map( ({ node }, index) =>
+            data.allMarkdownRemark.edges.map(({ node }, index) =>
               <PostPreview
                 key={`post-${index}`}
                 frontmatter={node.frontmatter}
                 excerpt={node.excerpt}
                 fields={node.fields}
-              />
-            )
+              />)
           }
+          <div className={styles.centerText}>
+            <p><Link to='/blog'>More posts.</Link></p>
+          </div>
         </section>
       </div>
     </Layout>

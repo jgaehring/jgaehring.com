@@ -77,7 +77,7 @@
   margin: 0 0 20vh;
 }
 
-.blog header {
+.blog header, .center-text {
   grid-column: 1 / span 6;
   text-align: center;
 }
