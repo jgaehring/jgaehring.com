@@ -101,7 +101,18 @@ export default IndexPage
 
 export const query = graphql`
   query HomePagePreviews {
-    allMarkdownRemark( sort: { fields: [frontmatter___rank, frontmatter___date], order: ASC } ) {
+    allMarkdownRemark(
+      filter: {
+        fields: {
+          collection: { eq: "blog" }
+        }
+      },
+      sort: {
+        fields: [frontmatter___date],
+        order: DESC,
+      },
+      limit: 3
+    ) {
       totalCount
       edges {
         node {
