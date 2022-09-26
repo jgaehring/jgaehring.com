@@ -22,22 +22,24 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <div className={styles.home}>
-        <section className={styles.about}>
-          <div className={styles.logo} >
-            <img src={logo} alt="jgaehring.com logo"/>
-            &mdash; &bull;&bull;&bull; &mdash;
-          </div>
-          <div className={styles.portrait}>
-            <img src={portrait} alt="Jamie"/>
-          </div>
-          <div className={styles.blurb} >
-            <p>
-              For over two decades, I've been helping farmers build a more open
-              food system. Today, I'm working to give those farmers better access
-              to the software, data and other tools that they need to feed their
-              communities in the 21<sup>st</sup> century.&nbsp;
-              <a id={styles.moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
-            </p>
+        <section className={styles.aboutContainer}>
+          <div className={styles.about}>
+            <div className={styles.logo}>
+              <img src={logo} alt="jgaehring.com logo"/>
+            </div>
+            <div className={styles.portrait}>
+              <img src={portrait} alt="Portrait of Jamie Gaehring"/>
+            </div>
+            <div className={styles.blurb} >
+              <p className={styles.bulletDivider}>&mdash; &bull;&sect;&bull; &mdash;</p>
+              <p>
+                For over two decades, I've been helping farmers build a more open
+                food system. Today, I'm working to give those farmers better access
+                to the software, data and other tools that they need to feed their
+                communities in the 21<sup>st</sup> century.&nbsp;
+                <a id={styles.moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
+              </p>
+            </div>
           </div>
         </section>
         <section>

@@ -4,9 +4,15 @@
   grid-gap: 20px;
 }
 
-.about {
+.about-container {
   height: 60vh;
   margin: 20vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about {
+  grid-template-rows: 1fr 1fr;
 }
 
 #more-link {
@@ -30,54 +36,60 @@
   justify-self: center;
   align-self: end;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bullet-divider {
+  text-align: center;
 }
 .portrait {
   grid-column: 5 / span 2;
   grid-row: 1 / span 2;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .blurb {
   grid-column: 1 / span 4;
   grid-row: 2 / span 1;
-}
-
-@media (max-width: 820px) {
-  .logo {
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 1;
-  }
-  .portrait {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 1;
-  }
-  .blurb {
-    grid-column: 2 / span 4;
-    grid-row: 3 / span 1;
-  }
-}
-@media (max-width: 600px) {
-  .about {
-    height: 80vh;
-    margin: 10vh 0;
-  }
-  .portrait {
-    grid-column: 2 / span 4;
-  }
-  .blurb {
-    grid-column: 1 / span 6;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .contact {
   grid-column: span 6;
   text-align: center;
-  margin: 0 0 20vh;
 }
-.blog, .projects {
+.contact {
   margin: 0 0 20vh;
 }
 
 .blog header, .center-text {
   grid-column: 1 / span 6;
   text-align: center;
+}
+
+@media (max-width: 820px) {
+  .about-container {
+    height: auto;
+    margin: 5vh 0 20vh;
+  }
+  .about {
+    grid-template-rows: auto;
+  }
+  .logo {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+  }
+  .portrait {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 1;
+  }
+  .blurb {
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 1;
+  }
 }
