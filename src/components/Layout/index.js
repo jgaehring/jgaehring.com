@@ -6,10 +6,11 @@ import favicon from '../../assets/favicon.ico';
 import logo from '../../assets/golden-russet-black.jpg';
 
 
-const description = 'For nearly two decades, I\'ve been helping farmers build a '
-  + 'more open food system. Today, I\'m working to give those farmers better '
-  + 'access to the software, data and other tools that they need to feed their '
-  + 'communities in the 21st century.';
+// TODO: Add these variables to siteMetadata in gatsby-config.js
+export const description = 'For over two decades, I\'ve been helping farmers '
+  + 'build a more open food system. Today, I\'m working to give those farmers '
+  + 'better access to the software, data and other tools that they need '
+  + 'to feed their communities in the 21st century.';
 const keywords = 'agriculture, technology, software, data, open source, farming, hudson valley, new york city, new jersey, greenmarket, javascript, web development, local food';
 const title = 'Jamie Gaehring';
 const baseURL = 'https://jgaehring.com';

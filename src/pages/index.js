@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 import Link from 'gatsby-link';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import Layout, { description } from '../components/Layout';
 import styles from './index.module.css';
 import PostPreview from '../components/PostPreview';
 import logo from '../assets/golden-russet-black.svg';
 import portrait from '../assets/woodward_crop_1971x2956.jpg';
 import { FaGithub, FaTwitter } from 'react-icons/lib/fa';
+
+const descriptionHtml = description.replaceAll(/21st/g, '21<sup>st</sup>');
 
 const IndexPage = ({data}) => {
   const moreRef = useRef(null);
@@ -20,7 +22,7 @@ const IndexPage = ({data}) => {
   };
 
   return (
-    <Layout>
+    <Layout description={description}>
       <div className={styles.home}>
         <section className={styles.aboutContainer}>
           <div className={styles.about}>
@@ -33,10 +35,7 @@ const IndexPage = ({data}) => {
             <div className={styles.blurb} >
               <p className={styles.bulletDivider}>&mdash; &bull;&sect;&bull; &mdash;</p>
               <p>
-                For over two decades, I've been helping farmers build a more open
-                food system. Today, I'm working to give those farmers better access
-                to the software, data and other tools that they need to feed their
-                communities in the 21<sup>st</sup> century.&nbsp;
+                <span dangerouslySetInnerHTML={{ __html: descriptionHtml }}/>&nbsp;
                 <a id={styles.moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
               </p>
             </div>
