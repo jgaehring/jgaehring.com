@@ -4,8 +4,8 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import styles from './project-profile.module.css';
-import { FaGithub } from 'react-icons/lib/fa';
-import MDOpenInNew from 'react-icons/lib/md/open-in-new';
+import { FaGithub } from 'react-icons/fa';
+import { MdOpenInNew } from 'react-icons/md';
 
 export default function ProjectProfile({ data, location }) {
   const { markdownRemark: post } = data;
@@ -27,7 +27,7 @@ export default function ProjectProfile({ data, location }) {
       target='_blank'
       rel="noopener noreferrer"
     >
-      View&nbsp;<MDOpenInNew/>
+      View&nbsp;<MdOpenInNew/>
     </a>
   )
 
