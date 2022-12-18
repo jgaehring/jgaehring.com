@@ -6,7 +6,7 @@ import styles from './index.module.css';
 import PostPreview from '../components/PostPreview';
 import logo from '../assets/golden-russet-black.svg';
 import portrait from '../assets/woodward_crop_1971x2956.jpg';
-import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaMastodon } from 'react-icons/fa';
 
 const descriptionHtml = description.replaceAll(/21st/g, '21<sup>st</sup>');
 
@@ -62,11 +62,11 @@ const IndexPage = ({data}) => {
                 <FaGithub/>
               </a>
               &nbsp;
-              <a href="https://twitter.com/JamieGaehring"
+              <a href="https://social.coop/@jgaehring"
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                <FaTwitter/>
+                <FaMastodon/>
               </a>
             </h2>
           </div>
