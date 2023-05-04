@@ -1,7 +1,7 @@
 ---
-path: "/field-modules"
-date: "2020-09-01"
-title: "Introducing farmOS Field Modules"
+path: "/complexity"
+date: "2023-06-01"
+title: "On Complexity in Agriculture & Technology"
 ---
 
 ![Trellising pole beans in a high tunnel](pole-beans.jpg)
