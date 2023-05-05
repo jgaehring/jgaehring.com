@@ -20,7 +20,7 @@ export default function BlogTemplate({ data, location }) {
   const image = rootUrl + logo;
   return (
     <Layout>
-      <div className={styles.post}>
+      <div>
         <Helmet
           title={`${title} | Jamie Gaehring`}
           meta={[
@@ -44,11 +44,13 @@ export default function BlogTemplate({ data, location }) {
         >
         </Helmet>
         <Header pathname={location.pathname}/>
-        <h1 className={styles.title}>{title}</h1>
-        <h5>by Jamie Gaehring | {date}</h5>
-        <div
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div className={styles.post}>
+          <h1 className={styles.title}>{title}</h1>
+          <h5>by Jamie Gaehring | {date}</h5>
+          <div
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
     </Layout>
   )
