@@ -4,7 +4,7 @@ date: "2023-06-01"
 title: "On Complexity in Agriculture & Technology"
 ---
 
-![Trellising pole beans in a high tunnel](pole-beans.jpg)
+![Trellising pole beans in a high tunnel](./pole-beans-vert.jpg)
 
 ## Modularity of the Problem Set
 Farming, to put it mildly, is a complex operation. It is complex in both the
