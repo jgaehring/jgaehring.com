@@ -6,47 +6,39 @@ title: "On Complexity in Agriculture & Technology"
 
 ![Trellising pole beans in a high tunnel](./pole-beans-vert.jpg)
 
-## Modularity of the Problem Set
-Farming, to put it mildly, is a complex operation. It is complex in both the
+Farming, to put it mildly, is a complex enterprise. It is complex in both the
 small and the large: from the attention to detail that must be paid for the
-successful harvest of a single crop, to the colossal challenge of managing a
-range of crops on a diversified farm; from the fine tuning required to make a
-local food shed thrive, to the hulking gears that must continually turn to
-supply our global food systems. There are vegetable farms, dairy farms, poultry
-farms, orchards, ranches, aquaponics, hydroponics and farms that do a little of
-everything. There are farms that sell to farmers markets, commodity markets,
-wholesale distributors, direct retailers and cooperative food processors, just
-to name a few outlets. People farm on wide open prairie and crowded city
-rooftops, in controlled greenhouses and seasonal flood plains, high up on rocky
-hilltops and down in fertile valleys, in reclaimed forests and abandoned
-warehouses. So yea, it's complex to say the least.
+successful harvest of a single crop, to the colossal effort of managing a range
+of crops on a diversified farm; from the fine tuning required to make a local
+food economy thrive, to the hulking gears of industrialized agriculture that
+must continually turn so that global supply chains never halt. There are
+vegetable farms, dairy farms, poultry farms, orchards, ranches, aquaponics,
+hydroponics and farms that do a little bit of everything. When the time comes to
+find a sales outlet, producers can sell to commodity markets, farmers markets,
+wholesale distributors, institutional buyers, cooperative food processors or via
+direct retail, just to name a few. People farm on wide open prairie and crowded
+city rooftops, in climate-controlled greenhouses and seasonal flood plains, high
+up on rocky hilltops and down in fertile valleys, in reclaimed forests and
+abandoned lots. So yes, to say farming is an elaborate task will always grossly
+understate the scope of its complexity.
 
-Taking it to another level, the unique complexity that one farm faces seldom
-shares many aspects with the complexity that another farm faces, even when it's
-the farm just down the road. Nevertheless, there is commonality too. Plants
-still need the same things to grow, animals the same care to reach market
-weight. Sun, soil and water. Energy and nutrients. Space and time.
+What's more, the complicated issues that one farm faces are seldom the same
+facing another. That can prove just as true for two farms in the same county or
+state as for farms in different countries, let alone separate hemispheres. Yet
+there is some commonality to be found in all of this: plants still need the same
+attention to grow; animals the same care to reach maturity; sun, soil and water;
+energy and nutrients; space and time. These are the irreducible constants of
+farming.
 
-When I was first learning how to code, I was struck when one farmer told me all
-farming boils down to simple inputs and outputs. We call that I/O in computer
-science, but it's basically the same thing. Garbage in, garbage out, as the old
-saying goes, implying that you can't expect meaningful data to come out of a
-program, if the data you put in is junk. This farmer made a similar argument
-about soil amendments and yields.
+## Complex Problems, Modular Solutions
+In a sense, one farm can be distinguished from others by which problems it tries
+to solve for and which it leaves up to other farms to solve. A farm will often
+establish its business model based on that problem set and carve out its market
+niche based on what solutions it can offer. Some farms grow for yield, while
+some grow for a particular quality. Some farms tackle the logistics of taking
+their product all the way to the end consumer, and some hand that off to their
+distributor and retailers, leaving them to focus on other concerns.
 
-<!-- TODO: Change these first two sentences. -->
-Now, I don't want to be too reductive, but I think many farmers do in fact share
-the same problems. A farm is distinguished from others only by which problems
-they try to solve and which they leave up to other farms. In fact, a farm will
-establish its business model based on that problem set, and will carve out its
-market niche based on what solutions it provides. Some farms grow for yield,
-while some grow for a particular quality. Some farms tackle the logistics of
-taking their product all the way to the end consumer, and some hand that off to
-their distributor, leaving them to focus on other concerns. To put it in
-mathematical terms, there is a superset of problems that all farms share, while
-each individual farm only treats a small subset of those problems.
-
-## Modularity of the Data Model
 So what does this mean for farm software? How do software engineers try to
 manage all this complexity?
 
@@ -81,6 +73,18 @@ This is popular in FOSS systems because it delegates much of the complexity of
 specialized use cases to other developers, and so large problem sets can be
 undertaken in a more distributed way.
 
+#### SCRATCH
+To put it in mathematical terms, there is a superset of problems that all farms
+share, while each individual farm only treats a small subset of those problems.
+
+When I was first learning how to code, I was struck when one farmer told me all
+farming boils down to simple inputs and outputs. We call that I/O in computer
+science, but it's basically the same thing. Garbage in, garbage out, as the old
+saying goes, implying that you can't expect meaningful data to come out of a
+program, if the data you put in is junk. This farmer made a similar argument
+about soil amendments and yields.
+
+## Modularity of Both the Data Model and the Interface
 To achieve a modular design with farm software we need zoom back out, look again
 at that overall superset of problems and find what can be generalized. This
 amounts to finding what can be generalized in the data model itself, so that it
@@ -108,7 +112,6 @@ the particular use case. What's perhaps most important about modules is that
 each farm can mix and match them to suit their unique needs, and exclude any
 modules that are extraneous to their requirements.
 
-## Modularity of the Interface
 The data model is the foundation of a modular system, but there is another level
 of modularity that must likewise reflect the diverse problem set of modern
 farming. That is the user interface, or UI.
