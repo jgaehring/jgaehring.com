@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import styles from './blog-post.module.css';
+import { post } from './blog-post.module.css';
 import logo from '../assets/golden-russet-black.jpg';
 
 export default function BlogTemplate({ data, location }) {
@@ -44,8 +44,8 @@ export default function BlogTemplate({ data, location }) {
         >
         </Helmet>
         <Header pathname={location.pathname}/>
-        <div className={styles.post}>
-          <h1 className={styles.title}>{title}</h1>
+        <div className={post}>
+          <h1>{title}</h1>
           <h5>by Jamie Gaehring | {date}</h5>
           <div
             dangerouslySetInnerHTML={{ __html: html }}

@@ -2,7 +2,10 @@ import React, { useRef } from 'react';
 import Link from 'gatsby-link';
 import { graphql } from 'gatsby';
 import Layout, { description } from '../components/Layout';
-import styles from './index.module.css';
+import {
+  about, aboutContainer, blurb, blog, bulletDivider, centerText, contact,
+  logo as styleLogo, moreLink, portrait as stylePortrait,
+} from './index.module.css';
 import PostPreview from '../components/PostPreview';
 import logo from '../assets/golden-russet-black.svg';
 import portrait from '../assets/woodward_crop_1971x2956.jpg';
@@ -23,26 +26,26 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout description={description}>
-      <div className={styles.home}>
-        <section className={styles.aboutContainer}>
-          <div className={styles.about}>
-            <div className={styles.logo}>
+      <div>
+        <section className={aboutContainer}>
+          <div className={about}>
+            <div className={styleLogo}>
               <img src={logo} alt="jgaehring.com logo"/>
             </div>
-            <div className={styles.portrait}>
+            <div className={stylePortrait}>
               <img src={portrait} alt="Portrait of Jamie Gaehring"/>
             </div>
-            <div className={styles.blurb} >
-              <p className={styles.bulletDivider}>&mdash; &bull;&sect;&bull; &mdash;</p>
+            <div className={blurb} >
+              <p className={bulletDivider}>&mdash; &bull;&sect;&bull; &mdash;</p>
               <p>
                 <span dangerouslySetInnerHTML={{ __html: descriptionHtml }}/>&nbsp;
-                <a id={styles.moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
+                <a id={moreLink} onClick={scrollToMore} href="#more">&#x21d3;</a>
               </p>
             </div>
           </div>
         </section>
         <section>
-          <div className={styles.contact}>
+          <div className={contact}>
             <p id="more" ref={moreRef}><Link to="/about">About me.</Link></p>
             <h3>
               &#123;{/*Use HTML code for curly braces b/c of jsx*/}
@@ -71,7 +74,7 @@ const IndexPage = ({data}) => {
             </h2>
           </div>
         </section>
-        <section className={styles.blog}>
+        <section className={blog}>
           <header>
             <h2>Writings</h2>
             <p>
@@ -87,7 +90,7 @@ const IndexPage = ({data}) => {
                 fields={node.fields}
               />)
           }
-          <div className={styles.centerText}>
+          <div className={centerText}>
             <p><Link to='/blog'>More posts.</Link></p>
           </div>
         </section>

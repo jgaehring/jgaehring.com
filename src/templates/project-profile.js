@@ -3,7 +3,10 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import styles from './project-profile.module.css';
+import {
+  gh, preview, screenshotContainer, details, title, links, description, tech,
+  post as postStyle,
+} from './project-profile.module.css';
 import { FaGithub } from 'react-icons/fa';
 import { MdOpenInNew } from 'react-icons/md';
 
@@ -17,7 +20,7 @@ export default function ProjectProfile({ data, location }) {
       target='_blank'
       rel="noopener noreferrer"
     >
-      <FaGithub className={styles.gh}/>
+      <FaGithub className={gh}/>
     </a>
   )
 
@@ -44,8 +47,8 @@ export default function ProjectProfile({ data, location }) {
       >
       </Helmet>
       <Header pathname={location.pathname}/>
-      <div className={styles.preview}>
-        <div className={styles.screenshotContainer}>
+      <div className={preview}>
+        <div className={screenshotContainer}>
           <a
             href={post.frontmatter.cover.publicURL}
             target='_blank'
@@ -57,11 +60,11 @@ export default function ProjectProfile({ data, location }) {
             />
           </a>
         </div>
-        <div className={styles.details}>
-          <div  className={styles.title}>
+        <div className={details}>
+          <div  className={title}>
             <h1>{post.frontmatter.title}</h1>
           </div>
-          <div className={styles.links}>
+          <div className={links}>
             {
               (post.frontmatter.link)
                 ? siteLink
@@ -73,10 +76,10 @@ export default function ProjectProfile({ data, location }) {
                 : null
             }
           </div>
-          <div className={styles.description}>
+          <div className={description}>
             <p><i>{post.frontmatter.description}</i></p>
           </div>
-          <div className={styles.tech}>
+          <div className={tech}>
             <h4>Technologies used:</h4>
             <ul>
               {
@@ -87,7 +90,7 @@ export default function ProjectProfile({ data, location }) {
         </div>
 
       </div>
-      <div className={styles.post}>
+      <div className={postStyle}>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
         />

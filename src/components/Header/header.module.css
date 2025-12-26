@@ -3,11 +3,11 @@
   text-align: center;
 }
 
-nav a, nav a:visited {
+.nav a, .nav a:visited {
   text-decoration: none;
 }
 
-nav ul {
+.nav ul {
   margin: 0 20%;
   width: 60%;
   display: inline-flex;
@@ -15,12 +15,12 @@ nav ul {
 }
 
 @media (max-width: 675px) {
-  nav ul {
+  .nav ul {
     margin: 0 15%;
     width: 70%;
   }
 }
-nav li {
+.nav li {
   display: inline-flex;
   list-style-type: none;
 }

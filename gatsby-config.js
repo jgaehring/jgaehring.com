@@ -25,7 +25,6 @@ module.exports = {
         // cookieDomain: "example.com",
       },
     },
-    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

@@ -4,7 +4,7 @@ import ProjectPreviews from '../components/ProjectPreviews';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
-export default ({ data, location }) => (
+const Projects = ({ data, location }) => (
   <Layout>
     <Header pathname={location.pathname}/>
     <h1>Projects</h1>
@@ -28,3 +28,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Projects;

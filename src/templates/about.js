@@ -1,9 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
-export default function About ({ data, location }) {
+const About = ({ data, location }) => {
   const { markdownRemark: post } = data;
   return (
     <Layout>
@@ -31,3 +32,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default About;

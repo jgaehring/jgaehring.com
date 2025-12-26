@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import PostPreview from '../components/PostPreview';
 
-export default ({ data, location }) => {
+const Blog = ({ data, location }) => {
   return (
     <Layout>
       <Header pathname={location.pathname}/>
@@ -39,3 +39,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default Blog;

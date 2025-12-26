@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styles from './project-previews.module.css';
+import { project, projectsContainer } from './project-previews.module.css';
 
 const ProjectPreviews = ({data}) => {
   return (
-  <div className={styles.projectsContainer} >
+  <div className={projectsContainer} >
     {
       data.map(({
         node: {
@@ -17,7 +17,7 @@ const ProjectPreviews = ({data}) => {
             slug
           }}
       }, i) => (
-        <div className={styles.project} key={`project-${i}`}>
+        <div className={project} key={`project-${i}`}>
           <Link to={`/${slug}`}>
             <img
               src={thumb.publicURL}
