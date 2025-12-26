@@ -8,16 +8,12 @@ import logo from '../../assets/golden-russet-black.jpg';
 export function Head ({ location, params, data, pageContext }) {
   const {
     site: { siteMetadata: site = {} },
-    markdownRemark: {
-      excerpt,
-      fields: { slug } = {},
-      frontmatter,
-    } = {},
+    markdownRemark: { excerpt, frontmatter} = {},
   } = data;
   const title = frontmatter?.title ?? site.title;
   const description = frontmatter?.description ?? excerpt ?? site.desription;
-  const url = `${site.siteUrl}/${slug ?? location.pathname}`;
-  const image = `${site.siteUrl}/${logo}`;
+  const url = `${site.siteUrl}${location.pathname}`;
+  const image = `${site.siteUrl}${logo}`;
   return <>
     <title>{title}</title>
     <link rel="canonical" href={url} />
