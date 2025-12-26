@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import {
   about, aboutContainer, blurb, blog, bulletDivider, centerText, contact,
-  logo as styleLogo, moreLink, portrait as stylePortrait,
+  logo as styleLogo, moreLink, portrait as stylePortrait, svgIcon,
 } from './index.module.css';
 import PostPreview from '../components/PostPreview';
 import logo from '../assets/golden-russet-black.svg';
@@ -12,6 +12,20 @@ import portrait from '../assets/woodward_crop_1971x2956.jpg';
 import { FaGithub, FaMastodon } from 'react-icons/fa';
 
 export { Head } from '../components/Layout';
+
+const IconBsky = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="2 2 20 20"
+    width="24"
+    height="24"
+    className={svgIcon}
+  >
+    <path
+      d="M6.335 4.212c2.293 1.76 4.76 5.327 5.665 7.241.906-1.914 3.372-5.482 5.665-7.241C19.319 2.942 22 1.96 22 5.086c0 .624-.35 5.244-.556 5.994-.713 2.608-3.315 3.273-5.629 2.87 4.045.704 5.074 3.035 2.852 5.366-4.22 4.426-6.066-1.111-6.54-2.53-.086-.26-.126-.382-.127-.278 0-.104-.041.018-.128.278-.473 1.419-2.318 6.956-6.539 2.53-2.222-2.331-1.193-4.662 2.852-5.366-2.314.403-4.916-.262-5.63-2.87C2.35 10.33 2 5.71 2 5.086c0-3.126 2.68-2.144 4.335-.874Z"
+    />
+  </svg>
+)
 
 const IndexPage = ({data}) => {
   const { site: { siteMetadata: { description } = {} } } = data;
@@ -73,6 +87,13 @@ const IndexPage = ({data}) => {
                 rel="noopener noreferrer"
               >
                 <FaMastodon/>
+              </a>
+              &nbsp;
+              <a href="https://bsky.app/profile/jgaehring.bsky.social"
+                target='_blank'
+                rel="noopener noreferrer"
+              >
+                <IconBsky/>
               </a>
             </h2>
           </div>

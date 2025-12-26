@@ -67,6 +67,12 @@
   margin: 0 0 20vh;
 }
 
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  fill: black;
+}
+
 .blog header, .center-text {
   grid-column: 1 / span 6;
   text-align: center;
