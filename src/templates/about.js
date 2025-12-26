@@ -1,16 +1,15 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 
+export { Head } from '../components/Layout';
+
 const About = ({ data, location }) => {
+  console.log(data)
   const { markdownRemark: post } = data;
   return (
     <Layout>
-      <Helmet
-        title="About | Jamie Gaehring">
-      </Helmet>
       <Header pathname={location.pathname}/>
       <div dangerouslySetInnerHTML={{ __html: post.html }}/>
     </Layout>
@@ -19,12 +18,20 @@ const About = ({ data, location }) => {
 
 export const pageQuery = graphql`
   query AboutPage {
-    markdownRemark(frontmatter: {title: {eq: "About"}}) {
+    site {
+      siteMetadata {
+        siteUrl
+        description
+        keywords
+        title
+      }
+    }
+    markdownRemark(frontmatter: {path: {eq: "/about"}}) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
         title
+        description
       }
       fields {
         slug

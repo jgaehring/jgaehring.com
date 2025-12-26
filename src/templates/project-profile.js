@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
@@ -10,9 +9,10 @@ import {
 import { FaGithub } from 'react-icons/fa';
 import { MdOpenInNew } from 'react-icons/md';
 
+export { Head } from '../components/Layout';
+
 export default function ProjectProfile({ data, location }) {
   const { markdownRemark: post } = data;
-  const rootUrl = 'https://jgaehring.com/'
 
   const ghLink = (
     <a
@@ -36,16 +36,6 @@ export default function ProjectProfile({ data, location }) {
 
   return (
     <Layout>
-      <Helmet
-        title={`${post.frontmatter.title} | Jamie Gaehring`}
-        meta={[
-          { name: 'description', content: post.excerpt },
-        ]}
-        link={[
-          { rel: 'canonical', href: rootUrl + data.markdownRemark.fields.slug }
-        ]}
-      >
-      </Helmet>
       <Header pathname={location.pathname}/>
       <div className={preview}>
         <div className={screenshotContainer}>
@@ -101,6 +91,14 @@ export default function ProjectProfile({ data, location }) {
 
 export const pageQuery = graphql`
   query ProjectProfile($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+        description
+        keywords
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } } ) {
       html
       frontmatter {
