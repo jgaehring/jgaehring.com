@@ -1,9 +1,18 @@
+const description = 'For over two decades, I\'ve been helping farmers build a '
+  + 'more open food system. Today, I\'m working to give those farmers better '
+  + 'access to the software, data and other tools that they need to feed their '
+  + 'communities in the 21st century.';
+const keywords = 'agriculture, technology, software, data, open source, farming, hudson valley, new york city, new jersey, greenmarket, javascript, web development, local food';
+const baseURL = 'https://jgaehring.com';
+
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://jgaehring.com',
+    description,
+    keywords,
     title: 'Jamie Gaehring',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-plugin-google-analytics`,

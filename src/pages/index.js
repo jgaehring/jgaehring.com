@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Link from 'gatsby-link';
 import { graphql } from 'gatsby';
-import Layout, { description } from '../components/Layout';
+import Layout from '../components/Layout';
 import {
   about, aboutContainer, blurb, blog, bulletDivider, centerText, contact,
   logo as styleLogo, moreLink, portrait as stylePortrait,
@@ -11,9 +11,12 @@ import logo from '../assets/golden-russet-black.svg';
 import portrait from '../assets/woodward_crop_1971x2956.jpg';
 import { FaGithub, FaMastodon } from 'react-icons/fa';
 
-const descriptionHtml = description.replaceAll(/21st/g, '21<sup>st</sup>');
+export { Head } from '../components/Layout';
 
 const IndexPage = ({data}) => {
+  const { site: { siteMetadata: { description } = {} } } = data;
+  const descriptionHtml = description.replaceAll(/21st/g, '21<sup>st</sup>');
+
   const moreRef = useRef(null);
   const scrollToMore = e => {
     e.preventDefault();
@@ -103,6 +106,14 @@ export default IndexPage
 
 export const query = graphql`
   query HomePagePreviews {
+    site {
+      siteMetadata {
+        siteUrl
+        description
+        keywords
+        title
+      }
+    }
     allMarkdownRemark(
       filter: {
         fields: {

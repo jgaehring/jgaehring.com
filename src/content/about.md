@@ -1,7 +1,9 @@
 ---
 path: "/about"
 date: "2020-09-01"
-title: "About"
+title: "About | Jamie Gaehring"
+description: Jamie Gaehring is a free software maintainer, consultant, and
+    community organizer from Queens, NYC.
 ---
 
 # Hello
