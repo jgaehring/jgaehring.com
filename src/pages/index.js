@@ -66,11 +66,11 @@ const IndexPage = ({data}) => {
             <p id="more" ref={moreRef}><Link to="/about">About me.</Link></p>
             <h3>
               &#123;{/*Use HTML code for curly braces b/c of jsx*/}
-              <a href="mailto:jamie@jgaehring.com"
+              <a href="mailto:jamie@runrig.org"
                 target='_blank'
                 rel="noopener noreferrer"
               >
-                jamie@jgaehring.com
+                jamie@runrig.org
               </a>
               &#125;
             </h3>
